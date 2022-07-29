@@ -4,19 +4,19 @@
 <img src="./Images/bootlogo.png" alight-itens="center">
 </div>
 
-[![GitHub contributors](https://img.shields.io/github/contributors/coldmvm/gmpack-updater)](https://github.com/coldmvm/gmpack-updater/graphs/contributors)
-[![GitHub All Releases](https://img.shields.io/github/downloads/coldmvm/gmpack-updater/total)](https://github.com/coldmvm/gmpack-updater/releases)
-[![Latest release](https://img.shields.io/github/v/release/coldmvm/gmpack-updater)](https://github.com/coldmvm/gmpack-updater/releases)
-[![GitHub issues](https://img.shields.io/github/issues/coldmvm/gmpack-updater)](https://github.com/coldmvm/gmpack-updater/issues)
+[![GitHub contributors](https://img.shields.io/github/contributors/gamemoddesignbr/gmpack-updater)](https://github.com/gamemoddesignbr/gmpack-updater/graphs/contributors)
+[![GitHub All Releases](https://img.shields.io/github/downloads/gamemoddesignbr/gmpack-updater/total)](https://github.com/gamemoddesignbr/gmpack-updater/releases)
+[![Latest release](https://img.shields.io/github/v/release/gamemoddesignbr/gmpack-updater)](https://github.com/gamemoddesignbr/gmpack-updater/releases)
+[![GitHub issues](https://img.shields.io/github/issues/gamemoddesignbr/gmpack-updater)](https://github.com/gamemoddesignbr/gmpack-updater/issues)
 [![License](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
-Um homebrew de Nintendo Switch, baseado no homebrew [AIO-Switch-Updater](https://github.com/HamletDuFromage/aio-switch-updater/), para fazer o download e atualizar firmwares e o custom firmware [GMPACK](https://github.com/coldmvm/gmpack/releases).
+Um homebrew de Nintendo Switch, baseado no homebrew [AIO-Switch-Updater](https://github.com/HamletDuFromage/aio-switch-updater/), para fazer o download e atualizar firmwares e o custom firmware [GMPACK](https://github.com/gamemoddesignbr/gmpack/releases).
 
 GMPACK é um pacote all-in-one (tudo em um) de custom firmware que inclui o Atmosphère, sigpatches, hekate, nyx e vários outros homebrews.
 
 Este homebrew suporta Atmosphère, ReiNX e SXOS, e funciona em consoles não corrigidos (`Erista`) and corrigidos (`V2/Mariko`).
 
-## **[FAÇA O DOWNLOAD POR AQUI!](https://github.com/coldmvm/gmpack-updater/releases)**
+## **[FAÇA O DOWNLOAD POR AQUI!](https://github.com/gamemoddesignbr/gmpack-updater/releases)**
 
 ## Como instalar?
 Baixe o arquivo `gmpack-updater.zip` do link acima e o extraia na `raiz` do microSD.

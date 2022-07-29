@@ -8,7 +8,7 @@ constexpr const char BRAND_FACEBOOK_GROUP[] = "GameMod design - ideias e projeto
 constexpr const char APP_FULL_NAME[] = "Atualizador Pacote GameMod";
 constexpr const char APP_SHORT_NAME[] = "APG";
 constexpr const char BASE_FOLDER_NAME[] = "gmpack";
-constexpr const char GITHUB_USER[] = "coldmvm";
+constexpr const char GITHUB_USER[] = "gamemoddesignbr";
 constexpr const bool SHOW_GNX = true;
 
 /*
@@ -30,7 +30,7 @@ constexpr const char APP_URL[] = "https://github.com/{}/{}-updater/releases/late
 constexpr const char APP_INFO[] = "https://api.github.com/repos/{}/{}-updater/releases/latest";
 constexpr const char APP_FILENAME[] = "/config/{}-updater/app.zip";
 
-constexpr const char NXLINKS_URL[] = "https://raw.githubusercontent.com/coldmvm/nx-links/master/nx-links-v202.json";
+constexpr const char NXLINKS_URL[] = "https://raw.githubusercontent.com/gamemoddesignbr/nx-links/master/nx-links-v202.json";
 
 constexpr const char FIRMWARE_FILENAME[] = "/config/{}-updater/firmware.zip";
 constexpr const char FIRMWARE_PATH[] = "/firmware/";

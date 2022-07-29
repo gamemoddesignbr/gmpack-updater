@@ -145,7 +145,7 @@ ToolsTab::ToolsTab(const std::string& tag, bool erista) : brls::List()
         json->getClickEvent()->subscribe([](brls::View* view) {
 
 			nlohmann::ordered_json json;
-			download::getRequest("https://raw.githubusercontent.com/coldmvm/gmpack/main/latest/pegascape/json_file2.json", json, {"accept: application/vnd.github.v3+json"});
+			download::getRequest("https://raw.githubusercontent.com/gamemoddesignbr/gmpack/main/latest/pegascape/json_file2.json", json, {"accept: application/vnd.github.v3+json"});
 
 /*
 			std::vector<std::string> filesList{};
