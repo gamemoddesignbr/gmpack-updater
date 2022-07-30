@@ -60,6 +60,9 @@ ChangelogPage::ChangelogPage() : AppletFrame(true, true)
     verTitles.push_back("v2.0.3");
     changes.push_back("\uE016 Removido alguns estágios de 'Baixar Atmosphère' e 'Baixar firmware' para deixar tais opções mais diretas.\n\uE016 Adicionado temas do Tinfoil e o arquivo 'options.json' à lista de exclusão na atualização normal.\n\uE016 Resquícios de downloade de pacotes Atmosphère agora são apagados quando a opção 'Limpar arquivos' é usada em 'Ferramentas'.\n\uE016 Melhoria nos textos para esclarecer como a opção 'Instalação limpa' funciona.\n\uE016 Melhoria nos textos de 'Baixar Atmosphère' para esclarecer o que é opcional.");
 
+    verTitles.push_back("v2.0.4");
+    changes.push_back("\uE016 Melhoria nos textos para esclarecer um pouco mais sobre 'Instalação limpa'.\n\uE016 Limpeza no código em geral.\n\uE016 Melhorias nos textos do homebrew.");
+
 	for (int i = verTitles.size() - 1; i >= 0; i--) {
         listItem = new brls::ListItem(verTitles[i]);
         change = changes[i];
