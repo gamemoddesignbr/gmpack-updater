@@ -73,7 +73,7 @@ ToolsTab::ToolsTab(const std::string& tag, bool erista) : brls::List()
     bool bAlwaysShow;
 	std::string sMOTD = util::getMOTD(bAlwaysShow);
     motd->getClickEvent()->subscribe([sMOTD](brls::View* view) {
-        util::showDialogBoxInfo(sMOTD);
+      util::showDialogBoxInfo(sMOTD);
     });
     motd->setHeight(LISTITEM_HEIGHT);
 
