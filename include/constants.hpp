@@ -30,7 +30,7 @@ constexpr const char APP_URL[] = "https://github.com/{}/{}-updater/releases/late
 constexpr const char APP_INFO[] = "https://api.github.com/repos/{}/{}-updater/releases/latest";
 constexpr const char APP_FILENAME[] = "/config/{}-updater/app.zip";
 
-constexpr const char NXLINKS_URL[] = "https://raw.githubusercontent.com/gamemoddesignbr/nx-links/master/nx-links-v202.json";
+constexpr const char NXLINKS_URL[] = "https://raw.githubusercontent.com/gamemoddesignbr/nx-links/master/nx-links-v204.json";
 
 constexpr const char FIRMWARE_FILENAME[] = "/config/{}-updater/firmware.zip";
 constexpr const char FIRMWARE_PATH[] = "/firmware/";
