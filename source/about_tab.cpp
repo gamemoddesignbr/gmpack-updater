@@ -26,6 +26,6 @@ AboutTab::AboutTab()
 
     // Links
     this->addView(new brls::Header("Disclaimers"));
-    brls::Label* links = new brls::Label(brls::LabelStyle::SMALL, fmt::format("menus/about/disclaimers"_i18n, BRAND_ARTICLE, BRAND_FULL_NAME, BRAND_FACEBOOK_GROUP), true);
+    brls::Label* links = new brls::Label(brls::LabelStyle::SMALL, fmt::format("menus/about/disclaimers"_i18n, BRAND_ARTICLE, BRAND_FULL_NAME), true);
     this->addView(links);
 }

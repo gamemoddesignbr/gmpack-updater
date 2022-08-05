@@ -35,11 +35,11 @@ AmsTab::AmsTab(const nlohmann::json& nxlinks, const bool erista) : brls::List()
 
     CreateDownloadItems(util::getValueFromKey(cfws, util::upperCase(BASE_FOLDER_NAME)), util::upperCase(BASE_FOLDER_NAME), packVersion);
 
-    if (SHOW_GNX)
+    if (SHOW_OTHER)
     {
         description = new brls::Label(brls::LabelStyle::DESCRIPTION, "menus/ams_update/goma_label"_i18n, true);
         this->addView(description);
-        CreateDownloadItems(util::getValueFromKey(cfws, "GNX"), "GNX");
+        CreateDownloadItems(util::getValueFromKey(cfws, "OUTROS"), "Outros");
     }
 }
 

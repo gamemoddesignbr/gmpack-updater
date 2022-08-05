@@ -10,11 +10,11 @@
 [![GitHub issues](https://img.shields.io/github/issues/gamemoddesignbr/gmpack-updater)](https://github.com/gamemoddesignbr/gmpack-updater/issues)
 [![License](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
-Um homebrew de Nintendo Switch, baseado no homebrew [AIO-Switch-Updater](https://github.com/HamletDuFromage/aio-switch-updater/), para fazer o download e atualizar firmwares e o custom firmware [GMPACK](https://github.com/gamemoddesignbr/gmpack/releases).
+Um homebrew de Nintendo Switch, baseado no homebrew [AIO-Switch-Updater](https://github.com/HamletDuFromage/aio-switch-updater/), altamente modificado, para fazer o download e atualizar firmwares e o custom firmware [GMPACK](https://github.com/gamemoddesignbr/gmpack/releases).
 
-GMPACK é um pacote all-in-one (tudo em um) de custom firmware que inclui o Atmosphère, sigpatches, hekate, nyx e vários outros homebrews.
+GMPACK é um pacote all-in-one (tudo em um) de custom firmware que inclui o Atmosphère, hekate, nyx e vários outros homebrews.
 
-Este homebrew suporta Atmosphère, ReiNX e SXOS, e funciona em consoles não corrigidos (`Erista`) and corrigidos (`V2/Mariko`).
+Este homebrew suporta Atmosphère e funciona em consoles não corrigidos (`Erista`) and corrigidos (`Mariko`).
 
 ## **[FAÇA O DOWNLOAD POR AQUI!](https://github.com/gamemoddesignbr/gmpack-updater/releases)**
 
@@ -29,7 +29,7 @@ Se você estiver com dúvidas de como usar o homebrew, aperte o botão `X` e uma
 ## Descrição das funções
 ### ⬦ Baixar Atmosphère
 - Baixa o pacote (`GMPACK`).
-  - Opcionalmente, também é possível baixar o pacote alternativo `GNX` feito pelo Goma.
+  - Opcionalmente, também é possível baixar pacotes alternativos.
 -  Após baixado, o programa irá instalar o pacote para você.
 
 ### ⬦ Baixar firmwares
@@ -48,13 +48,20 @@ Se você estiver com dúvidas de como usar o homebrew, aperte o botão `X` e uma
 
 ### ⬦ Extras (na página `Ferramentas`)
 - Editar as configurações da internet (DNS, endereço IP, MTU, etc). Adicione suas próprias configurações em `config/aio-switch-updater/internet.json`. Você vai achar um modelo desta configuração neste repositório.
-- Abrir o navegador de internet do Switch (precisa abrir usando um jogo e pressionar R).
+- Abrir o navegador de internet do Switch (precisa abrir o APG em modo título/title usando um jogo e pressionar R).
 - Limpar os arquivos temporários baixados.
-- Abrir a última mensagem do dia (MOTD) disponível no servidor.
+- Abrir a última mensagem do dia (MOTD) disponível no servidor (quando disponível).
 - Consultar as alterações sofridas pelo homebrew (changelog).
 
-## Disclaimer
-A GameMod design não detém nenhum direito de cópia sobre nenhum arquivo baixado por este homebrew e todo o crédito pertence aos seus respectivos proprietários. Se o atual proprietário do arquivo baixado por este atualizador solicitar, removeremos imediatamente a habilidade de baixar qualquer arquivo problemático.
+## Aviso legal
+A GameMod design não detém nenhum direito de cópia sobre nenhum arquivo baixado por este homebrew e todo o crédito pertence aos seus respectivos proprietários. Se o atual proprietário do arquivo baixado por este atualizador solicitar a remoção, removeremos imediatamente deste homebrew a habilidade de baixar tal arquivo.
+- O GMPACK, assim como o Atmosphère, não habilita a pirataria no console e seu propósito principal é somente habilitar o usuário a rodar homebrews.
+- O uso do GMPACK com o propósito diferente do mencionado acima, como rodar cópias (backup) de jogos originais, é parcial ou totalmente proibida pela legislação de certos países.
+- Ao usar o GMPACK você está declarando ter consultado sua legislação local e estar legalmente apto a usá-los com o propósito de rodar cópias (backup) dos seus jogos originais.
+- Você está declarando também ser o dono de todos os jogos originais dos quais você fez, faz ou fará cópias (backup).
+- O uso do GMPACK com o propósito diferente do que é permitido pela sua legislação local será feito sob a sua inteira responsabilidade, isentando-se assim a GameMod design.
+- A GameMod design não comercializa ou instala backup de jogos, ROMs de emuladores nem nenhum conteúdo que habilita a pirataria!
+- A GameMod design condena a pirataria. Apoie os desenvolvedores de jogos!
 
 ## Agradecimentos especiais
 - [HamletDuFromage](https://github.com/HamletDuFromage/) pelo brilhante homebew AIO-Switch-Updater.

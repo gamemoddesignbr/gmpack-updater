@@ -39,13 +39,7 @@ void showScreen(const bool& existHiddenFile)
         }
     }
     else
-    {
-//        if ((bAlwaysShowMOTD) || (!bWasMOTDDisplayed))
-//            brls::Application::pushView(new WarningPage("menus/main/launch_warning"_i18n, true)); //1 BOOL = MOTD - 2 BOOL BETA
-//        else
-//            brls::Application::pushView(new WarningPage("menus/main/launch_warning"_i18n, false)); //1 BOOL = MOTD - 2 BOOL BETA
         brls::Application::pushView(new WarningPage("menus/main/launch_warning"_i18n, ((bAlwaysShowMOTD) || (!bWasMOTDDisplayed)), beta)); //1 BOOL = MOTD - 2 BOOL BETA
-    }
 }
 int main(int argc, char* argv[])
 {

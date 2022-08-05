@@ -2,7 +2,7 @@
   "about": {
     "title": "{} ({})",
     "copyright": "O {} ({}) usa a licença GPL-3.0\n© {} {}",
-    "disclaimers": "\u25c6 {} {} não detém nenhum direito de cópia sobre nenhum arquivo baixado por este homebrew e todo o crédito pertence aos seus respectivos proprietários.\n\u25c6 Os links serão atualizados sempre que um novo pacote estiver disponível ou for necessário. Se um link estiver quebrado, informe no grupo de Facebook '{}'.\n\nObrigado!"
+    "disclaimers": "\u25c6 {} {} não detém nenhum direito de cópia sobre nenhum arquivo baixado por este homebrew e todo o crédito pertence aos seus respectivos proprietários.\n\nObrigado!"
   },
   "credits": {
     "title_main": "O {} ({}) não seria possível sem a ajuda e ideias das seguintes pessoas/grupos:",
@@ -52,7 +52,9 @@
     "download_translations": "Baixar traduções",
     "download_mods": "Baixar modificações",
     "tools": "Ferramentas",
-    "launch_warning": "Por favor, preste atenção aos seguintes pontos antes de usar este homebrew:\n\n\u25c6 Leia e entenda sobre como manualmente atualizar seu Switch antes. Isto lhe ajudará a entender melhor este homebrew e você saberá o que fazer caso algo saia errado.\n\u25c6 Para evitar o risco de corrompimento de dados, o uso deste homebrew em um microSD formatado em exFAT é FORTEMENTE desaconselhado.\n\n\u25c6 As últimas informações sobre novas funções inseridas e/ou modificadas estão disponíveis no menu Ferramentas→Alterações.\n\n\u2605 Ao pressionar o botão \uE0E2 um popup de AJUDA aparecerá com explicações de como usar este homebrew.\n\nEsta tela não aparecerá novamente.",
+    "launch_warning": "Por favor, preste atenção aos seguintes pontos antes de usar este homebrew:\n\n\u25c6 Leia e entenda sobre como manualmente atualizar seu Switch antes. Isto lhe ajudará a entender melhor este homebrew e você saberá o que fazer caso algo saia errado.\n\u25c6 Para evitar o risco de corrompimento de dados, o uso deste homebrew em um microSD formatado em exFAT é FORTEMENTE desaconselhado.\n\n\u25c6 As últimas informações sobre novas funções inseridas e/ou modificadas estão disponíveis no menu Ferramentas→Alterações.\n\n\u2605 Ao pressionar o botão \uE0E2 um popup de AJUDA aparecerá com explicações de como usar este homebrew.\n\n\u2605 Ao pressionar o botão \uE0E3 uma janela com o AVISO LEGAL aparecerá. Por favor, leia-a!\n\nEsta tela não aparecerá novamente.",
+    "legal_warning_txt": "Aviso legal",
+    "legal_warning": "Sempre que mencionado modificação (destrave ou desbloqueio) do console deve ser levado em conta o seguinte:\n\uE150 {} {} não é afiliad{} a nenhuma empresa mencionada aqui ou no site, tampouco seus respectivos serviços online.\n\u2460 O propósito principal de tal modificação é o de habilitar a execução de homebrews (que são “programas caseiros” não-oficiais criados pelos próprios usuários da plataforma).\n\u2461 O uso de qualquer produto ou software com o propósito diferente do mencionado acima, como rodar cópias (backup) de jogos originais, é parcial ou totalmente proibida pela legislação de certos países.\n\u2462 Ao usar tais produtos ou softwares você está declarando ter consultado sua legislação local e estar legalmente apto a usá-los com o propósito de rodar cópias (backup) dos seus jogos originais.\n\u2463 Você está declarando também ser o dono de todos os jogos originais dos quais você fez, faz ou fará cópias (backup).\n\u2464 O uso de tais produtos ou software com o propósito diferente do que é permitido pela sua legislação local será feito sob a sua inteira responsabilidade, isentando-se assim {} {}.\n\u2465 {} {} não comercializa ou instala backup de jogos, ROMs de emuladores nem nenhum conteúdo que habilita a pirataria!\n\uE150 {} {} condena a pirataria. Apoie os desenvolvedores de jogos!",
     "beta_warning": "ESTA É UMA VERSÃO BETA!\n\nPor favor tenha ciência de que este homebrew ainda está passando pelos testes finais antes da versão oficial!\nO homebrew e suas novas funções descritas no changelog são disponibilizadas 'como estão' e {} {} não dá nenhuma garantia expressa ou implícita sobre sua usabilidade.\n{} {} não se responsabiliza por nenhuma perda de dados direta ou indireta sofrida como resultado do uso deste homebrew.\n\nObrigado!",
     "footer_text" : "{} - {} - {}Gb disponíveis",
     "footer_text_not_connected" : " - Offline",
@@ -66,7 +68,7 @@
     "help_how_to_use_full": "Como usar o homebrew?",
     "help_how_to_use_text": "\nComo usar este homebrew?\n\nUsar este homebrew é muito fácil!\n\n\u25c6 Navegue pelas abas horizontais na parte da esquerda com o direcional D-PAD (\uE0AD, \uE0AC, \uE0AE e \uE0AB) ou os analógicos da esquerda (\uE0C1) ou direita (\uE0C2) e selecione com o botão \uE0E0.\n\n\u25c6 Ao entrar em um opção, para voltar à opção anterior ou cancelar/fechar uma opção/tela, pressione o botão \uE0E1.\n\n\u25c6 Para sair do homebrew pressione o botão \uE0EF.",
     "help_order": "Ordem das atualizações",
-    "help_order_text": "\nQual ordem devo seguir para atualizar o console?\n\n\uE150 Antes de mais nada, nunca atualize o console sem ter atualizado o Atmosphère (AMS) antes, a não ser que ele suporte a versão do console a ser instalada!\nPor exemplo o AMS 1.3.2 suporta da versão 14.1.1 até a versão 1.0.0, mas pode não funcionar com a próxima.\n\n\u25c6 Primeiro navegue até a aba '{}' e faça o download do '{}' ou 'GNX' (dependendo de qual você usa) e depois navegue até a aba '{}' para baixar Firmware do console.\n\nSeja paciente e dê ao homebrew o tempo necessário para que ele conclua a instalção.",
+    "help_order_text": "\nQual ordem devo seguir para atualizar o console?\n\n\uE150 Antes de mais nada, nunca atualize o console sem ter atualizado o Atmosphère (AMS) antes, a não ser que ele suporte a versão do console a ser instalada!\nPor exemplo o AMS 1.3.2 suporta da versão 14.1.1 até a versão 1.0.0, mas pode não funcionar com a próxima.\n\n\u25c6 Primeiro navegue até a aba '{}' e faça o download do '{}' ou 'Outros' (dependendo de qual você usa) e depois navegue até a aba '{}' para baixar Firmware do console.\n\nSeja paciente e dê ao homebrew o tempo necessário para que ele conclua a instalção.",
     "help_clean_inst": "Instalação limpa",
     "help_clean_inst_text": "\nComo fazer uma instalação limpa?\n\n\uE150 Uma instalação limpa irá remover tudo do seu microSD menos os arquivos e pastas abaixo!\n\n* Para executar uma instalação limpa selecione o pacote Atmosphère de sua preferência, escolha 'Sim', confirme novamente com 'Sim' e espere o processo terminar!\n* Escolhendo 'Não' executará a instalação normal que poderá apagar os itens marcados com \uE150.\n\nO que a instalação limpa não remove:\n\u2605 emuNAND (jogos, saves e usuários) \uE150 pasta de backup \uE150 backup dos saves (JKSV, Checkpoint e EdiZon) \u2605 pasta do retroarch e ROMs \uE150 arquivos/temas do Tinfoil"
   },
@@ -91,7 +93,7 @@
     "current_ams": "Atmosphère atual: {}",
     "erista_rev": "Revisão: Erista",
     "mariko_rev": "Revisão: Mariko",
-    "goma_label": "Pacote Atmosphère opcional alternativo:\nGNX, também conhecido como GomaNX, assim como o GMPACK, também é um pacote all-in-one (tudo em um) baseado no custom firmware Atmosphère feito pelo Goma.",
+    "goma_label": "Pacote Atmosphère opcional alternativo:\nAqui estão listados outros pacotes baseado no custom firmware Atmosphère.",
     "reboot_rcm": "O Switch agora irá reiniciar em um payload especial para concluir a instalação."
   },
   "firmware": {

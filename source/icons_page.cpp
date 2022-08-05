@@ -8,11 +8,9 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 {
     this->setTitle("Icones");
     list = new brls::List();
-    std::vector<std::string> vecIcons;
     std::string strIcon;
     std::vector<std::string> vecChanges;
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
             "\u0000, \u0001, \u0002, \u0003, \u0004, \u0005, \u0006, \u0007, \u0008, \u0009, \u000A, \u000B, \u000C, \u000D, \u000E, \u000F, "
             "\u0010, \u0011, \uE012, \u0013, \u0014, \u0015, \u0016, \u0017, \u0018, \u0019, \u001A, \u001B, \u001C, \u001D, \u001E, \u001F, "
@@ -24,7 +22,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
             "\u0070, \u0071, \u0072, \u0073, \u0074, \u0075, \u0076, \u0077, \u0078, \u0079, \u007A, \u007B, \u007C, \u007D, \u007E, \u007F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u0080, \u0081, \u0082, \u0083, \u0084, \u0085, \u0086, \u0087, \u0088, \u0089, \u008A, \u008B, \u008C, \u008D, \u008E, \u008F, "
 			"\u0090, \u0091, \u0092, \u0093, \u0094, \u0095, \u0096, \u0097, \u0098, \u0099, \u009A, \u009B, \u009C, \u009D, \u009E, \u009F, "
@@ -33,10 +30,10 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u00C0, \u00C1, \u00C2, \u00C3, \u00C4, \u00C5, \u00C6, \u00C7, \u00C8, \u00C9, \u00CA, \u00CB, \u00CC, \u00CD, \u00CE, \u00CF, "
 			"\u00D0, \u00D1, \u00D2, \u00D3, \u00D4, \u00D5, \u00D6, \u00D7, \u00D8, \u00D9, \u00DA, \u00DB, \u00DC, \u00DD, \u00DE, \u00DF, "
 			"\u00E0, \u00E1, \u00E2, \u00E3, \u00E4, \u00E5, \u00E6, \u00E7, \u00E8, \u00E9, \u00EA, \u00EB, \u00EC, \u00ED, \u00EE, \u00EF, "
-			"\u00FF, \u00FF, \u00FF, \u00FF, \u00FF, \u00FF, \u00FF, \u00FF, \u00FF, \u00FF, \u00FF, \u00FF, \u00FF, \u00FF, \u00FF, \u00FF, "
+			"\u00F0, \u00F1, \u00F2, \u00F3, \u00F4, \u00F5, \u00F6, \u00F7, \u00F8, \u00F9, \u00FA, \u00FB, \u00FC, \u00FD, \u00FE, \u00FF, "
     );
 
-    vecIcons.push_back("Icones ");
+
     vecChanges.push_back(
 			"\u0100, \u0101, \u0102, \u0103, \u0104, \u0105, \u0106, \u0107, \u0108, \u0109, \u010A, \u010B, \u010C, \u010D, \u010E, \u010F, "
 			"\u0110, \u0111, \u0112, \u0113, \u0114, \u0115, \u0116, \u0117, \u0118, \u0119, \u011A, \u011B, \u011C, \u011D, \u011E, \u011F, "
@@ -48,7 +45,7 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u0170, \u0171, \u0172, \u0173, \u0174, \u0175, \u0176, \u0177, \u0178, \u0179, \u017A, \u017B, \u017C, \u017D, \u017E, \u017F, "
     );
 
-    vecIcons.push_back("Icones ");
+
     vecChanges.push_back(
 			"\u0180, \u0181, \u0182, \u0183, \u0184, \u0185, \u0186, \u0187, \u0188, \u0189, \u018A, \u018B, \u018C, \u018D, \u018E, \u018F, "
 			"\u0190, \u0191, \u0192, \u0193, \u0194, \u0195, \u0196, \u0197, \u0198, \u0199, \u019A, \u019B, \u019C, \u019D, \u019E, \u019F, "
@@ -57,10 +54,9 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u01C0, \u01C1, \u01C2, \u01C3, \u01C4, \u01C5, \u01C6, \u01C7, \u01C8, \u01C9, \u01CA, \u01CB, \u01CC, \u01CD, \u01CE, \u01CF, "
 			"\u01D0, \u01D1, \u01D2, \u01D3, \u01D4, \u01D5, \u01D6, \u01D7, \u01D8, \u01D9, \u01DA, \u01DB, \u01DC, \u01DD, \u01DE, \u01DF, "
 			"\u01E0, \u01E1, \u01E2, \u01E3, \u01E4, \u01E5, \u01E6, \u01E7, \u01E8, \u01E9, \u01EA, \u01EB, \u01EC, \u01ED, \u01EE, \u01EF, "
-			"\u01FF, \u01FF, \u01FF, \u01FF, \u01FF, \u01FF, \u01FF, \u01FF, \u01FF, \u01FF, \u01FF, \u01FF, \u01FF, \u01FF, \u01FF, \u01FF, "
+			"\u01F0, \u01F1, \u01F2, \u01F3, \u01F4, \u01F5, \u01F6, \u01F7, \u01F8, \u01F9, \u01FA, \u01FB, \u01FC, \u01FD, \u01FE, \u01FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u0200, \u0201, \u0202, \u0203, \u0204, \u0205, \u0206, \u0207, \u0208, \u0209, \u020A, \u020B, \u020C, \u020D, \u020E, \u020F, "
 			"\u0210, \u0211, \u0212, \u0213, \u0214, \u0215, \u0216, \u0217, \u0218, \u0219, \u021A, \u021B, \u021C, \u021D, \u021E, \u021F, "
@@ -72,7 +68,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u0270, \u0271, \u0272, \u0273, \u0274, \u0275, \u0276, \u0277, \u0278, \u0279, \u027A, \u027B, \u027C, \u027D, \u027E, \u027F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u0280, \u0281, \u0282, \u0283, \u0284, \u0285, \u0286, \u0287, \u0288, \u0289, \u028A, \u028B, \u028C, \u028D, \u028E, \u028F, "
 			"\u0290, \u0291, \u0292, \u0293, \u0294, \u0295, \u0296, \u0297, \u0298, \u0299, \u029A, \u029B, \u029C, \u029D, \u029E, \u029F, "
@@ -81,10 +76,9 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u02C0, \u02C1, \u02C2, \u02C3, \u02C4, \u02C5, \u02C6, \u02C7, \u02C8, \u02C9, \u02CA, \u02CB, \u02CC, \u02CD, \u02CE, \u02CF, "
 			"\u02D0, \u02D1, \u02D2, \u02D3, \u02D4, \u02D5, \u02D6, \u02D7, \u02D8, \u02D9, \u02DA, \u02DB, \u02DC, \u02DD, \u02DE, \u02DF, "
 			"\u02E0, \u02E1, \u02E2, \u02E3, \u02E4, \u02E5, \u02E6, \u02E7, \u02E8, \u02E9, \u02EA, \u02EB, \u02EC, \u02ED, \u02EE, \u02EF, "
-			"\u02FF, \u02FF, \u02FF, \u02FF, \u02FF, \u02FF, \u02FF, \u02FF, \u02FF, \u02FF, \u02FF, \u02FF, \u02FF, \u02FF, \u02FF, \u02FF, "
+			"\u02F0, \u02F1, \u02F2, \u02F3, \u02F4, \u02F5, \u02F6, \u02F7, \u02F8, \u02F9, \u02FA, \u02FB, \u02FC, \u02FD, \u02FE, \u02FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u0300, \u0301, \u0302, \u0303, \u0304, \u0305, \u0306, \u0307, \u0308, \u0309, \u030A, \u030B, \u030C, \u030D, \u030E, \u030F, "
 			"\u0310, \u0311, \u0312, \u0313, \u0314, \u0315, \u0316, \u0317, \u0318, \u0319, \u031A, \u031B, \u031C, \u031D, \u031E, \u031F, "
@@ -96,7 +90,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u0370, \u0371, \u0372, \u0373, \u0374, \u0375, \u0376, \u0377, \u0378, \u0379, \u037A, \u037B, \u037C, \u037D, \u037E, \u037F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u0380, \u0381, \u0382, \u0383, \u0384, \u0385, \u0386, \u0387, \u0388, \u0389, \u038A, \u038B, \u038C, \u038D, \u038E, \u038F, "
 			"\u0390, \u0391, \u0392, \u0393, \u0394, \u0395, \u0396, \u0397, \u0398, \u0399, \u039A, \u039B, \u039C, \u039D, \u039E, \u039F, "
@@ -105,10 +98,9 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u03C0, \u03C1, \u03C2, \u03C3, \u03C4, \u03C5, \u03C6, \u03C7, \u03C8, \u03C9, \u03CA, \u03CB, \u03CC, \u03CD, \u03CE, \u03CF, "
 			"\u03D0, \u03D1, \u03D2, \u03D3, \u03D4, \u03D5, \u03D6, \u03D7, \u03D8, \u03D9, \u03DA, \u03DB, \u03DC, \u03DD, \u03DE, \u03DF, "
 			"\u03E0, \u03E1, \u03E2, \u03E3, \u03E4, \u03E5, \u03E6, \u03E7, \u03E8, \u03E9, \u03EA, \u03EB, \u03EC, \u03ED, \u03EE, \u03EF, "
-			"\u03FF, \u03FF, \u03FF, \u03FF, \u03FF, \u03FF, \u03FF, \u03FF, \u03FF, \u03FF, \u03FF, \u03FF, \u03FF, \u03FF, \u03FF, \u03FF, "
+			"\u03F0, \u03F1, \u03F2, \u03F3, \u03F4, \u03F5, \u03F6, \u03F7, \u03F8, \u03F9, \u03FA, \u03FB, \u03FC, \u03FD, \u03FE, \u03FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u0400, \u0401, \u0402, \u0403, \u0404, \u0405, \u0406, \u0407, \u0408, \u0409, \u040A, \u040B, \u040C, \u040D, \u040E, \u040F, "
 			"\u0410, \u0411, \u0412, \u0413, \u0414, \u0415, \u0416, \u0417, \u0418, \u0419, \u041A, \u041B, \u041C, \u041D, \u041E, \u041F, "
@@ -120,7 +112,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u0470, \u0471, \u0472, \u0473, \u0474, \u0475, \u0476, \u0477, \u0478, \u0479, \u047A, \u047B, \u047C, \u047D, \u047E, \u047F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u0480, \u0481, \u0482, \u0483, \u0484, \u0485, \u0486, \u0487, \u0488, \u0489, \u048A, \u048B, \u048C, \u048D, \u048E, \u048F, "
 			"\u0490, \u0491, \u0492, \u0493, \u0494, \u0495, \u0496, \u0497, \u0498, \u0499, \u049A, \u049B, \u049C, \u049D, \u049E, \u049F, "
@@ -129,10 +120,9 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u04C0, \u04C1, \u04C2, \u04C3, \u04C4, \u04C5, \u04C6, \u04C7, \u04C8, \u04C9, \u04CA, \u04CB, \u04CC, \u04CD, \u04CE, \u04CF, "
 			"\u04D0, \u04D1, \u04D2, \u04D3, \u04D4, \u04D5, \u04D6, \u04D7, \u04D8, \u04D9, \u04DA, \u04DB, \u04DC, \u04DD, \u04DE, \u04DF, "
 			"\u04E0, \u04E1, \u04E2, \u04E3, \u04E4, \u04E5, \u04E6, \u04E7, \u04E8, \u04E9, \u04EA, \u04EB, \u04EC, \u04ED, \u04EE, \u04EF, "
-			"\u04FF, \u04FF, \u04FF, \u04FF, \u04FF, \u04FF, \u04FF, \u04FF, \u04FF, \u04FF, \u04FF, \u04FF, \u04FF, \u04FF, \u04FF, \u04FF, "
+			"\u04F0, \u04F1, \u04F2, \u04F3, \u04F4, \u04F5, \u04F6, \u04F7, \u04F8, \u04F9, \u04FA, \u04FB, \u04FC, \u04FD, \u04FE, \u04FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u0500, \u0501, \u0502, \u0503, \u0504, \u0505, \u0506, \u0507, \u0508, \u0509, \u050A, \u050B, \u050C, \u050D, \u050E, \u050F, "
 			"\u0510, \u0511, \u0512, \u0513, \u0514, \u0515, \u0516, \u0517, \u0518, \u0519, \u051A, \u051B, \u051C, \u051D, \u051E, \u051F, "
@@ -144,7 +134,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u0570, \u0571, \u0572, \u0573, \u0574, \u0575, \u0576, \u0577, \u0578, \u0579, \u057A, \u057B, \u057C, \u057D, \u057E, \u057F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u0580, \u0581, \u0582, \u0583, \u0584, \u0585, \u0586, \u0587, \u0588, \u0589, \u058A, \u058B, \u058C, \u058D, \u058E, \u058F, "
 			"\u0590, \u0591, \u0592, \u0593, \u0594, \u0595, \u0596, \u0597, \u0598, \u0599, \u059A, \u059B, \u059C, \u059D, \u059E, \u059F, "
@@ -153,10 +142,9 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u05C0, \u05C1, \u05C2, \u05C3, \u05C4, \u05C5, \u05C6, \u05C7, \u05C8, \u05C9, \u05CA, \u05CB, \u05CC, \u05CD, \u05CE, \u05CF, "
 			"\u05D0, \u05D1, \u05D2, \u05D3, \u05D4, \u05D5, \u05D6, \u05D7, \u05D8, \u05D9, \u05DA, \u05DB, \u05DC, \u05DD, \u05DE, \u05DF, "
 			"\u05E0, \u05E1, \u05E2, \u05E3, \u05E4, \u05E5, \u05E6, \u05E7, \u05E8, \u05E9, \u05EA, \u05EB, \u05EC, \u05ED, \u05EE, \u05EF, "
-			"\u05FF, \u05FF, \u05FF, \u05FF, \u05FF, \u05FF, \u05FF, \u05FF, \u05FF, \u05FF, \u05FF, \u05FF, \u05FF, \u05FF, \u05FF, \u05FF, "
+			"\u05F0, \u05F1, \u05F2, \u05F3, \u05F4, \u05F5, \u05F6, \u05F7, \u05F8, \u05F9, \u05FA, \u05FB, \u05FC, \u05FD, \u05FE, \u05FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u0600, \u0601, \u0602, \u0603, \u0604, \u0605, \u0606, \u0607, \u0608, \u0609, \u060A, \u060B, \u060C, \u060D, \u060E, \u060F, "
 			"\u0610, \u0611, \u0612, \u0613, \u0614, \u0615, \u0616, \u0617, \u0618, \u0619, \u061A, \u061B, \u061C, \u061D, \u061E, \u061F, "
@@ -168,7 +156,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u0670, \u0671, \u0672, \u0673, \u0674, \u0675, \u0676, \u0677, \u0678, \u0679, \u067A, \u067B, \u067C, \u067D, \u067E, \u067F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u0680, \u0681, \u0682, \u0683, \u0684, \u0685, \u0686, \u0687, \u0688, \u0689, \u068A, \u068B, \u068C, \u068D, \u068E, \u068F, "
 			"\u0690, \u0691, \u0692, \u0693, \u0694, \u0695, \u0696, \u0697, \u0698, \u0699, \u069A, \u069B, \u069C, \u069D, \u069E, \u069F, "
@@ -180,7 +167,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u06FF, \u06FF, \u06FF, \u06FF, \u06FF, \u06FF, \u06FF, \u06FF, \u06FF, \u06FF, \u06FF, \u06FF, \u06FF, \u06FF, \u06FF, \u06FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u0700, \u0701, \u0702, \u0703, \u0704, \u0705, \u0706, \u0707, \u0708, \u0709, \u070A, \u070B, \u070C, \u070D, \u070E, \u070F, "
 			"\u0710, \u0711, \u0712, \u0713, \u0714, \u0715, \u0716, \u0717, \u0718, \u0719, \u071A, \u071B, \u071C, \u071D, \u071E, \u071F, "
@@ -192,7 +178,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u0770, \u0771, \u0772, \u0773, \u0774, \u0775, \u0776, \u0777, \u0778, \u0779, \u077A, \u077B, \u077C, \u077D, \u077E, \u077F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u0780, \u0781, \u0782, \u0783, \u0784, \u0785, \u0786, \u0787, \u0788, \u0789, \u078A, \u078B, \u078C, \u078D, \u078E, \u078F, "
 			"\u0790, \u0791, \u0792, \u0793, \u0794, \u0795, \u0796, \u0797, \u0798, \u0799, \u079A, \u079B, \u079C, \u079D, \u079E, \u079F, "
@@ -204,7 +189,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u07FF, \u07FF, \u07FF, \u07FF, \u07FF, \u07FF, \u07FF, \u07FF, \u07FF, \u07FF, \u07FF, \u07FF, \u07FF, \u07FF, \u07FF, \u07FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u0800, \u0801, \u0802, \u0803, \u0804, \u0805, \u0806, \u0807, \u0808, \u0809, \u080A, \u080B, \u080C, \u080D, \u080E, \u080F, "
 			"\u0810, \u0811, \u0812, \u0813, \u0814, \u0815, \u0816, \u0817, \u0818, \u0819, \u081A, \u081B, \u081C, \u081D, \u081E, \u081F, "
@@ -216,7 +200,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u0870, \u0871, \u0872, \u0873, \u0874, \u0875, \u0876, \u0877, \u0878, \u0879, \u087A, \u087B, \u087C, \u087D, \u087E, \u087F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u0880, \u0881, \u0882, \u0883, \u0884, \u0885, \u0886, \u0887, \u0888, \u0889, \u088A, \u088B, \u088C, \u088D, \u088E, \u088F, "
 			"\u0890, \u0891, \u0892, \u0893, \u0894, \u0895, \u0896, \u0897, \u0898, \u0899, \u089A, \u089B, \u089C, \u089D, \u089E, \u089F, "
@@ -228,7 +211,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u08FF, \u08FF, \u08FF, \u08FF, \u08FF, \u08FF, \u08FF, \u08FF, \u08FF, \u08FF, \u08FF, \u08FF, \u08FF, \u08FF, \u08FF, \u08FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u0900, \u0901, \u0902, \u0903, \u0904, \u0905, \u0906, \u0907, \u0908, \u0909, \u090A, \u090B, \u090C, \u090D, \u090E, \u090F, "
 			"\u0910, \u0911, \u0912, \u0913, \u0914, \u0915, \u0916, \u0917, \u0918, \u0919, \u091A, \u091B, \u091C, \u091D, \u091E, \u091F, "
@@ -240,7 +222,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u0970, \u0971, \u0972, \u0973, \u0974, \u0975, \u0976, \u0977, \u0978, \u0979, \u097A, \u097B, \u097C, \u097D, \u097E, \u097F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u0980, \u0981, \u0982, \u0983, \u0984, \u0985, \u0986, \u0987, \u0988, \u0989, \u098A, \u098B, \u098C, \u098D, \u098E, \u098F, "
 			"\u0990, \u0991, \u0992, \u0993, \u0994, \u0995, \u0996, \u0997, \u0998, \u0999, \u099A, \u099B, \u099C, \u099D, \u099E, \u099F, "
@@ -252,7 +233,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u09FF, \u09FF, \u09FF, \u09FF, \u09FF, \u09FF, \u09FF, \u09FF, \u09FF, \u09FF, \u09FF, \u09FF, \u09FF, \u09FF, \u09FF, \u09FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u0A00, \u0A01, \u0A02, \u0A03, \u0A04, \u0A05, \u0A06, \u0A07, \u0A08, \u0A09, \u0A0A, \u0A0B, \u0A0C, \u0A0D, \u0A0E, \u0A0F, "
 			"\u0A10, \u0A11, \u0A12, \u0A13, \u0A14, \u0A15, \u0A16, \u0A17, \u0A18, \u0A19, \u0A1A, \u0A1B, \u0A1C, \u0A1D, \u0A1E, \u0A1F, "
@@ -264,7 +244,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u0A70, \u0A71, \u0A72, \u0A73, \u0A74, \u0A75, \u0A76, \u0A77, \u0A78, \u0A79, \u0A7A, \u0A7B, \u0A7C, \u0A7D, \u0A7E, \u0A7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u0A80, \u0A81, \u0A82, \u0A83, \u0A84, \u0A85, \u0A86, \u0A87, \u0A88, \u0A89, \u0A8A, \u0A8B, \u0A8C, \u0A8D, \u0A8E, \u0A8F, "
 			"\u0A90, \u0A91, \u0A92, \u0A93, \u0A94, \u0A95, \u0A96, \u0A97, \u0A98, \u0A99, \u0A9A, \u0A9B, \u0A9C, \u0A9D, \u0A9E, \u0A9F, "
@@ -276,7 +255,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u0AFF, \u0AFF, \u0AFF, \u0AFF, \u0AFF, \u0AFF, \u0AFF, \u0AFF, \u0AFF, \u0AFF, \u0AFF, \u0AFF, \u0AFF, \u0AFF, \u0AFF, \u0AFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u0B00, \u0B01, \u0B02, \u0B03, \u0B04, \u0B05, \u0B06, \u0B07, \u0B08, \u0B09, \u0B0A, \u0B0B, \u0B0C, \u0B0D, \u0B0E, \u0B0F, "
 			"\u0B10, \u0B11, \u0B12, \u0B13, \u0B14, \u0B15, \u0B16, \u0B17, \u0B18, \u0B19, \u0B1A, \u0B1B, \u0B1C, \u0B1D, \u0B1E, \u0B1F, "
@@ -288,7 +266,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u0B70, \u0B71, \u0B72, \u0B73, \u0B74, \u0B75, \u0B76, \u0B77, \u0B78, \u0B79, \u0B7A, \u0B7B, \u0B7C, \u0B7D, \u0B7E, \u0B7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u0B80, \u0B81, \u0B82, \u0B83, \u0B84, \u0B85, \u0B86, \u0B87, \u0B88, \u0B89, \u0B8A, \u0B8B, \u0B8C, \u0B8D, \u0B8E, \u0B8F, "
 			"\u0B90, \u0B91, \u0B92, \u0B93, \u0B94, \u0B95, \u0B96, \u0B97, \u0B98, \u0B99, \u0B9A, \u0B9B, \u0B9C, \u0B9D, \u0B9E, \u0B9F, "
@@ -300,7 +277,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u0BFF, \u0BFF, \u0BFF, \u0BFF, \u0BFF, \u0BFF, \u0BFF, \u0BFF, \u0BFF, \u0BFF, \u0BFF, \u0BFF, \u0BFF, \u0BFF, \u0BFF, \u0BFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u0C00, \u0C01, \u0C02, \u0C03, \u0C04, \u0C05, \u0C06, \u0C07, \u0C08, \u0C09, \u0C0A, \u0C0B, \u0C0C, \u0C0D, \u0C0E, \u0C0F, "
 			"\u0C10, \u0C11, \u0C12, \u0C13, \u0C14, \u0C15, \u0C16, \u0C17, \u0C18, \u0C19, \u0C1A, \u0C1B, \u0C1C, \u0C1D, \u0C1E, \u0C1F, "
@@ -312,7 +288,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u0C70, \u0C71, \u0C72, \u0C73, \u0C74, \u0C75, \u0C76, \u0C77, \u0C78, \u0C79, \u0C7A, \u0C7B, \u0C7C, \u0C7D, \u0C7E, \u0C7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u0C80, \u0C81, \u0C82, \u0C83, \u0C84, \u0C85, \u0C86, \u0C87, \u0C88, \u0C89, \u0C8A, \u0C8B, \u0C8C, \u0C8D, \u0C8E, \u0C8F, "
 			"\u0C90, \u0C91, \u0C92, \u0C93, \u0C94, \u0C95, \u0C96, \u0C97, \u0C98, \u0C99, \u0C9A, \u0C9B, \u0C9C, \u0C9D, \u0C9E, \u0C9F, "
@@ -324,7 +299,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u0CFF, \u0CFF, \u0CFF, \u0CFF, \u0CFF, \u0CFF, \u0CFF, \u0CFF, \u0CFF, \u0CFF, \u0CFF, \u0CFF, \u0CFF, \u0CFF, \u0CFF, \u0CFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u0D00, \u0D01, \u0D02, \u0D03, \u0D04, \u0D05, \u0D06, \u0D07, \u0D08, \u0D09, \u0D0A, \u0D0B, \u0D0C, \u0D0D, \u0D0E, \u0D0F, "
 			"\u0D10, \u0D11, \u0D12, \u0D13, \u0D14, \u0D15, \u0D16, \u0D17, \u0D18, \u0D19, \u0D1A, \u0D1B, \u0D1C, \u0D1D, \u0D1E, \u0D1F, "
@@ -336,7 +310,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u0D70, \u0D71, \u0D72, \u0D73, \u0D74, \u0D75, \u0D76, \u0D77, \u0D78, \u0D79, \u0D7A, \u0D7B, \u0D7C, \u0D7D, \u0D7E, \u0D7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u0D80, \u0D81, \u0D82, \u0D83, \u0D84, \u0D85, \u0D86, \u0D87, \u0D88, \u0D89, \u0D8A, \u0D8B, \u0D8C, \u0D8D, \u0D8E, \u0D8F, "
 			"\u0D90, \u0D91, \u0D92, \u0D93, \u0D94, \u0D95, \u0D96, \u0D97, \u0D98, \u0D99, \u0D9A, \u0D9B, \u0D9C, \u0D9D, \u0D9E, \u0D9F, "
@@ -348,7 +321,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u0DFF, \u0DFF, \u0DFF, \u0DFF, \u0DFF, \u0DFF, \u0DFF, \u0DFF, \u0DFF, \u0DFF, \u0DFF, \u0DFF, \u0DFF, \u0DFF, \u0DFF, \u0DFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u0E00, \u0E01, \u0E02, \u0E03, \u0E04, \u0E05, \u0E06, \u0E07, \u0E08, \u0E09, \u0E0A, \u0E0B, \u0E0C, \u0E0D, \u0E0E, \u0E0F, "
 			"\u0E10, \u0E11, \u0E12, \u0E13, \u0E14, \u0E15, \u0E16, \u0E17, \u0E18, \u0E19, \u0E1A, \u0E1B, \u0E1C, \u0E1D, \u0E1E, \u0E1F, "
@@ -360,7 +332,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u0E70, \u0E71, \u0E72, \u0E73, \u0E74, \u0E75, \u0E76, \u0E77, \u0E78, \u0E79, \u0E7A, \u0E7B, \u0E7C, \u0E7D, \u0E7E, \u0E7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u0E80, \u0E81, \u0E82, \u0E83, \u0E84, \u0E85, \u0E86, \u0E87, \u0E88, \u0E89, \u0E8A, \u0E8B, \u0E8C, \u0E8D, \u0E8E, \u0E8F, "
 			"\u0E90, \u0E91, \u0E92, \u0E93, \u0E94, \u0E95, \u0E96, \u0E97, \u0E98, \u0E99, \u0E9A, \u0E9B, \u0E9C, \u0E9D, \u0E9E, \u0E9F, "
@@ -372,7 +343,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u0EFF, \u0EFF, \u0EFF, \u0EFF, \u0EFF, \u0EFF, \u0EFF, \u0EFF, \u0EFF, \u0EFF, \u0EFF, \u0EFF, \u0EFF, \u0EFF, \u0EFF, \u0EFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u0F00, \u0F01, \u0F02, \u0F03, \u0F04, \u0F05, \u0F06, \u0F07, \u0F08, \u0F09, \u0F0A, \u0F0B, \u0F0C, \u0F0D, \u0F0E, \u0F0F, "
 			"\u0F10, \u0F11, \u0F12, \u0F13, \u0F14, \u0F15, \u0F16, \u0F17, \u0F18, \u0F19, \u0F1A, \u0F1B, \u0F1C, \u0F1D, \u0F1E, \u0F1F, "
@@ -384,7 +354,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u0F70, \u0F71, \u0F72, \u0F73, \u0F74, \u0F75, \u0F76, \u0F77, \u0F78, \u0F79, \u0F7A, \u0F7B, \u0F7C, \u0F7D, \u0F7E, \u0F7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u0F80, \u0F81, \u0F82, \u0F83, \u0F84, \u0F85, \u0F86, \u0F87, \u0F88, \u0F89, \u0F8A, \u0F8B, \u0F8C, \u0F8D, \u0F8E, \u0F8F, "
 			"\u0F90, \u0F91, \u0F92, \u0F93, \u0F94, \u0F95, \u0F96, \u0F97, \u0F98, \u0F99, \u0F9A, \u0F9B, \u0F9C, \u0F9D, \u0F9E, \u0F9F, "
@@ -396,7 +365,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u0FFF, \u0FFF, \u0FFF, \u0FFF, \u0FFF, \u0FFF, \u0FFF, \u0FFF, \u0FFF, \u0FFF, \u0FFF, \u0FFF, \u0FFF, \u0FFF, \u0FFF, \u0FFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
             "\u1000, \u1001, \u1002, \u1003, \u1004, \u1005, \u1006, \u1007, \u1008, \u1009, \u100A, \u100B, \u100C, \u100D, \u100E, \u100F, "
             "\u1010, \u1011, \uE012, \u1013, \u1014, \u1015, \u1016, \u1017, \u1018, \u1019, \u101A, \u101B, \u101C, \u101D, \u101E, \u101F, "
@@ -408,7 +376,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
             "\u1070, \u1071, \u1072, \u1073, \u1074, \u1075, \u1076, \u1077, \u1078, \u1079, \u107A, \u107B, \u107C, \u107D, \u107E, \u107F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u1080, \u1081, \u1082, \u1083, \u1084, \u1085, \u1086, \u1087, \u1088, \u1089, \u108A, \u108B, \u108C, \u108D, \u108E, \u108F, "
 			"\u1090, \u1091, \u1092, \u1093, \u1094, \u1095, \u1096, \u1097, \u1098, \u1099, \u109A, \u109B, \u109C, \u109D, \u109E, \u109F, "
@@ -420,7 +387,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u10FF, \u10FF, \u10FF, \u10FF, \u10FF, \u10FF, \u10FF, \u10FF, \u10FF, \u10FF, \u10FF, \u10FF, \u10FF, \u10FF, \u10FF, \u10FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u1100, \u1101, \u1102, \u1103, \u1104, \u1105, \u1106, \u1107, \u1108, \u1109, \u110A, \u110B, \u110C, \u110D, \u110E, \u110F, "
 			"\u1110, \u1111, \u1112, \u1113, \u1114, \u1115, \u1116, \u1117, \u1118, \u1119, \u111A, \u111B, \u111C, \u111D, \u111E, \u111F, "
@@ -432,7 +398,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u1170, \u1171, \u1172, \u1173, \u1174, \u1175, \u1176, \u1177, \u1178, \u1179, \u117A, \u117B, \u117C, \u117D, \u117E, \u117F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u1180, \u1181, \u1182, \u1183, \u1184, \u1185, \u1186, \u1187, \u1188, \u1189, \u118A, \u118B, \u118C, \u118D, \u118E, \u118F, "
 			"\u1190, \u1191, \u1192, \u1193, \u1194, \u1195, \u1196, \u1197, \u1198, \u1199, \u119A, \u119B, \u119C, \u119D, \u119E, \u119F, "
@@ -444,7 +409,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u11FF, \u11FF, \u11FF, \u11FF, \u11FF, \u11FF, \u11FF, \u11FF, \u11FF, \u11FF, \u11FF, \u11FF, \u11FF, \u11FF, \u11FF, \u11FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u1200, \u1201, \u1202, \u1203, \u1204, \u1205, \u1206, \u1207, \u1208, \u1209, \u120A, \u120B, \u120C, \u120D, \u120E, \u120F, "
 			"\u1210, \u1211, \u1212, \u1213, \u1214, \u1215, \u1216, \u1217, \u1218, \u1219, \u121A, \u121B, \u121C, \u121D, \u121E, \u121F, "
@@ -456,7 +420,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u1270, \u1271, \u1272, \u1273, \u1274, \u1275, \u1276, \u1277, \u1278, \u1279, \u127A, \u127B, \u127C, \u127D, \u127E, \u127F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u1280, \u1281, \u1282, \u1283, \u1284, \u1285, \u1286, \u1287, \u1288, \u1289, \u128A, \u128B, \u128C, \u128D, \u128E, \u128F, "
 			"\u1290, \u1291, \u1292, \u1293, \u1294, \u1295, \u1296, \u1297, \u1298, \u1299, \u129A, \u129B, \u129C, \u129D, \u129E, \u129F, "
@@ -468,7 +431,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u12FF, \u12FF, \u12FF, \u12FF, \u12FF, \u12FF, \u12FF, \u12FF, \u12FF, \u12FF, \u12FF, \u12FF, \u12FF, \u12FF, \u12FF, \u12FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u1300, \u1301, \u1302, \u1303, \u1304, \u1305, \u1306, \u1307, \u1308, \u1309, \u130A, \u130B, \u130C, \u130D, \u130E, \u130F, "
 			"\u1310, \u1311, \u1312, \u1313, \u1314, \u1315, \u1316, \u1317, \u1318, \u1319, \u131A, \u131B, \u131C, \u131D, \u131E, \u131F, "
@@ -480,7 +442,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u1370, \u1371, \u1372, \u1373, \u1374, \u1375, \u1376, \u1377, \u1378, \u1379, \u137A, \u137B, \u137C, \u137D, \u137E, \u137F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u1380, \u1381, \u1382, \u1383, \u1384, \u1385, \u1386, \u1387, \u1388, \u1389, \u138A, \u138B, \u138C, \u138D, \u138E, \u138F, "
 			"\u1390, \u1391, \u1392, \u1393, \u1394, \u1395, \u1396, \u1397, \u1398, \u1399, \u139A, \u139B, \u139C, \u139D, \u139E, \u139F, "
@@ -492,7 +453,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u13FF, \u13FF, \u13FF, \u13FF, \u13FF, \u13FF, \u13FF, \u13FF, \u13FF, \u13FF, \u13FF, \u13FF, \u13FF, \u13FF, \u13FF, \u13FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u1400, \u1401, \u1402, \u1403, \u1404, \u1405, \u1406, \u1407, \u1408, \u1409, \u140A, \u140B, \u140C, \u140D, \u140E, \u140F, "
 			"\u1410, \u1411, \u1412, \u1413, \u1414, \u1415, \u1416, \u1417, \u1418, \u1419, \u141A, \u141B, \u141C, \u141D, \u141E, \u141F, "
@@ -504,7 +464,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u1470, \u1471, \u1472, \u1473, \u1474, \u1475, \u1476, \u1477, \u1478, \u1479, \u147A, \u147B, \u147C, \u147D, \u147E, \u147F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u1480, \u1481, \u1482, \u1483, \u1484, \u1485, \u1486, \u1487, \u1488, \u1489, \u148A, \u148B, \u148C, \u148D, \u148E, \u148F, "
 			"\u1490, \u1491, \u1492, \u1493, \u1494, \u1495, \u1496, \u1497, \u1498, \u1499, \u149A, \u149B, \u149C, \u149D, \u149E, \u149F, "
@@ -516,7 +475,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u14FF, \u14FF, \u14FF, \u14FF, \u14FF, \u14FF, \u14FF, \u14FF, \u14FF, \u14FF, \u14FF, \u14FF, \u14FF, \u14FF, \u14FF, \u14FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u1500, \u1501, \u1502, \u1503, \u1504, \u1505, \u1506, \u1507, \u1508, \u1509, \u150A, \u150B, \u150C, \u150D, \u150E, \u150F, "
 			"\u1510, \u1511, \u1512, \u1513, \u1514, \u1515, \u1516, \u1517, \u1518, \u1519, \u151A, \u151B, \u151C, \u151D, \u151E, \u151F, "
@@ -528,7 +486,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u1570, \u1571, \u1572, \u1573, \u1574, \u1575, \u1576, \u1577, \u1578, \u1579, \u157A, \u157B, \u157C, \u157D, \u157E, \u157F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u1580, \u1581, \u1582, \u1583, \u1584, \u1585, \u1586, \u1587, \u1588, \u1589, \u158A, \u158B, \u158C, \u158D, \u158E, \u158F, "
 			"\u1590, \u1591, \u1592, \u1593, \u1594, \u1595, \u1596, \u1597, \u1598, \u1599, \u159A, \u159B, \u159C, \u159D, \u159E, \u159F, "
@@ -540,7 +497,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u15FF, \u15FF, \u15FF, \u15FF, \u15FF, \u15FF, \u15FF, \u15FF, \u15FF, \u15FF, \u15FF, \u15FF, \u15FF, \u15FF, \u15FF, \u15FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u1600, \u1601, \u1602, \u1603, \u1604, \u1605, \u1606, \u1607, \u1608, \u1609, \u160A, \u160B, \u160C, \u160D, \u160E, \u160F, "
 			"\u1610, \u1611, \u1612, \u1613, \u1614, \u1615, \u1616, \u1617, \u1618, \u1619, \u161A, \u161B, \u161C, \u161D, \u161E, \u161F, "
@@ -552,7 +508,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u1670, \u1671, \u1672, \u1673, \u1674, \u1675, \u1676, \u1677, \u1678, \u1679, \u167A, \u167B, \u167C, \u167D, \u167E, \u167F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u1680, \u1681, \u1682, \u1683, \u1684, \u1685, \u1686, \u1687, \u1688, \u1689, \u168A, \u168B, \u168C, \u168D, \u168E, \u168F, "
 			"\u1690, \u1691, \u1692, \u1693, \u1694, \u1695, \u1696, \u1697, \u1698, \u1699, \u169A, \u169B, \u169C, \u169D, \u169E, \u169F, "
@@ -564,7 +519,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u16FF, \u16FF, \u16FF, \u16FF, \u16FF, \u16FF, \u16FF, \u16FF, \u16FF, \u16FF, \u16FF, \u16FF, \u16FF, \u16FF, \u16FF, \u16FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u1700, \u1701, \u1702, \u1703, \u1704, \u1705, \u1706, \u1707, \u1708, \u1709, \u170A, \u170B, \u170C, \u170D, \u170E, \u170F, "
 			"\u1710, \u1711, \u1712, \u1713, \u1714, \u1715, \u1716, \u1717, \u1718, \u1719, \u171A, \u171B, \u171C, \u171D, \u171E, \u171F, "
@@ -576,7 +530,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u1770, \u1771, \u1772, \u1773, \u1774, \u1775, \u1776, \u1777, \u1778, \u1779, \u177A, \u177B, \u177C, \u177D, \u177E, \u177F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u1780, \u1781, \u1782, \u1783, \u1784, \u1785, \u1786, \u1787, \u1788, \u1789, \u178A, \u178B, \u178C, \u178D, \u178E, \u178F, "
 			"\u1790, \u1791, \u1792, \u1793, \u1794, \u1795, \u1796, \u1797, \u1798, \u1799, \u179A, \u179B, \u179C, \u179D, \u179E, \u179F, "
@@ -588,7 +541,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u17FF, \u17FF, \u17FF, \u17FF, \u17FF, \u17FF, \u17FF, \u17FF, \u17FF, \u17FF, \u17FF, \u17FF, \u17FF, \u17FF, \u17FF, \u17FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u1800, \u1801, \u1802, \u1803, \u1804, \u1805, \u1806, \u1807, \u1808, \u1809, \u180A, \u180B, \u180C, \u180D, \u180E, \u180F, "
 			"\u1810, \u1811, \u1812, \u1813, \u1814, \u1815, \u1816, \u1817, \u1818, \u1819, \u181A, \u181B, \u181C, \u181D, \u181E, \u181F, "
@@ -600,7 +552,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u1870, \u1871, \u1872, \u1873, \u1874, \u1875, \u1876, \u1877, \u1878, \u1879, \u187A, \u187B, \u187C, \u187D, \u187E, \u187F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u1880, \u1881, \u1882, \u1883, \u1884, \u1885, \u1886, \u1887, \u1888, \u1889, \u188A, \u188B, \u188C, \u188D, \u188E, \u188F, "
 			"\u1890, \u1891, \u1892, \u1893, \u1894, \u1895, \u1896, \u1897, \u1898, \u1899, \u189A, \u189B, \u189C, \u189D, \u189E, \u189F, "
@@ -612,7 +563,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u18FF, \u18FF, \u18FF, \u18FF, \u18FF, \u18FF, \u18FF, \u18FF, \u18FF, \u18FF, \u18FF, \u18FF, \u18FF, \u18FF, \u18FF, \u18FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u1900, \u1901, \u1902, \u1903, \u1904, \u1905, \u1906, \u1907, \u1908, \u1909, \u190A, \u190B, \u190C, \u190D, \u190E, \u190F, "
 			"\u1910, \u1911, \u1912, \u1913, \u1914, \u1915, \u1916, \u1917, \u1918, \u1919, \u191A, \u191B, \u191C, \u191D, \u191E, \u191F, "
@@ -624,7 +574,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u1970, \u1971, \u1972, \u1973, \u1974, \u1975, \u1976, \u1977, \u1978, \u1979, \u197A, \u197B, \u197C, \u197D, \u197E, \u197F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u1980, \u1981, \u1982, \u1983, \u1984, \u1985, \u1986, \u1987, \u1988, \u1989, \u198A, \u198B, \u198C, \u198D, \u198E, \u198F, "
 			"\u1990, \u1991, \u1992, \u1993, \u1994, \u1995, \u1996, \u1997, \u1998, \u1999, \u199A, \u199B, \u199C, \u199D, \u199E, \u199F, "
@@ -636,7 +585,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u19FF, \u19FF, \u19FF, \u19FF, \u19FF, \u19FF, \u19FF, \u19FF, \u19FF, \u19FF, \u19FF, \u19FF, \u19FF, \u19FF, \u19FF, \u19FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u1A00, \u1A01, \u1A02, \u1A03, \u1A04, \u1A05, \u1A06, \u1A07, \u1A08, \u1A09, \u1A0A, \u1A0B, \u1A0C, \u1A0D, \u1A0E, \u1A0F, "
 			"\u1A10, \u1A11, \u1A12, \u1A13, \u1A14, \u1A15, \u1A16, \u1A17, \u1A18, \u1A19, \u1A1A, \u1A1B, \u1A1C, \u1A1D, \u1A1E, \u1A1F, "
@@ -648,7 +596,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u1A70, \u1A71, \u1A72, \u1A73, \u1A74, \u1A75, \u1A76, \u1A77, \u1A78, \u1A79, \u1A7A, \u1A7B, \u1A7C, \u1A7D, \u1A7E, \u1A7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u1A80, \u1A81, \u1A82, \u1A83, \u1A84, \u1A85, \u1A86, \u1A87, \u1A88, \u1A89, \u1A8A, \u1A8B, \u1A8C, \u1A8D, \u1A8E, \u1A8F, "
 			"\u1A90, \u1A91, \u1A92, \u1A93, \u1A94, \u1A95, \u1A96, \u1A97, \u1A98, \u1A99, \u1A9A, \u1A9B, \u1A9C, \u1A9D, \u1A9E, \u1A9F, "
@@ -660,7 +607,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u1AFF, \u1AFF, \u1AFF, \u1AFF, \u1AFF, \u1AFF, \u1AFF, \u1AFF, \u1AFF, \u1AFF, \u1AFF, \u1AFF, \u1AFF, \u1AFF, \u1AFF, \u1AFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u1B00, \u1B01, \u1B02, \u1B03, \u1B04, \u1B05, \u1B06, \u1B07, \u1B08, \u1B09, \u1B0A, \u1B0B, \u1B0C, \u1B0D, \u1B0E, \u1B0F, "
 			"\u1B10, \u1B11, \u1B12, \u1B13, \u1B14, \u1B15, \u1B16, \u1B17, \u1B18, \u1B19, \u1B1A, \u1B1B, \u1B1C, \u1B1D, \u1B1E, \u1B1F, "
@@ -672,7 +618,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u1B70, \u1B71, \u1B72, \u1B73, \u1B74, \u1B75, \u1B76, \u1B77, \u1B78, \u1B79, \u1B7A, \u1B7B, \u1B7C, \u1B7D, \u1B7E, \u1B7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u1B80, \u1B81, \u1B82, \u1B83, \u1B84, \u1B85, \u1B86, \u1B87, \u1B88, \u1B89, \u1B8A, \u1B8B, \u1B8C, \u1B8D, \u1B8E, \u1B8F, "
 			"\u1B90, \u1B91, \u1B92, \u1B93, \u1B94, \u1B95, \u1B96, \u1B97, \u1B98, \u1B99, \u1B9A, \u1B9B, \u1B9C, \u1B9D, \u1B9E, \u1B9F, "
@@ -684,7 +629,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u1BFF, \u1BFF, \u1BFF, \u1BFF, \u1BFF, \u1BFF, \u1BFF, \u1BFF, \u1BFF, \u1BFF, \u1BFF, \u1BFF, \u1BFF, \u1BFF, \u1BFF, \u1BFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u1C00, \u1C01, \u1C02, \u1C03, \u1C04, \u1C05, \u1C06, \u1C07, \u1C08, \u1C09, \u1C0A, \u1C0B, \u1C0C, \u1C0D, \u1C0E, \u1C0F, "
 			"\u1C10, \u1C11, \u1C12, \u1C13, \u1C14, \u1C15, \u1C16, \u1C17, \u1C18, \u1C19, \u1C1A, \u1C1B, \u1C1C, \u1C1D, \u1C1E, \u1C1F, "
@@ -696,7 +640,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u1C70, \u1C71, \u1C72, \u1C73, \u1C74, \u1C75, \u1C76, \u1C77, \u1C78, \u1C79, \u1C7A, \u1C7B, \u1C7C, \u1C7D, \u1C7E, \u1C7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u1C80, \u1C81, \u1C82, \u1C83, \u1C84, \u1C85, \u1C86, \u1C87, \u1C88, \u1C89, \u1C8A, \u1C8B, \u1C8C, \u1C8D, \u1C8E, \u1C8F, "
 			"\u1C90, \u1C91, \u1C92, \u1C93, \u1C94, \u1C95, \u1C96, \u1C97, \u1C98, \u1C99, \u1C9A, \u1C9B, \u1C9C, \u1C9D, \u1C9E, \u1C9F, "
@@ -708,7 +651,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u1CFF, \u1CFF, \u1CFF, \u1CFF, \u1CFF, \u1CFF, \u1CFF, \u1CFF, \u1CFF, \u1CFF, \u1CFF, \u1CFF, \u1CFF, \u1CFF, \u1CFF, \u1CFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u1D00, \u1D01, \u1D02, \u1D03, \u1D04, \u1D05, \u1D06, \u1D07, \u1D08, \u1D09, \u1D0A, \u1D0B, \u1D0C, \u1D0D, \u1D0E, \u1D0F, "
 			"\u1D10, \u1D11, \u1D12, \u1D13, \u1D14, \u1D15, \u1D16, \u1D17, \u1D18, \u1D19, \u1D1A, \u1D1B, \u1D1C, \u1D1D, \u1D1E, \u1D1F, "
@@ -720,7 +662,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u1D70, \u1D71, \u1D72, \u1D73, \u1D74, \u1D75, \u1D76, \u1D77, \u1D78, \u1D79, \u1D7A, \u1D7B, \u1D7C, \u1D7D, \u1D7E, \u1D7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u1D80, \u1D81, \u1D82, \u1D83, \u1D84, \u1D85, \u1D86, \u1D87, \u1D88, \u1D89, \u1D8A, \u1D8B, \u1D8C, \u1D8D, \u1D8E, \u1D8F, "
 			"\u1D90, \u1D91, \u1D92, \u1D93, \u1D94, \u1D95, \u1D96, \u1D97, \u1D98, \u1D99, \u1D9A, \u1D9B, \u1D9C, \u1D9D, \u1D9E, \u1D9F, "
@@ -732,7 +673,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u1DFF, \u1DFF, \u1DFF, \u1DFF, \u1DFF, \u1DFF, \u1DFF, \u1DFF, \u1DFF, \u1DFF, \u1DFF, \u1DFF, \u1DFF, \u1DFF, \u1DFF, \u1DFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u1E00, \u1E01, \u1E02, \u1E03, \u1E04, \u1E05, \u1E06, \u1E07, \u1E08, \u1E09, \u1E0A, \u1E0B, \u1E0C, \u1E0D, \u1E0E, \u1E0F, "
 			"\u1E10, \u1E11, \u1E12, \u1E13, \u1E14, \u1E15, \u1E16, \u1E17, \u1E18, \u1E19, \u1E1A, \u1E1B, \u1E1C, \u1E1D, \u1E1E, \u1E1F, "
@@ -744,7 +684,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u1E70, \u1E71, \u1E72, \u1E73, \u1E74, \u1E75, \u1E76, \u1E77, \u1E78, \u1E79, \u1E7A, \u1E7B, \u1E7C, \u1E7D, \u1E7E, \u1E7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u1E80, \u1E81, \u1E82, \u1E83, \u1E84, \u1E85, \u1E86, \u1E87, \u1E88, \u1E89, \u1E8A, \u1E8B, \u1E8C, \u1E8D, \u1E8E, \u1E8F, "
 			"\u1E90, \u1E91, \u1E92, \u1E93, \u1E94, \u1E95, \u1E96, \u1E97, \u1E98, \u1E99, \u1E9A, \u1E9B, \u1E9C, \u1E9D, \u1E9E, \u1E9F, "
@@ -756,7 +695,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u1EFF, \u1EFF, \u1EFF, \u1EFF, \u1EFF, \u1EFF, \u1EFF, \u1EFF, \u1EFF, \u1EFF, \u1EFF, \u1EFF, \u1EFF, \u1EFF, \u1EFF, \u1EFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u1F00, \u1F01, \u1F02, \u1F03, \u1F04, \u1F05, \u1F06, \u1F07, \u1F08, \u1F09, \u1F0A, \u1F0B, \u1F0C, \u1F0D, \u1F0E, \u1F0F, "
 			"\u1F10, \u1F11, \u1F12, \u1F13, \u1F14, \u1F15, \u1F16, \u1F17, \u1F18, \u1F19, \u1F1A, \u1F1B, \u1F1C, \u1F1D, \u1F1E, \u1F1F, "
@@ -768,7 +706,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u1F70, \u1F71, \u1F72, \u1F73, \u1F74, \u1F75, \u1F76, \u1F77, \u1F78, \u1F79, \u1F7A, \u1F7B, \u1F7C, \u1F7D, \u1F7E, \u1F7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u1F80, \u1F81, \u1F82, \u1F83, \u1F84, \u1F85, \u1F86, \u1F87, \u1F88, \u1F89, \u1F8A, \u1F8B, \u1F8C, \u1F8D, \u1F8E, \u1F8F, "
 			"\u1F90, \u1F91, \u1F92, \u1F93, \u1F94, \u1F95, \u1F96, \u1F97, \u1F98, \u1F99, \u1F9A, \u1F9B, \u1F9C, \u1F9D, \u1F9E, \u1F9F, "
@@ -780,8 +717,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u1FFF, \u1FFF, \u1FFF, \u1FFF, \u1FFF, \u1FFF, \u1FFF, \u1FFF, \u1FFF, \u1FFF, \u1FFF, \u1FFF, \u1FFF, \u1FFF, \u1FFF, \u1FFF, "
     );
 
-
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
             "\u2000, \u2001, \u2002, \u2003, \u2004, \u2005, \u2006, \u2007, \u2008, \u2009, \u200A, \u200B, \u200C, \u200D, \u200E, \u200F, "
             "\u2010, \u2011, \uE012, \u2013, \u2014, \u2015, \u2016, \u2017, \u2018, \u2019, \u201A, \u201B, \u201C, \u201D, \u201E, \u201F, "
@@ -793,7 +728,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
             "\u2070, \u2071, \u2072, \u2073, \u2074, \u2075, \u2076, \u2077, \u2078, \u2079, \u207A, \u207B, \u207C, \u207D, \u207E, \u207F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u2080, \u2081, \u2082, \u2083, \u2084, \u2085, \u2086, \u2087, \u2088, \u2089, \u208A, \u208B, \u208C, \u208D, \u208E, \u208F, "
 			"\u2090, \u2091, \u2092, \u2093, \u2094, \u2095, \u2096, \u2097, \u2098, \u2099, \u209A, \u209B, \u209C, \u209D, \u209E, \u209F, "
@@ -805,7 +739,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u20FF, \u20FF, \u20FF, \u20FF, \u20FF, \u20FF, \u20FF, \u20FF, \u20FF, \u20FF, \u20FF, \u20FF, \u20FF, \u20FF, \u20FF, \u20FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u2100, \u2101, \u2102, \u2103, \u2104, \u2105, \u2106, \u2107, \u2108, \u2109, \u210A, \u210B, \u210C, \u210D, \u210E, \u210F, "
 			"\u2110, \u2111, \u2112, \u2113, \u2114, \u2115, \u2116, \u2117, \u2118, \u2119, \u211A, \u211B, \u211C, \u211D, \u211E, \u211F, "
@@ -817,7 +750,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u2170, \u2171, \u2172, \u2173, \u2174, \u2175, \u2176, \u2177, \u2178, \u2179, \u217A, \u217B, \u217C, \u217D, \u217E, \u217F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u2180, \u2181, \u2182, \u2183, \u2184, \u2185, \u2186, \u2187, \u2188, \u2189, \u218A, \u218B, \u218C, \u218D, \u218E, \u218F, "
 			"\u2190, \u2191, \u2192, \u2193, \u2194, \u2195, \u2196, \u2197, \u2198, \u2199, \u219A, \u219B, \u219C, \u219D, \u219E, \u219F, "
@@ -829,7 +761,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u21FF, \u21FF, \u21FF, \u21FF, \u21FF, \u21FF, \u21FF, \u21FF, \u21FF, \u21FF, \u21FF, \u21FF, \u21FF, \u21FF, \u21FF, \u21FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u2200, \u2201, \u2202, \u2203, \u2204, \u2205, \u2206, \u2207, \u2208, \u2209, \u220A, \u220B, \u220C, \u220D, \u220E, \u220F, "
 			"\u2210, \u2211, \u2212, \u2213, \u2214, \u2215, \u2216, \u2217, \u2218, \u2219, \u221A, \u221B, \u221C, \u221D, \u221E, \u221F, "
@@ -841,7 +772,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u2270, \u2271, \u2272, \u2273, \u2274, \u2275, \u2276, \u2277, \u2278, \u2279, \u227A, \u227B, \u227C, \u227D, \u227E, \u227F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u2280, \u2281, \u2282, \u2283, \u2284, \u2285, \u2286, \u2287, \u2288, \u2289, \u228A, \u228B, \u228C, \u228D, \u228E, \u228F, "
 			"\u2290, \u2291, \u2292, \u2293, \u2294, \u2295, \u2296, \u2297, \u2298, \u2299, \u229A, \u229B, \u229C, \u229D, \u229E, \u229F, "
@@ -853,7 +783,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u22FF, \u22FF, \u22FF, \u22FF, \u22FF, \u22FF, \u22FF, \u22FF, \u22FF, \u22FF, \u22FF, \u22FF, \u22FF, \u22FF, \u22FF, \u22FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u2300, \u2301, \u2302, \u2303, \u2304, \u2305, \u2306, \u2307, \u2308, \u2309, \u230A, \u230B, \u230C, \u230D, \u230E, \u230F, "
 			"\u2310, \u2311, \u2312, \u2313, \u2314, \u2315, \u2316, \u2317, \u2318, \u2319, \u231A, \u231B, \u231C, \u231D, \u231E, \u231F, "
@@ -865,7 +794,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u2370, \u2371, \u2372, \u2373, \u2374, \u2375, \u2376, \u2377, \u2378, \u2379, \u237A, \u237B, \u237C, \u237D, \u237E, \u237F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u2380, \u2381, \u2382, \u2383, \u2384, \u2385, \u2386, \u2387, \u2388, \u2389, \u238A, \u238B, \u238C, \u238D, \u238E, \u238F, "
 			"\u2390, \u2391, \u2392, \u2393, \u2394, \u2395, \u2396, \u2397, \u2398, \u2399, \u239A, \u239B, \u239C, \u239D, \u239E, \u239F, "
@@ -874,10 +802,9 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u23C0, \u23C1, \u23C2, \u23C3, \u23C4, \u23C5, \u23C6, \u23C7, \u23C8, \u23C9, \u23CA, \u23CB, \u23CC, \u23CD, \u23CE, \u23CF, "
 			"\u23D0, \u23D1, \u23D2, \u23D3, \u23D4, \u23D5, \u23D6, \u23D7, \u23D8, \u23D9, \u23DA, \u23DB, \u23DC, \u23DD, \u23DE, \u23DF, "
 			"\u23E0, \u23E1, \u23E2, \u23E3, \u23E4, \u23E5, \u23E6, \u23E7, \u23E8, \u23E9, \u23EA, \u23EB, \u23EC, \u23ED, \u23EE, \u23EF, "
-			"\u23FF, \u23FF, \u23FF, \u23FF, \u23FF, \u23FF, \u23FF, \u23FF, \u23FF, \u23FF, \u23FF, \u23FF, \u23FF, \u23FF, \u23FF, \u23FF, "
+			"\u23F0, \u23F1, \u23F2, \u23F3, \u23F4, \u23F5, \u23F6, \u23F7, \u23F8, \u23F9, \u23FA, \u23FB, \u23FC, \u23FD, \u23FE, \u23FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u2400, \u2401, \u2402, \u2403, \u2404, \u2405, \u2406, \u2407, \u2408, \u2409, \u240A, \u240B, \u240C, \u240D, \u240E, \u240F, "
 			"\u2410, \u2411, \u2412, \u2413, \u2414, \u2415, \u2416, \u2417, \u2418, \u2419, \u241A, \u241B, \u241C, \u241D, \u241E, \u241F, "
@@ -889,7 +816,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u2470, \u2471, \u2472, \u2473, \u2474, \u2475, \u2476, \u2477, \u2478, \u2479, \u247A, \u247B, \u247C, \u247D, \u247E, \u247F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u2480, \u2481, \u2482, \u2483, \u2484, \u2485, \u2486, \u2487, \u2488, \u2489, \u248A, \u248B, \u248C, \u248D, \u248E, \u248F, "
 			"\u2490, \u2491, \u2492, \u2493, \u2494, \u2495, \u2496, \u2497, \u2498, \u2499, \u249A, \u249B, \u249C, \u249D, \u249E, \u249F, "
@@ -898,10 +824,9 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u24C0, \u24C1, \u24C2, \u24C3, \u24C4, \u24C5, \u24C6, \u24C7, \u24C8, \u24C9, \u24CA, \u24CB, \u24CC, \u24CD, \u24CE, \u24CF, "
 			"\u24D0, \u24D1, \u24D2, \u24D3, \u24D4, \u24D5, \u24D6, \u24D7, \u24D8, \u24D9, \u24DA, \u24DB, \u24DC, \u24DD, \u24DE, \u24DF, "
 			"\u24E0, \u24E1, \u24E2, \u24E3, \u24E4, \u24E5, \u24E6, \u24E7, \u24E8, \u24E9, \u24EA, \u24EB, \u24EC, \u24ED, \u24EE, \u24EF, "
-			"\u24FF, \u24FF, \u24FF, \u24FF, \u24FF, \u24FF, \u24FF, \u24FF, \u24FF, \u24FF, \u24FF, \u24FF, \u24FF, \u24FF, \u24FF, \u24FF, "
+			"\u24F0, \u24F1, \u24F2, \u24F3, \u24F4, \u24F5, \u24F6, \u24F7, \u24F8, \u24F9, \u24FA, \u24FB, \u24FC, \u24FD, \u24FE, \u24FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u2500, \u2501, \u2502, \u2503, \u2504, \u2505, \u2506, \u2507, \u2508, \u2509, \u250A, \u250B, \u250C, \u250D, \u250E, \u250F, "
 			"\u2510, \u2511, \u2512, \u2513, \u2514, \u2515, \u2516, \u2517, \u2518, \u2519, \u251A, \u251B, \u251C, \u251D, \u251E, \u251F, "
@@ -913,7 +838,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u2570, \u2571, \u2572, \u2573, \u2574, \u2575, \u2576, \u2577, \u2578, \u2579, \u257A, \u257B, \u257C, \u257D, \u257E, \u257F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u2580, \u2581, \u2582, \u2583, \u2584, \u2585, \u2586, \u2587, \u2588, \u2589, \u258A, \u258B, \u258C, \u258D, \u258E, \u258F, "
 			"\u2590, \u2591, \u2592, \u2593, \u2594, \u2595, \u2596, \u2597, \u2598, \u2599, \u259A, \u259B, \u259C, \u259D, \u259E, \u259F, "
@@ -922,10 +846,9 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u25C0, \u25C1, \u25C2, \u25C3, \u25C4, \u25C5, \u25C6, \u25C7, \u25C8, \u25C9, \u25CA, \u25CB, \u25CC, \u25CD, \u25CE, \u25CF, "
 			"\u25D0, \u25D1, \u25D2, \u25D3, \u25D4, \u25D5, \u25D6, \u25D7, \u25D8, \u25D9, \u25DA, \u25DB, \u25DC, \u25DD, \u25DE, \u25DF, "
 			"\u25E0, \u25E1, \u25E2, \u25E3, \u25E4, \u25E5, \u25E6, \u25E7, \u25E8, \u25E9, \u25EA, \u25EB, \u25EC, \u25ED, \u25EE, \u25EF, "
-			"\u25FF, \u25FF, \u25FF, \u25FF, \u25FF, \u25FF, \u25FF, \u25FF, \u25FF, \u25FF, \u25FF, \u25FF, \u25FF, \u25FF, \u25FF, \u25FF, "
+			"\u25F0, \u25F1, \u25F2, \u25F3, \u25F4, \u25F5, \u25F6, \u25F7, \u25F8, \u25F9, \u25FA, \u25FB, \u25FC, \u25FD, \u25FE, \u25FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u2600, \u2601, \u2602, \u2603, \u2604, \u2605, \u2606, \u2607, \u2608, \u2609, \u260A, \u260B, \u260C, \u260D, \u260E, \u260F, "
 			"\u2610, \u2611, \u2612, \u2613, \u2614, \u2615, \u2616, \u2617, \u2618, \u2619, \u261A, \u261B, \u261C, \u261D, \u261E, \u261F, "
@@ -937,7 +860,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u2670, \u2671, \u2672, \u2673, \u2674, \u2675, \u2676, \u2677, \u2678, \u2679, \u267A, \u267B, \u267C, \u267D, \u267E, \u267F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u2680, \u2681, \u2682, \u2683, \u2684, \u2685, \u2686, \u2687, \u2688, \u2689, \u268A, \u268B, \u268C, \u268D, \u268E, \u268F, "
 			"\u2690, \u2691, \u2692, \u2693, \u2694, \u2695, \u2696, \u2697, \u2698, \u2699, \u269A, \u269B, \u269C, \u269D, \u269E, \u269F, "
@@ -946,10 +868,9 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u26C0, \u26C1, \u26C2, \u26C3, \u26C4, \u26C5, \u26C6, \u26C7, \u26C8, \u26C9, \u26CA, \u26CB, \u26CC, \u26CD, \u26CE, \u26CF, "
 			"\u26D0, \u26D1, \u26D2, \u26D3, \u26D4, \u26D5, \u26D6, \u26D7, \u26D8, \u26D9, \u26DA, \u26DB, \u26DC, \u26DD, \u26DE, \u26DF, "
 			"\u26E0, \u26E1, \u26E2, \u26E3, \u26E4, \u26E5, \u26E6, \u26E7, \u26E8, \u26E9, \u26EA, \u26EB, \u26EC, \u26ED, \u26EE, \u26EF, "
-			"\u26FF, \u26FF, \u26FF, \u26FF, \u26FF, \u26FF, \u26FF, \u26FF, \u26FF, \u26FF, \u26FF, \u26FF, \u26FF, \u26FF, \u26FF, \u26FF, "
+			"\u26F0, \u26F1, \u26F2, \u26F3, \u26F4, \u26F5, \u26F6, \u26F7, \u26F8, \u26F9, \u26FA, \u26FB, \u26FC, \u26FD, \u26FE, \u26FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u2700, \u2701, \u2702, \u2703, \u2704, \u2705, \u2706, \u2707, \u2708, \u2709, \u270A, \u270B, \u270C, \u270D, \u270E, \u270F, "
 			"\u2710, \u2711, \u2712, \u2713, \u2714, \u2715, \u2716, \u2717, \u2718, \u2719, \u271A, \u271B, \u271C, \u271D, \u271E, \u271F, "
@@ -961,7 +882,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u2770, \u2771, \u2772, \u2773, \u2774, \u2775, \u2776, \u2777, \u2778, \u2779, \u277A, \u277B, \u277C, \u277D, \u277E, \u277F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u2780, \u2781, \u2782, \u2783, \u2784, \u2785, \u2786, \u2787, \u2788, \u2789, \u278A, \u278B, \u278C, \u278D, \u278E, \u278F, "
 			"\u2790, \u2791, \u2792, \u2793, \u2794, \u2795, \u2796, \u2797, \u2798, \u2799, \u279A, \u279B, \u279C, \u279D, \u279E, \u279F, "
@@ -970,10 +890,9 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u27C0, \u27C1, \u27C2, \u27C3, \u27C4, \u27C5, \u27C6, \u27C7, \u27C8, \u27C9, \u27CA, \u27CB, \u27CC, \u27CD, \u27CE, \u27CF, "
 			"\u27D0, \u27D1, \u27D2, \u27D3, \u27D4, \u27D5, \u27D6, \u27D7, \u27D8, \u27D9, \u27DA, \u27DB, \u27DC, \u27DD, \u27DE, \u27DF, "
 			"\u27E0, \u27E1, \u27E2, \u27E3, \u27E4, \u27E5, \u27E6, \u27E7, \u27E8, \u27E9, \u27EA, \u27EB, \u27EC, \u27ED, \u27EE, \u27EF, "
-			"\u27FF, \u27FF, \u27FF, \u27FF, \u27FF, \u27FF, \u27FF, \u27FF, \u27FF, \u27FF, \u27FF, \u27FF, \u27FF, \u27FF, \u27FF, \u27FF, "
+			"\u27F0, \u27F1, \u27F2, \u27F3, \u27F4, \u27F5, \u27F6, \u27F7, \u27F8, \u27F9, \u27FA, \u27FB, \u27FC, \u27FD, \u27FE, \u27FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u2800, \u2801, \u2802, \u2803, \u2804, \u2805, \u2806, \u2807, \u2808, \u2809, \u280A, \u280B, \u280C, \u280D, \u280E, \u280F, "
 			"\u2810, \u2811, \u2812, \u2813, \u2814, \u2815, \u2816, \u2817, \u2818, \u2819, \u281A, \u281B, \u281C, \u281D, \u281E, \u281F, "
@@ -985,7 +904,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u2870, \u2871, \u2872, \u2873, \u2874, \u2875, \u2876, \u2877, \u2878, \u2879, \u287A, \u287B, \u287C, \u287D, \u287E, \u287F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u2880, \u2881, \u2882, \u2883, \u2884, \u2885, \u2886, \u2887, \u2888, \u2889, \u288A, \u288B, \u288C, \u288D, \u288E, \u288F, "
 			"\u2890, \u2891, \u2892, \u2893, \u2894, \u2895, \u2896, \u2897, \u2898, \u2899, \u289A, \u289B, \u289C, \u289D, \u289E, \u289F, "
@@ -997,7 +915,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u28FF, \u28FF, \u28FF, \u28FF, \u28FF, \u28FF, \u28FF, \u28FF, \u28FF, \u28FF, \u28FF, \u28FF, \u28FF, \u28FF, \u28FF, \u28FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u2900, \u2901, \u2902, \u2903, \u2904, \u2905, \u2906, \u2907, \u2908, \u2909, \u290A, \u290B, \u290C, \u290D, \u290E, \u290F, "
 			"\u2910, \u2911, \u2912, \u2913, \u2914, \u2915, \u2916, \u2917, \u2918, \u2919, \u291A, \u291B, \u291C, \u291D, \u291E, \u291F, "
@@ -1009,7 +926,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u2970, \u2971, \u2972, \u2973, \u2974, \u2975, \u2976, \u2977, \u2978, \u2979, \u297A, \u297B, \u297C, \u297D, \u297E, \u297F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u2980, \u2981, \u2982, \u2983, \u2984, \u2985, \u2986, \u2987, \u2988, \u2989, \u298A, \u298B, \u298C, \u298D, \u298E, \u298F, "
 			"\u2990, \u2991, \u2992, \u2993, \u2994, \u2995, \u2996, \u2997, \u2998, \u2999, \u299A, \u299B, \u299C, \u299D, \u299E, \u299F, "
@@ -1021,7 +937,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u29FF, \u29FF, \u29FF, \u29FF, \u29FF, \u29FF, \u29FF, \u29FF, \u29FF, \u29FF, \u29FF, \u29FF, \u29FF, \u29FF, \u29FF, \u29FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u2A00, \u2A01, \u2A02, \u2A03, \u2A04, \u2A05, \u2A06, \u2A07, \u2A08, \u2A09, \u2A0A, \u2A0B, \u2A0C, \u2A0D, \u2A0E, \u2A0F, "
 			"\u2A10, \u2A11, \u2A12, \u2A13, \u2A14, \u2A15, \u2A16, \u2A17, \u2A18, \u2A19, \u2A1A, \u2A1B, \u2A1C, \u2A1D, \u2A1E, \u2A1F, "
@@ -1033,7 +948,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u2A70, \u2A71, \u2A72, \u2A73, \u2A74, \u2A75, \u2A76, \u2A77, \u2A78, \u2A79, \u2A7A, \u2A7B, \u2A7C, \u2A7D, \u2A7E, \u2A7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u2A80, \u2A81, \u2A82, \u2A83, \u2A84, \u2A85, \u2A86, \u2A87, \u2A88, \u2A89, \u2A8A, \u2A8B, \u2A8C, \u2A8D, \u2A8E, \u2A8F, "
 			"\u2A90, \u2A91, \u2A92, \u2A93, \u2A94, \u2A95, \u2A96, \u2A97, \u2A98, \u2A99, \u2A9A, \u2A9B, \u2A9C, \u2A9D, \u2A9E, \u2A9F, "
@@ -1045,7 +959,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u2AFF, \u2AFF, \u2AFF, \u2AFF, \u2AFF, \u2AFF, \u2AFF, \u2AFF, \u2AFF, \u2AFF, \u2AFF, \u2AFF, \u2AFF, \u2AFF, \u2AFF, \u2AFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u2B00, \u2B01, \u2B02, \u2B03, \u2B04, \u2B05, \u2B06, \u2B07, \u2B08, \u2B09, \u2B0A, \u2B0B, \u2B0C, \u2B0D, \u2B0E, \u2B0F, "
 			"\u2B10, \u2B11, \u2B12, \u2B13, \u2B14, \u2B15, \u2B16, \u2B17, \u2B18, \u2B19, \u2B1A, \u2B1B, \u2B1C, \u2B1D, \u2B1E, \u2B1F, "
@@ -1057,7 +970,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u2B70, \u2B71, \u2B72, \u2B73, \u2B74, \u2B75, \u2B76, \u2B77, \u2B78, \u2B79, \u2B7A, \u2B7B, \u2B7C, \u2B7D, \u2B7E, \u2B7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u2B80, \u2B81, \u2B82, \u2B83, \u2B84, \u2B85, \u2B86, \u2B87, \u2B88, \u2B89, \u2B8A, \u2B8B, \u2B8C, \u2B8D, \u2B8E, \u2B8F, "
 			"\u2B90, \u2B91, \u2B92, \u2B93, \u2B94, \u2B95, \u2B96, \u2B97, \u2B98, \u2B99, \u2B9A, \u2B9B, \u2B9C, \u2B9D, \u2B9E, \u2B9F, "
@@ -1069,7 +981,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u2BFF, \u2BFF, \u2BFF, \u2BFF, \u2BFF, \u2BFF, \u2BFF, \u2BFF, \u2BFF, \u2BFF, \u2BFF, \u2BFF, \u2BFF, \u2BFF, \u2BFF, \u2BFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u2C00, \u2C01, \u2C02, \u2C03, \u2C04, \u2C05, \u2C06, \u2C07, \u2C08, \u2C09, \u2C0A, \u2C0B, \u2C0C, \u2C0D, \u2C0E, \u2C0F, "
 			"\u2C10, \u2C11, \u2C12, \u2C13, \u2C14, \u2C15, \u2C16, \u2C17, \u2C18, \u2C19, \u2C1A, \u2C1B, \u2C1C, \u2C1D, \u2C1E, \u2C1F, "
@@ -1081,7 +992,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u2C70, \u2C71, \u2C72, \u2C73, \u2C74, \u2C75, \u2C76, \u2C77, \u2C78, \u2C79, \u2C7A, \u2C7B, \u2C7C, \u2C7D, \u2C7E, \u2C7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u2C80, \u2C81, \u2C82, \u2C83, \u2C84, \u2C85, \u2C86, \u2C87, \u2C88, \u2C89, \u2C8A, \u2C8B, \u2C8C, \u2C8D, \u2C8E, \u2C8F, "
 			"\u2C90, \u2C91, \u2C92, \u2C93, \u2C94, \u2C95, \u2C96, \u2C97, \u2C98, \u2C99, \u2C9A, \u2C9B, \u2C9C, \u2C9D, \u2C9E, \u2C9F, "
@@ -1093,7 +1003,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u2CFF, \u2CFF, \u2CFF, \u2CFF, \u2CFF, \u2CFF, \u2CFF, \u2CFF, \u2CFF, \u2CFF, \u2CFF, \u2CFF, \u2CFF, \u2CFF, \u2CFF, \u2CFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u2D00, \u2D01, \u2D02, \u2D03, \u2D04, \u2D05, \u2D06, \u2D07, \u2D08, \u2D09, \u2D0A, \u2D0B, \u2D0C, \u2D0D, \u2D0E, \u2D0F, "
 			"\u2D10, \u2D11, \u2D12, \u2D13, \u2D14, \u2D15, \u2D16, \u2D17, \u2D18, \u2D19, \u2D1A, \u2D1B, \u2D1C, \u2D1D, \u2D1E, \u2D1F, "
@@ -1105,7 +1014,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u2D70, \u2D71, \u2D72, \u2D73, \u2D74, \u2D75, \u2D76, \u2D77, \u2D78, \u2D79, \u2D7A, \u2D7B, \u2D7C, \u2D7D, \u2D7E, \u2D7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u2D80, \u2D81, \u2D82, \u2D83, \u2D84, \u2D85, \u2D86, \u2D87, \u2D88, \u2D89, \u2D8A, \u2D8B, \u2D8C, \u2D8D, \u2D8E, \u2D8F, "
 			"\u2D90, \u2D91, \u2D92, \u2D93, \u2D94, \u2D95, \u2D96, \u2D97, \u2D98, \u2D99, \u2D9A, \u2D9B, \u2D9C, \u2D9D, \u2D9E, \u2D9F, "
@@ -1117,7 +1025,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u2DFF, \u2DFF, \u2DFF, \u2DFF, \u2DFF, \u2DFF, \u2DFF, \u2DFF, \u2DFF, \u2DFF, \u2DFF, \u2DFF, \u2DFF, \u2DFF, \u2DFF, \u2DFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u2E00, \u2E01, \u2E02, \u2E03, \u2E04, \u2E05, \u2E06, \u2E07, \u2E08, \u2E09, \u2E0A, \u2E0B, \u2E0C, \u2E0D, \u2E0E, \u2E0F, "
 			"\u2E10, \u2E11, \u2E12, \u2E13, \u2E14, \u2E15, \u2E16, \u2E17, \u2E18, \u2E19, \u2E1A, \u2E1B, \u2E1C, \u2E1D, \u2E1E, \u2E1F, "
@@ -1129,7 +1036,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u2E70, \u2E71, \u2E72, \u2E73, \u2E74, \u2E75, \u2E76, \u2E77, \u2E78, \u2E79, \u2E7A, \u2E7B, \u2E7C, \u2E7D, \u2E7E, \u2E7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u2E80, \u2E81, \u2E82, \u2E83, \u2E84, \u2E85, \u2E86, \u2E87, \u2E88, \u2E89, \u2E8A, \u2E8B, \u2E8C, \u2E8D, \u2E8E, \u2E8F, "
 			"\u2E90, \u2E91, \u2E92, \u2E93, \u2E94, \u2E95, \u2E96, \u2E97, \u2E98, \u2E99, \u2E9A, \u2E9B, \u2E9C, \u2E9D, \u2E9E, \u2E9F, "
@@ -1141,7 +1047,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u2EFF, \u2EFF, \u2EFF, \u2EFF, \u2EFF, \u2EFF, \u2EFF, \u2EFF, \u2EFF, \u2EFF, \u2EFF, \u2EFF, \u2EFF, \u2EFF, \u2EFF, \u2EFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u2F00, \u2F01, \u2F02, \u2F03, \u2F04, \u2F05, \u2F06, \u2F07, \u2F08, \u2F09, \u2F0A, \u2F0B, \u2F0C, \u2F0D, \u2F0E, \u2F0F, "
 			"\u2F10, \u2F11, \u2F12, \u2F13, \u2F14, \u2F15, \u2F16, \u2F17, \u2F18, \u2F19, \u2F1A, \u2F1B, \u2F1C, \u2F1D, \u2F1E, \u2F1F, "
@@ -1153,7 +1058,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u2F70, \u2F71, \u2F72, \u2F73, \u2F74, \u2F75, \u2F76, \u2F77, \u2F78, \u2F79, \u2F7A, \u2F7B, \u2F7C, \u2F7D, \u2F7E, \u2F7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u2F80, \u2F81, \u2F82, \u2F83, \u2F84, \u2F85, \u2F86, \u2F87, \u2F88, \u2F89, \u2F8A, \u2F8B, \u2F8C, \u2F8D, \u2F8E, \u2F8F, "
 			"\u2F90, \u2F91, \u2F92, \u2F93, \u2F94, \u2F95, \u2F96, \u2F97, \u2F98, \u2F99, \u2F9A, \u2F9B, \u2F9C, \u2F9D, \u2F9E, \u2F9F, "
@@ -1165,7 +1069,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u2FFF, \u2FFF, \u2FFF, \u2FFF, \u2FFF, \u2FFF, \u2FFF, \u2FFF, \u2FFF, \u2FFF, \u2FFF, \u2FFF, \u2FFF, \u2FFF, \u2FFF, \u2FFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
             "\u3000, \u3001, \u3002, \u3003, \u3004, \u3005, \u3006, \u3007, \u3008, \u3009, \u300A, \u300B, \u300C, \u300D, \u300E, \u300F, "
             "\u3010, \u3011, \uE012, \u3013, \u3014, \u3015, \u3016, \u3017, \u3018, \u3019, \u301A, \u301B, \u301C, \u301D, \u301E, \u301F, "
@@ -1177,7 +1080,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
             "\u3070, \u3071, \u3072, \u3073, \u3074, \u3075, \u3076, \u3077, \u3078, \u3079, \u307A, \u307B, \u307C, \u307D, \u307E, \u307F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u3080, \u3081, \u3082, \u3083, \u3084, \u3085, \u3086, \u3087, \u3088, \u3089, \u308A, \u308B, \u308C, \u308D, \u308E, \u308F, "
 			"\u3090, \u3091, \u3092, \u3093, \u3094, \u3095, \u3096, \u3097, \u3098, \u3099, \u309A, \u309B, \u309C, \u309D, \u309E, \u309F, "
@@ -1189,7 +1091,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u30FF, \u30FF, \u30FF, \u30FF, \u30FF, \u30FF, \u30FF, \u30FF, \u30FF, \u30FF, \u30FF, \u30FF, \u30FF, \u30FF, \u30FF, \u30FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u3100, \u3101, \u3102, \u3103, \u3104, \u3105, \u3106, \u3107, \u3108, \u3109, \u310A, \u310B, \u310C, \u310D, \u310E, \u310F, "
 			"\u3110, \u3111, \u3112, \u3113, \u3114, \u3115, \u3116, \u3117, \u3118, \u3119, \u311A, \u311B, \u311C, \u311D, \u311E, \u311F, "
@@ -1201,7 +1102,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u3170, \u3171, \u3172, \u3173, \u3174, \u3175, \u3176, \u3177, \u3178, \u3179, \u317A, \u317B, \u317C, \u317D, \u317E, \u317F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u3180, \u3181, \u3182, \u3183, \u3184, \u3185, \u3186, \u3187, \u3188, \u3189, \u318A, \u318B, \u318C, \u318D, \u318E, \u318F, "
 			"\u3190, \u3191, \u3192, \u3193, \u3194, \u3195, \u3196, \u3197, \u3198, \u3199, \u319A, \u319B, \u319C, \u319D, \u319E, \u319F, "
@@ -1213,7 +1113,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u31FF, \u31FF, \u31FF, \u31FF, \u31FF, \u31FF, \u31FF, \u31FF, \u31FF, \u31FF, \u31FF, \u31FF, \u31FF, \u31FF, \u31FF, \u31FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u3200, \u3201, \u3202, \u3203, \u3204, \u3205, \u3206, \u3207, \u3208, \u3209, \u320A, \u320B, \u320C, \u320D, \u320E, \u320F, "
 			"\u3210, \u3211, \u3212, \u3213, \u3214, \u3215, \u3216, \u3217, \u3218, \u3219, \u321A, \u321B, \u321C, \u321D, \u321E, \u321F, "
@@ -1225,7 +1124,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u3270, \u3271, \u3272, \u3273, \u3274, \u3275, \u3276, \u3277, \u3278, \u3279, \u327A, \u327B, \u327C, \u327D, \u327E, \u327F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u3280, \u3281, \u3282, \u3283, \u3284, \u3285, \u3286, \u3287, \u3288, \u3289, \u328A, \u328B, \u328C, \u328D, \u328E, \u328F, "
 			"\u3290, \u3291, \u3292, \u3293, \u3294, \u3295, \u3296, \u3297, \u3298, \u3299, \u329A, \u329B, \u329C, \u329D, \u329E, \u329F, "
@@ -1237,7 +1135,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u32FF, \u32FF, \u32FF, \u32FF, \u32FF, \u32FF, \u32FF, \u32FF, \u32FF, \u32FF, \u32FF, \u32FF, \u32FF, \u32FF, \u32FF, \u32FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u3300, \u3301, \u3302, \u3303, \u3304, \u3305, \u3306, \u3307, \u3308, \u3309, \u330A, \u330B, \u330C, \u330D, \u330E, \u330F, "
 			"\u3310, \u3311, \u3312, \u3313, \u3314, \u3315, \u3316, \u3317, \u3318, \u3319, \u331A, \u331B, \u331C, \u331D, \u331E, \u331F, "
@@ -1249,7 +1146,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u3370, \u3371, \u3372, \u3373, \u3374, \u3375, \u3376, \u3377, \u3378, \u3379, \u337A, \u337B, \u337C, \u337D, \u337E, \u337F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u3380, \u3381, \u3382, \u3383, \u3384, \u3385, \u3386, \u3387, \u3388, \u3389, \u338A, \u338B, \u338C, \u338D, \u338E, \u338F, "
 			"\u3390, \u3391, \u3392, \u3393, \u3394, \u3395, \u3396, \u3397, \u3398, \u3399, \u339A, \u339B, \u339C, \u339D, \u339E, \u339F, "
@@ -1261,7 +1157,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u33FF, \u33FF, \u33FF, \u33FF, \u33FF, \u33FF, \u33FF, \u33FF, \u33FF, \u33FF, \u33FF, \u33FF, \u33FF, \u33FF, \u33FF, \u33FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u3400, \u3401, \u3402, \u3403, \u3404, \u3405, \u3406, \u3407, \u3408, \u3409, \u340A, \u340B, \u340C, \u340D, \u340E, \u340F, "
 			"\u3410, \u3411, \u3412, \u3413, \u3414, \u3415, \u3416, \u3417, \u3418, \u3419, \u341A, \u341B, \u341C, \u341D, \u341E, \u341F, "
@@ -1273,7 +1168,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u3470, \u3471, \u3472, \u3473, \u3474, \u3475, \u3476, \u3477, \u3478, \u3479, \u347A, \u347B, \u347C, \u347D, \u347E, \u347F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u3480, \u3481, \u3482, \u3483, \u3484, \u3485, \u3486, \u3487, \u3488, \u3489, \u348A, \u348B, \u348C, \u348D, \u348E, \u348F, "
 			"\u3490, \u3491, \u3492, \u3493, \u3494, \u3495, \u3496, \u3497, \u3498, \u3499, \u349A, \u349B, \u349C, \u349D, \u349E, \u349F, "
@@ -1285,7 +1179,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u34FF, \u34FF, \u34FF, \u34FF, \u34FF, \u34FF, \u34FF, \u34FF, \u34FF, \u34FF, \u34FF, \u34FF, \u34FF, \u34FF, \u34FF, \u34FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u3500, \u3501, \u3502, \u3503, \u3504, \u3505, \u3506, \u3507, \u3508, \u3509, \u350A, \u350B, \u350C, \u350D, \u350E, \u350F, "
 			"\u3510, \u3511, \u3512, \u3513, \u3514, \u3515, \u3516, \u3517, \u3518, \u3519, \u351A, \u351B, \u351C, \u351D, \u351E, \u351F, "
@@ -1297,7 +1190,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u3570, \u3571, \u3572, \u3573, \u3574, \u3575, \u3576, \u3577, \u3578, \u3579, \u357A, \u357B, \u357C, \u357D, \u357E, \u357F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u3580, \u3581, \u3582, \u3583, \u3584, \u3585, \u3586, \u3587, \u3588, \u3589, \u358A, \u358B, \u358C, \u358D, \u358E, \u358F, "
 			"\u3590, \u3591, \u3592, \u3593, \u3594, \u3595, \u3596, \u3597, \u3598, \u3599, \u359A, \u359B, \u359C, \u359D, \u359E, \u359F, "
@@ -1309,7 +1201,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u35FF, \u35FF, \u35FF, \u35FF, \u35FF, \u35FF, \u35FF, \u35FF, \u35FF, \u35FF, \u35FF, \u35FF, \u35FF, \u35FF, \u35FF, \u35FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u3600, \u3601, \u3602, \u3603, \u3604, \u3605, \u3606, \u3607, \u3608, \u3609, \u360A, \u360B, \u360C, \u360D, \u360E, \u360F, "
 			"\u3610, \u3611, \u3612, \u3613, \u3614, \u3615, \u3616, \u3617, \u3618, \u3619, \u361A, \u361B, \u361C, \u361D, \u361E, \u361F, "
@@ -1321,7 +1212,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u3670, \u3671, \u3672, \u3673, \u3674, \u3675, \u3676, \u3677, \u3678, \u3679, \u367A, \u367B, \u367C, \u367D, \u367E, \u367F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u3680, \u3681, \u3682, \u3683, \u3684, \u3685, \u3686, \u3687, \u3688, \u3689, \u368A, \u368B, \u368C, \u368D, \u368E, \u368F, "
 			"\u3690, \u3691, \u3692, \u3693, \u3694, \u3695, \u3696, \u3697, \u3698, \u3699, \u369A, \u369B, \u369C, \u369D, \u369E, \u369F, "
@@ -1333,7 +1223,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u36FF, \u36FF, \u36FF, \u36FF, \u36FF, \u36FF, \u36FF, \u36FF, \u36FF, \u36FF, \u36FF, \u36FF, \u36FF, \u36FF, \u36FF, \u36FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u3700, \u3701, \u3702, \u3703, \u3704, \u3705, \u3706, \u3707, \u3708, \u3709, \u370A, \u370B, \u370C, \u370D, \u370E, \u370F, "
 			"\u3710, \u3711, \u3712, \u3713, \u3714, \u3715, \u3716, \u3717, \u3718, \u3719, \u371A, \u371B, \u371C, \u371D, \u371E, \u371F, "
@@ -1345,7 +1234,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u3770, \u3771, \u3772, \u3773, \u3774, \u3775, \u3776, \u3777, \u3778, \u3779, \u377A, \u377B, \u377C, \u377D, \u377E, \u377F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u3780, \u3781, \u3782, \u3783, \u3784, \u3785, \u3786, \u3787, \u3788, \u3789, \u378A, \u378B, \u378C, \u378D, \u378E, \u378F, "
 			"\u3790, \u3791, \u3792, \u3793, \u3794, \u3795, \u3796, \u3797, \u3798, \u3799, \u379A, \u379B, \u379C, \u379D, \u379E, \u379F, "
@@ -1357,7 +1245,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u37FF, \u37FF, \u37FF, \u37FF, \u37FF, \u37FF, \u37FF, \u37FF, \u37FF, \u37FF, \u37FF, \u37FF, \u37FF, \u37FF, \u37FF, \u37FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u3800, \u3801, \u3802, \u3803, \u3804, \u3805, \u3806, \u3807, \u3808, \u3809, \u380A, \u380B, \u380C, \u380D, \u380E, \u380F, "
 			"\u3810, \u3811, \u3812, \u3813, \u3814, \u3815, \u3816, \u3817, \u3818, \u3819, \u381A, \u381B, \u381C, \u381D, \u381E, \u381F, "
@@ -1369,7 +1256,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u3870, \u3871, \u3872, \u3873, \u3874, \u3875, \u3876, \u3877, \u3878, \u3879, \u387A, \u387B, \u387C, \u387D, \u387E, \u387F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u3880, \u3881, \u3882, \u3883, \u3884, \u3885, \u3886, \u3887, \u3888, \u3889, \u388A, \u388B, \u388C, \u388D, \u388E, \u388F, "
 			"\u3890, \u3891, \u3892, \u3893, \u3894, \u3895, \u3896, \u3897, \u3898, \u3899, \u389A, \u389B, \u389C, \u389D, \u389E, \u389F, "
@@ -1381,7 +1267,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u38FF, \u38FF, \u38FF, \u38FF, \u38FF, \u38FF, \u38FF, \u38FF, \u38FF, \u38FF, \u38FF, \u38FF, \u38FF, \u38FF, \u38FF, \u38FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u3900, \u3901, \u3902, \u3903, \u3904, \u3905, \u3906, \u3907, \u3908, \u3909, \u390A, \u390B, \u390C, \u390D, \u390E, \u390F, "
 			"\u3910, \u3911, \u3912, \u3913, \u3914, \u3915, \u3916, \u3917, \u3918, \u3919, \u391A, \u391B, \u391C, \u391D, \u391E, \u391F, "
@@ -1393,7 +1278,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u3970, \u3971, \u3972, \u3973, \u3974, \u3975, \u3976, \u3977, \u3978, \u3979, \u397A, \u397B, \u397C, \u397D, \u397E, \u397F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u3980, \u3981, \u3982, \u3983, \u3984, \u3985, \u3986, \u3987, \u3988, \u3989, \u398A, \u398B, \u398C, \u398D, \u398E, \u398F, "
 			"\u3990, \u3991, \u3992, \u3993, \u3994, \u3995, \u3996, \u3997, \u3998, \u3999, \u399A, \u399B, \u399C, \u399D, \u399E, \u399F, "
@@ -1405,7 +1289,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u39FF, \u39FF, \u39FF, \u39FF, \u39FF, \u39FF, \u39FF, \u39FF, \u39FF, \u39FF, \u39FF, \u39FF, \u39FF, \u39FF, \u39FF, \u39FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u3A00, \u3A01, \u3A02, \u3A03, \u3A04, \u3A05, \u3A06, \u3A07, \u3A08, \u3A09, \u3A0A, \u3A0B, \u3A0C, \u3A0D, \u3A0E, \u3A0F, "
 			"\u3A10, \u3A11, \u3A12, \u3A13, \u3A14, \u3A15, \u3A16, \u3A17, \u3A18, \u3A19, \u3A1A, \u3A1B, \u3A1C, \u3A1D, \u3A1E, \u3A1F, "
@@ -1417,7 +1300,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u3A70, \u3A71, \u3A72, \u3A73, \u3A74, \u3A75, \u3A76, \u3A77, \u3A78, \u3A79, \u3A7A, \u3A7B, \u3A7C, \u3A7D, \u3A7E, \u3A7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u3A80, \u3A81, \u3A82, \u3A83, \u3A84, \u3A85, \u3A86, \u3A87, \u3A88, \u3A89, \u3A8A, \u3A8B, \u3A8C, \u3A8D, \u3A8E, \u3A8F, "
 			"\u3A90, \u3A91, \u3A92, \u3A93, \u3A94, \u3A95, \u3A96, \u3A97, \u3A98, \u3A99, \u3A9A, \u3A9B, \u3A9C, \u3A9D, \u3A9E, \u3A9F, "
@@ -1429,7 +1311,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u3AFF, \u3AFF, \u3AFF, \u3AFF, \u3AFF, \u3AFF, \u3AFF, \u3AFF, \u3AFF, \u3AFF, \u3AFF, \u3AFF, \u3AFF, \u3AFF, \u3AFF, \u3AFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u3B00, \u3B01, \u3B02, \u3B03, \u3B04, \u3B05, \u3B06, \u3B07, \u3B08, \u3B09, \u3B0A, \u3B0B, \u3B0C, \u3B0D, \u3B0E, \u3B0F, "
 			"\u3B10, \u3B11, \u3B12, \u3B13, \u3B14, \u3B15, \u3B16, \u3B17, \u3B18, \u3B19, \u3B1A, \u3B1B, \u3B1C, \u3B1D, \u3B1E, \u3B1F, "
@@ -1441,7 +1322,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u3B70, \u3B71, \u3B72, \u3B73, \u3B74, \u3B75, \u3B76, \u3B77, \u3B78, \u3B79, \u3B7A, \u3B7B, \u3B7C, \u3B7D, \u3B7E, \u3B7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u3B80, \u3B81, \u3B82, \u3B83, \u3B84, \u3B85, \u3B86, \u3B87, \u3B88, \u3B89, \u3B8A, \u3B8B, \u3B8C, \u3B8D, \u3B8E, \u3B8F, "
 			"\u3B90, \u3B91, \u3B92, \u3B93, \u3B94, \u3B95, \u3B96, \u3B97, \u3B98, \u3B99, \u3B9A, \u3B9B, \u3B9C, \u3B9D, \u3B9E, \u3B9F, "
@@ -1453,7 +1333,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u3BFF, \u3BFF, \u3BFF, \u3BFF, \u3BFF, \u3BFF, \u3BFF, \u3BFF, \u3BFF, \u3BFF, \u3BFF, \u3BFF, \u3BFF, \u3BFF, \u3BFF, \u3BFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u3C00, \u3C01, \u3C02, \u3C03, \u3C04, \u3C05, \u3C06, \u3C07, \u3C08, \u3C09, \u3C0A, \u3C0B, \u3C0C, \u3C0D, \u3C0E, \u3C0F, "
 			"\u3C10, \u3C11, \u3C12, \u3C13, \u3C14, \u3C15, \u3C16, \u3C17, \u3C18, \u3C19, \u3C1A, \u3C1B, \u3C1C, \u3C1D, \u3C1E, \u3C1F, "
@@ -1465,7 +1344,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u3C70, \u3C71, \u3C72, \u3C73, \u3C74, \u3C75, \u3C76, \u3C77, \u3C78, \u3C79, \u3C7A, \u3C7B, \u3C7C, \u3C7D, \u3C7E, \u3C7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u3C80, \u3C81, \u3C82, \u3C83, \u3C84, \u3C85, \u3C86, \u3C87, \u3C88, \u3C89, \u3C8A, \u3C8B, \u3C8C, \u3C8D, \u3C8E, \u3C8F, "
 			"\u3C90, \u3C91, \u3C92, \u3C93, \u3C94, \u3C95, \u3C96, \u3C97, \u3C98, \u3C99, \u3C9A, \u3C9B, \u3C9C, \u3C9D, \u3C9E, \u3C9F, "
@@ -1477,7 +1355,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u3CFF, \u3CFF, \u3CFF, \u3CFF, \u3CFF, \u3CFF, \u3CFF, \u3CFF, \u3CFF, \u3CFF, \u3CFF, \u3CFF, \u3CFF, \u3CFF, \u3CFF, \u3CFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u3D00, \u3D01, \u3D02, \u3D03, \u3D04, \u3D05, \u3D06, \u3D07, \u3D08, \u3D09, \u3D0A, \u3D0B, \u3D0C, \u3D0D, \u3D0E, \u3D0F, "
 			"\u3D10, \u3D11, \u3D12, \u3D13, \u3D14, \u3D15, \u3D16, \u3D17, \u3D18, \u3D19, \u3D1A, \u3D1B, \u3D1C, \u3D1D, \u3D1E, \u3D1F, "
@@ -1489,7 +1366,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u3D70, \u3D71, \u3D72, \u3D73, \u3D74, \u3D75, \u3D76, \u3D77, \u3D78, \u3D79, \u3D7A, \u3D7B, \u3D7C, \u3D7D, \u3D7E, \u3D7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u3D80, \u3D81, \u3D82, \u3D83, \u3D84, \u3D85, \u3D86, \u3D87, \u3D88, \u3D89, \u3D8A, \u3D8B, \u3D8C, \u3D8D, \u3D8E, \u3D8F, "
 			"\u3D90, \u3D91, \u3D92, \u3D93, \u3D94, \u3D95, \u3D96, \u3D97, \u3D98, \u3D99, \u3D9A, \u3D9B, \u3D9C, \u3D9D, \u3D9E, \u3D9F, "
@@ -1501,7 +1377,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u3DFF, \u3DFF, \u3DFF, \u3DFF, \u3DFF, \u3DFF, \u3DFF, \u3DFF, \u3DFF, \u3DFF, \u3DFF, \u3DFF, \u3DFF, \u3DFF, \u3DFF, \u3DFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u3E00, \u3E01, \u3E02, \u3E03, \u3E04, \u3E05, \u3E06, \u3E07, \u3E08, \u3E09, \u3E0A, \u3E0B, \u3E0C, \u3E0D, \u3E0E, \u3E0F, "
 			"\u3E10, \u3E11, \u3E12, \u3E13, \u3E14, \u3E15, \u3E16, \u3E17, \u3E18, \u3E19, \u3E1A, \u3E1B, \u3E1C, \u3E1D, \u3E1E, \u3E1F, "
@@ -1513,7 +1388,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u3E70, \u3E71, \u3E72, \u3E73, \u3E74, \u3E75, \u3E76, \u3E77, \u3E78, \u3E79, \u3E7A, \u3E7B, \u3E7C, \u3E7D, \u3E7E, \u3E7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u3E80, \u3E81, \u3E82, \u3E83, \u3E84, \u3E85, \u3E86, \u3E87, \u3E88, \u3E89, \u3E8A, \u3E8B, \u3E8C, \u3E8D, \u3E8E, \u3E8F, "
 			"\u3E90, \u3E91, \u3E92, \u3E93, \u3E94, \u3E95, \u3E96, \u3E97, \u3E98, \u3E99, \u3E9A, \u3E9B, \u3E9C, \u3E9D, \u3E9E, \u3E9F, "
@@ -1525,7 +1399,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u3EFF, \u3EFF, \u3EFF, \u3EFF, \u3EFF, \u3EFF, \u3EFF, \u3EFF, \u3EFF, \u3EFF, \u3EFF, \u3EFF, \u3EFF, \u3EFF, \u3EFF, \u3EFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u3F00, \u3F01, \u3F02, \u3F03, \u3F04, \u3F05, \u3F06, \u3F07, \u3F08, \u3F09, \u3F0A, \u3F0B, \u3F0C, \u3F0D, \u3F0E, \u3F0F, "
 			"\u3F10, \u3F11, \u3F12, \u3F13, \u3F14, \u3F15, \u3F16, \u3F17, \u3F18, \u3F19, \u3F1A, \u3F1B, \u3F1C, \u3F1D, \u3F1E, \u3F1F, "
@@ -1537,7 +1410,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u3F70, \u3F71, \u3F72, \u3F73, \u3F74, \u3F75, \u3F76, \u3F77, \u3F78, \u3F79, \u3F7A, \u3F7B, \u3F7C, \u3F7D, \u3F7E, \u3F7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u3F80, \u3F81, \u3F82, \u3F83, \u3F84, \u3F85, \u3F86, \u3F87, \u3F88, \u3F89, \u3F8A, \u3F8B, \u3F8C, \u3F8D, \u3F8E, \u3F8F, "
 			"\u3F90, \u3F91, \u3F92, \u3F93, \u3F94, \u3F95, \u3F96, \u3F97, \u3F98, \u3F99, \u3F9A, \u3F9B, \u3F9C, \u3F9D, \u3F9E, \u3F9F, "
@@ -1549,7 +1421,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u3FFF, \u3FFF, \u3FFF, \u3FFF, \u3FFF, \u3FFF, \u3FFF, \u3FFF, \u3FFF, \u3FFF, \u3FFF, \u3FFF, \u3FFF, \u3FFF, \u3FFF, \u3FFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
             "\u4000, \u4001, \u4002, \u4003, \u4004, \u4005, \u4006, \u4007, \u4008, \u4009, \u400A, \u400B, \u400C, \u400D, \u400E, \u400F, "
             "\u4010, \u4011, \uE012, \u4013, \u4014, \u4015, \u4016, \u4017, \u4018, \u4019, \u401A, \u401B, \u401C, \u401D, \u401E, \u401F, "
@@ -1561,7 +1432,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
             "\u4070, \u4071, \u4072, \u4073, \u4074, \u4075, \u4076, \u4077, \u4078, \u4079, \u407A, \u407B, \u407C, \u407D, \u407E, \u407F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u4080, \u4081, \u4082, \u4083, \u4084, \u4085, \u4086, \u4087, \u4088, \u4089, \u408A, \u408B, \u408C, \u408D, \u408E, \u408F, "
 			"\u4090, \u4091, \u4092, \u4093, \u4094, \u4095, \u4096, \u4097, \u4098, \u4099, \u409A, \u409B, \u409C, \u409D, \u409E, \u409F, "
@@ -1573,7 +1443,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u40FF, \u40FF, \u40FF, \u40FF, \u40FF, \u40FF, \u40FF, \u40FF, \u40FF, \u40FF, \u40FF, \u40FF, \u40FF, \u40FF, \u40FF, \u40FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u4100, \u4101, \u4102, \u4103, \u4104, \u4105, \u4106, \u4107, \u4108, \u4109, \u410A, \u410B, \u410C, \u410D, \u410E, \u410F, "
 			"\u4110, \u4111, \u4112, \u4113, \u4114, \u4115, \u4116, \u4117, \u4118, \u4119, \u411A, \u411B, \u411C, \u411D, \u411E, \u411F, "
@@ -1585,7 +1454,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u4170, \u4171, \u4172, \u4173, \u4174, \u4175, \u4176, \u4177, \u4178, \u4179, \u417A, \u417B, \u417C, \u417D, \u417E, \u417F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u4180, \u4181, \u4182, \u4183, \u4184, \u4185, \u4186, \u4187, \u4188, \u4189, \u418A, \u418B, \u418C, \u418D, \u418E, \u418F, "
 			"\u4190, \u4191, \u4192, \u4193, \u4194, \u4195, \u4196, \u4197, \u4198, \u4199, \u419A, \u419B, \u419C, \u419D, \u419E, \u419F, "
@@ -1597,7 +1465,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u41FF, \u41FF, \u41FF, \u41FF, \u41FF, \u41FF, \u41FF, \u41FF, \u41FF, \u41FF, \u41FF, \u41FF, \u41FF, \u41FF, \u41FF, \u41FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u4200, \u4201, \u4202, \u4203, \u4204, \u4205, \u4206, \u4207, \u4208, \u4209, \u420A, \u420B, \u420C, \u420D, \u420E, \u420F, "
 			"\u4210, \u4211, \u4212, \u4213, \u4214, \u4215, \u4216, \u4217, \u4218, \u4219, \u421A, \u421B, \u421C, \u421D, \u421E, \u421F, "
@@ -1609,7 +1476,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u4270, \u4271, \u4272, \u4273, \u4274, \u4275, \u4276, \u4277, \u4278, \u4279, \u427A, \u427B, \u427C, \u427D, \u427E, \u427F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u4280, \u4281, \u4282, \u4283, \u4284, \u4285, \u4286, \u4287, \u4288, \u4289, \u428A, \u428B, \u428C, \u428D, \u428E, \u428F, "
 			"\u4290, \u4291, \u4292, \u4293, \u4294, \u4295, \u4296, \u4297, \u4298, \u4299, \u429A, \u429B, \u429C, \u429D, \u429E, \u429F, "
@@ -1621,7 +1487,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u42FF, \u42FF, \u42FF, \u42FF, \u42FF, \u42FF, \u42FF, \u42FF, \u42FF, \u42FF, \u42FF, \u42FF, \u42FF, \u42FF, \u42FF, \u42FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u4300, \u4301, \u4302, \u4303, \u4304, \u4305, \u4306, \u4307, \u4308, \u4309, \u430A, \u430B, \u430C, \u430D, \u430E, \u430F, "
 			"\u4310, \u4311, \u4312, \u4313, \u4314, \u4315, \u4316, \u4317, \u4318, \u4319, \u431A, \u431B, \u431C, \u431D, \u431E, \u431F, "
@@ -1633,7 +1498,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u4370, \u4371, \u4372, \u4373, \u4374, \u4375, \u4376, \u4377, \u4378, \u4379, \u437A, \u437B, \u437C, \u437D, \u437E, \u437F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u4380, \u4381, \u4382, \u4383, \u4384, \u4385, \u4386, \u4387, \u4388, \u4389, \u438A, \u438B, \u438C, \u438D, \u438E, \u438F, "
 			"\u4390, \u4391, \u4392, \u4393, \u4394, \u4395, \u4396, \u4397, \u4398, \u4399, \u439A, \u439B, \u439C, \u439D, \u439E, \u439F, "
@@ -1645,7 +1509,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u43FF, \u43FF, \u43FF, \u43FF, \u43FF, \u43FF, \u43FF, \u43FF, \u43FF, \u43FF, \u43FF, \u43FF, \u43FF, \u43FF, \u43FF, \u43FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u4400, \u4401, \u4402, \u4403, \u4404, \u4405, \u4406, \u4407, \u4408, \u4409, \u440A, \u440B, \u440C, \u440D, \u440E, \u440F, "
 			"\u4410, \u4411, \u4412, \u4413, \u4414, \u4415, \u4416, \u4417, \u4418, \u4419, \u441A, \u441B, \u441C, \u441D, \u441E, \u441F, "
@@ -1657,7 +1520,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u4470, \u4471, \u4472, \u4473, \u4474, \u4475, \u4476, \u4477, \u4478, \u4479, \u447A, \u447B, \u447C, \u447D, \u447E, \u447F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u4480, \u4481, \u4482, \u4483, \u4484, \u4485, \u4486, \u4487, \u4488, \u4489, \u448A, \u448B, \u448C, \u448D, \u448E, \u448F, "
 			"\u4490, \u4491, \u4492, \u4493, \u4494, \u4495, \u4496, \u4497, \u4498, \u4499, \u449A, \u449B, \u449C, \u449D, \u449E, \u449F, "
@@ -1669,7 +1531,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u44FF, \u44FF, \u44FF, \u44FF, \u44FF, \u44FF, \u44FF, \u44FF, \u44FF, \u44FF, \u44FF, \u44FF, \u44FF, \u44FF, \u44FF, \u44FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u4500, \u4501, \u4502, \u4503, \u4504, \u4505, \u4506, \u4507, \u4508, \u4509, \u450A, \u450B, \u450C, \u450D, \u450E, \u450F, "
 			"\u4510, \u4511, \u4512, \u4513, \u4514, \u4515, \u4516, \u4517, \u4518, \u4519, \u451A, \u451B, \u451C, \u451D, \u451E, \u451F, "
@@ -1681,7 +1542,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u4570, \u4571, \u4572, \u4573, \u4574, \u4575, \u4576, \u4577, \u4578, \u4579, \u457A, \u457B, \u457C, \u457D, \u457E, \u457F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u4580, \u4581, \u4582, \u4583, \u4584, \u4585, \u4586, \u4587, \u4588, \u4589, \u458A, \u458B, \u458C, \u458D, \u458E, \u458F, "
 			"\u4590, \u4591, \u4592, \u4593, \u4594, \u4595, \u4596, \u4597, \u4598, \u4599, \u459A, \u459B, \u459C, \u459D, \u459E, \u459F, "
@@ -1693,7 +1553,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u45FF, \u45FF, \u45FF, \u45FF, \u45FF, \u45FF, \u45FF, \u45FF, \u45FF, \u45FF, \u45FF, \u45FF, \u45FF, \u45FF, \u45FF, \u45FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u4600, \u4601, \u4602, \u4603, \u4604, \u4605, \u4606, \u4607, \u4608, \u4609, \u460A, \u460B, \u460C, \u460D, \u460E, \u460F, "
 			"\u4610, \u4611, \u4612, \u4613, \u4614, \u4615, \u4616, \u4617, \u4618, \u4619, \u461A, \u461B, \u461C, \u461D, \u461E, \u461F, "
@@ -1705,7 +1564,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u4670, \u4671, \u4672, \u4673, \u4674, \u4675, \u4676, \u4677, \u4678, \u4679, \u467A, \u467B, \u467C, \u467D, \u467E, \u467F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u4680, \u4681, \u4682, \u4683, \u4684, \u4685, \u4686, \u4687, \u4688, \u4689, \u468A, \u468B, \u468C, \u468D, \u468E, \u468F, "
 			"\u4690, \u4691, \u4692, \u4693, \u4694, \u4695, \u4696, \u4697, \u4698, \u4699, \u469A, \u469B, \u469C, \u469D, \u469E, \u469F, "
@@ -1717,7 +1575,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u46FF, \u46FF, \u46FF, \u46FF, \u46FF, \u46FF, \u46FF, \u46FF, \u46FF, \u46FF, \u46FF, \u46FF, \u46FF, \u46FF, \u46FF, \u46FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u4700, \u4701, \u4702, \u4703, \u4704, \u4705, \u4706, \u4707, \u4708, \u4709, \u470A, \u470B, \u470C, \u470D, \u470E, \u470F, "
 			"\u4710, \u4711, \u4712, \u4713, \u4714, \u4715, \u4716, \u4717, \u4718, \u4719, \u471A, \u471B, \u471C, \u471D, \u471E, \u471F, "
@@ -1729,7 +1586,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u4770, \u4771, \u4772, \u4773, \u4774, \u4775, \u4776, \u4777, \u4778, \u4779, \u477A, \u477B, \u477C, \u477D, \u477E, \u477F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u4780, \u4781, \u4782, \u4783, \u4784, \u4785, \u4786, \u4787, \u4788, \u4789, \u478A, \u478B, \u478C, \u478D, \u478E, \u478F, "
 			"\u4790, \u4791, \u4792, \u4793, \u4794, \u4795, \u4796, \u4797, \u4798, \u4799, \u479A, \u479B, \u479C, \u479D, \u479E, \u479F, "
@@ -1741,7 +1597,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u47FF, \u47FF, \u47FF, \u47FF, \u47FF, \u47FF, \u47FF, \u47FF, \u47FF, \u47FF, \u47FF, \u47FF, \u47FF, \u47FF, \u47FF, \u47FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u4800, \u4801, \u4802, \u4803, \u4804, \u4805, \u4806, \u4807, \u4808, \u4809, \u480A, \u480B, \u480C, \u480D, \u480E, \u480F, "
 			"\u4810, \u4811, \u4812, \u4813, \u4814, \u4815, \u4816, \u4817, \u4818, \u4819, \u481A, \u481B, \u481C, \u481D, \u481E, \u481F, "
@@ -1753,7 +1608,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u4870, \u4871, \u4872, \u4873, \u4874, \u4875, \u4876, \u4877, \u4878, \u4879, \u487A, \u487B, \u487C, \u487D, \u487E, \u487F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u4880, \u4881, \u4882, \u4883, \u4884, \u4885, \u4886, \u4887, \u4888, \u4889, \u488A, \u488B, \u488C, \u488D, \u488E, \u488F, "
 			"\u4890, \u4891, \u4892, \u4893, \u4894, \u4895, \u4896, \u4897, \u4898, \u4899, \u489A, \u489B, \u489C, \u489D, \u489E, \u489F, "
@@ -1765,7 +1619,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u48FF, \u48FF, \u48FF, \u48FF, \u48FF, \u48FF, \u48FF, \u48FF, \u48FF, \u48FF, \u48FF, \u48FF, \u48FF, \u48FF, \u48FF, \u48FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u4900, \u4901, \u4902, \u4903, \u4904, \u4905, \u4906, \u4907, \u4908, \u4909, \u490A, \u490B, \u490C, \u490D, \u490E, \u490F, "
 			"\u4910, \u4911, \u4912, \u4913, \u4914, \u4915, \u4916, \u4917, \u4918, \u4919, \u491A, \u491B, \u491C, \u491D, \u491E, \u491F, "
@@ -1777,7 +1630,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u4970, \u4971, \u4972, \u4973, \u4974, \u4975, \u4976, \u4977, \u4978, \u4979, \u497A, \u497B, \u497C, \u497D, \u497E, \u497F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u4980, \u4981, \u4982, \u4983, \u4984, \u4985, \u4986, \u4987, \u4988, \u4989, \u498A, \u498B, \u498C, \u498D, \u498E, \u498F, "
 			"\u4990, \u4991, \u4992, \u4993, \u4994, \u4995, \u4996, \u4997, \u4998, \u4999, \u499A, \u499B, \u499C, \u499D, \u499E, \u499F, "
@@ -1789,7 +1641,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u49FF, \u49FF, \u49FF, \u49FF, \u49FF, \u49FF, \u49FF, \u49FF, \u49FF, \u49FF, \u49FF, \u49FF, \u49FF, \u49FF, \u49FF, \u49FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u4A00, \u4A01, \u4A02, \u4A03, \u4A04, \u4A05, \u4A06, \u4A07, \u4A08, \u4A09, \u4A0A, \u4A0B, \u4A0C, \u4A0D, \u4A0E, \u4A0F, "
 			"\u4A10, \u4A11, \u4A12, \u4A13, \u4A14, \u4A15, \u4A16, \u4A17, \u4A18, \u4A19, \u4A1A, \u4A1B, \u4A1C, \u4A1D, \u4A1E, \u4A1F, "
@@ -1801,7 +1652,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u4A70, \u4A71, \u4A72, \u4A73, \u4A74, \u4A75, \u4A76, \u4A77, \u4A78, \u4A79, \u4A7A, \u4A7B, \u4A7C, \u4A7D, \u4A7E, \u4A7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u4A80, \u4A81, \u4A82, \u4A83, \u4A84, \u4A85, \u4A86, \u4A87, \u4A88, \u4A89, \u4A8A, \u4A8B, \u4A8C, \u4A8D, \u4A8E, \u4A8F, "
 			"\u4A90, \u4A91, \u4A92, \u4A93, \u4A94, \u4A95, \u4A96, \u4A97, \u4A98, \u4A99, \u4A9A, \u4A9B, \u4A9C, \u4A9D, \u4A9E, \u4A9F, "
@@ -1813,7 +1663,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u4AFF, \u4AFF, \u4AFF, \u4AFF, \u4AFF, \u4AFF, \u4AFF, \u4AFF, \u4AFF, \u4AFF, \u4AFF, \u4AFF, \u4AFF, \u4AFF, \u4AFF, \u4AFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u4B00, \u4B01, \u4B02, \u4B03, \u4B04, \u4B05, \u4B06, \u4B07, \u4B08, \u4B09, \u4B0A, \u4B0B, \u4B0C, \u4B0D, \u4B0E, \u4B0F, "
 			"\u4B10, \u4B11, \u4B12, \u4B13, \u4B14, \u4B15, \u4B16, \u4B17, \u4B18, \u4B19, \u4B1A, \u4B1B, \u4B1C, \u4B1D, \u4B1E, \u4B1F, "
@@ -1825,7 +1674,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u4B70, \u4B71, \u4B72, \u4B73, \u4B74, \u4B75, \u4B76, \u4B77, \u4B78, \u4B79, \u4B7A, \u4B7B, \u4B7C, \u4B7D, \u4B7E, \u4B7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u4B80, \u4B81, \u4B82, \u4B83, \u4B84, \u4B85, \u4B86, \u4B87, \u4B88, \u4B89, \u4B8A, \u4B8B, \u4B8C, \u4B8D, \u4B8E, \u4B8F, "
 			"\u4B90, \u4B91, \u4B92, \u4B93, \u4B94, \u4B95, \u4B96, \u4B97, \u4B98, \u4B99, \u4B9A, \u4B9B, \u4B9C, \u4B9D, \u4B9E, \u4B9F, "
@@ -1837,7 +1685,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u4BFF, \u4BFF, \u4BFF, \u4BFF, \u4BFF, \u4BFF, \u4BFF, \u4BFF, \u4BFF, \u4BFF, \u4BFF, \u4BFF, \u4BFF, \u4BFF, \u4BFF, \u4BFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u4C00, \u4C01, \u4C02, \u4C03, \u4C04, \u4C05, \u4C06, \u4C07, \u4C08, \u4C09, \u4C0A, \u4C0B, \u4C0C, \u4C0D, \u4C0E, \u4C0F, "
 			"\u4C10, \u4C11, \u4C12, \u4C13, \u4C14, \u4C15, \u4C16, \u4C17, \u4C18, \u4C19, \u4C1A, \u4C1B, \u4C1C, \u4C1D, \u4C1E, \u4C1F, "
@@ -1849,7 +1696,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u4C70, \u4C71, \u4C72, \u4C73, \u4C74, \u4C75, \u4C76, \u4C77, \u4C78, \u4C79, \u4C7A, \u4C7B, \u4C7C, \u4C7D, \u4C7E, \u4C7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u4C80, \u4C81, \u4C82, \u4C83, \u4C84, \u4C85, \u4C86, \u4C87, \u4C88, \u4C89, \u4C8A, \u4C8B, \u4C8C, \u4C8D, \u4C8E, \u4C8F, "
 			"\u4C90, \u4C91, \u4C92, \u4C93, \u4C94, \u4C95, \u4C96, \u4C97, \u4C98, \u4C99, \u4C9A, \u4C9B, \u4C9C, \u4C9D, \u4C9E, \u4C9F, "
@@ -1861,7 +1707,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u4CFF, \u4CFF, \u4CFF, \u4CFF, \u4CFF, \u4CFF, \u4CFF, \u4CFF, \u4CFF, \u4CFF, \u4CFF, \u4CFF, \u4CFF, \u4CFF, \u4CFF, \u4CFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u4D00, \u4D01, \u4D02, \u4D03, \u4D04, \u4D05, \u4D06, \u4D07, \u4D08, \u4D09, \u4D0A, \u4D0B, \u4D0C, \u4D0D, \u4D0E, \u4D0F, "
 			"\u4D10, \u4D11, \u4D12, \u4D13, \u4D14, \u4D15, \u4D16, \u4D17, \u4D18, \u4D19, \u4D1A, \u4D1B, \u4D1C, \u4D1D, \u4D1E, \u4D1F, "
@@ -1873,7 +1718,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u4D70, \u4D71, \u4D72, \u4D73, \u4D74, \u4D75, \u4D76, \u4D77, \u4D78, \u4D79, \u4D7A, \u4D7B, \u4D7C, \u4D7D, \u4D7E, \u4D7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u4D80, \u4D81, \u4D82, \u4D83, \u4D84, \u4D85, \u4D86, \u4D87, \u4D88, \u4D89, \u4D8A, \u4D8B, \u4D8C, \u4D8D, \u4D8E, \u4D8F, "
 			"\u4D90, \u4D91, \u4D92, \u4D93, \u4D94, \u4D95, \u4D96, \u4D97, \u4D98, \u4D99, \u4D9A, \u4D9B, \u4D9C, \u4D9D, \u4D9E, \u4D9F, "
@@ -1885,7 +1729,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u4DFF, \u4DFF, \u4DFF, \u4DFF, \u4DFF, \u4DFF, \u4DFF, \u4DFF, \u4DFF, \u4DFF, \u4DFF, \u4DFF, \u4DFF, \u4DFF, \u4DFF, \u4DFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u4E00, \u4E01, \u4E02, \u4E03, \u4E04, \u4E05, \u4E06, \u4E07, \u4E08, \u4E09, \u4E0A, \u4E0B, \u4E0C, \u4E0D, \u4E0E, \u4E0F, "
 			"\u4E10, \u4E11, \u4E12, \u4E13, \u4E14, \u4E15, \u4E16, \u4E17, \u4E18, \u4E19, \u4E1A, \u4E1B, \u4E1C, \u4E1D, \u4E1E, \u4E1F, "
@@ -1897,7 +1740,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u4E70, \u4E71, \u4E72, \u4E73, \u4E74, \u4E75, \u4E76, \u4E77, \u4E78, \u4E79, \u4E7A, \u4E7B, \u4E7C, \u4E7D, \u4E7E, \u4E7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u4E80, \u4E81, \u4E82, \u4E83, \u4E84, \u4E85, \u4E86, \u4E87, \u4E88, \u4E89, \u4E8A, \u4E8B, \u4E8C, \u4E8D, \u4E8E, \u4E8F, "
 			"\u4E90, \u4E91, \u4E92, \u4E93, \u4E94, \u4E95, \u4E96, \u4E97, \u4E98, \u4E99, \u4E9A, \u4E9B, \u4E9C, \u4E9D, \u4E9E, \u4E9F, "
@@ -1909,7 +1751,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u4EFF, \u4EFF, \u4EFF, \u4EFF, \u4EFF, \u4EFF, \u4EFF, \u4EFF, \u4EFF, \u4EFF, \u4EFF, \u4EFF, \u4EFF, \u4EFF, \u4EFF, \u4EFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u4F00, \u4F01, \u4F02, \u4F03, \u4F04, \u4F05, \u4F06, \u4F07, \u4F08, \u4F09, \u4F0A, \u4F0B, \u4F0C, \u4F0D, \u4F0E, \u4F0F, "
 			"\u4F10, \u4F11, \u4F12, \u4F13, \u4F14, \u4F15, \u4F16, \u4F17, \u4F18, \u4F19, \u4F1A, \u4F1B, \u4F1C, \u4F1D, \u4F1E, \u4F1F, "
@@ -1921,7 +1762,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u4F70, \u4F71, \u4F72, \u4F73, \u4F74, \u4F75, \u4F76, \u4F77, \u4F78, \u4F79, \u4F7A, \u4F7B, \u4F7C, \u4F7D, \u4F7E, \u4F7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u4F80, \u4F81, \u4F82, \u4F83, \u4F84, \u4F85, \u4F86, \u4F87, \u4F88, \u4F89, \u4F8A, \u4F8B, \u4F8C, \u4F8D, \u4F8E, \u4F8F, "
 			"\u4F90, \u4F91, \u4F92, \u4F93, \u4F94, \u4F95, \u4F96, \u4F97, \u4F98, \u4F99, \u4F9A, \u4F9B, \u4F9C, \u4F9D, \u4F9E, \u4F9F, "
@@ -1933,7 +1773,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u4FFF, \u4FFF, \u4FFF, \u4FFF, \u4FFF, \u4FFF, \u4FFF, \u4FFF, \u4FFF, \u4FFF, \u4FFF, \u4FFF, \u4FFF, \u4FFF, \u4FFF, \u4FFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
             "\u5000, \u5001, \u5002, \u5003, \u5004, \u5005, \u5006, \u5007, \u5008, \u5009, \u500A, \u500B, \u500C, \u500D, \u500E, \u500F, "
             "\u5010, \u5011, \uE012, \u5013, \u5014, \u5015, \u5016, \u5017, \u5018, \u5019, \u501A, \u501B, \u501C, \u501D, \u501E, \u501F, "
@@ -1945,7 +1784,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
             "\u5070, \u5071, \u5072, \u5073, \u5074, \u5075, \u5076, \u5077, \u5078, \u5079, \u507A, \u507B, \u507C, \u507D, \u507E, \u507F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u5080, \u5081, \u5082, \u5083, \u5084, \u5085, \u5086, \u5087, \u5088, \u5089, \u508A, \u508B, \u508C, \u508D, \u508E, \u508F, "
 			"\u5090, \u5091, \u5092, \u5093, \u5094, \u5095, \u5096, \u5097, \u5098, \u5099, \u509A, \u509B, \u509C, \u509D, \u509E, \u509F, "
@@ -1957,7 +1795,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u50FF, \u50FF, \u50FF, \u50FF, \u50FF, \u50FF, \u50FF, \u50FF, \u50FF, \u50FF, \u50FF, \u50FF, \u50FF, \u50FF, \u50FF, \u50FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u5100, \u5101, \u5102, \u5103, \u5104, \u5105, \u5106, \u5107, \u5108, \u5109, \u510A, \u510B, \u510C, \u510D, \u510E, \u510F, "
 			"\u5110, \u5111, \u5112, \u5113, \u5114, \u5115, \u5116, \u5117, \u5118, \u5119, \u511A, \u511B, \u511C, \u511D, \u511E, \u511F, "
@@ -1969,7 +1806,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u5170, \u5171, \u5172, \u5173, \u5174, \u5175, \u5176, \u5177, \u5178, \u5179, \u517A, \u517B, \u517C, \u517D, \u517E, \u517F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u5180, \u5181, \u5182, \u5183, \u5184, \u5185, \u5186, \u5187, \u5188, \u5189, \u518A, \u518B, \u518C, \u518D, \u518E, \u518F, "
 			"\u5190, \u5191, \u5192, \u5193, \u5194, \u5195, \u5196, \u5197, \u5198, \u5199, \u519A, \u519B, \u519C, \u519D, \u519E, \u519F, "
@@ -1981,7 +1817,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u51FF, \u51FF, \u51FF, \u51FF, \u51FF, \u51FF, \u51FF, \u51FF, \u51FF, \u51FF, \u51FF, \u51FF, \u51FF, \u51FF, \u51FF, \u51FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u5200, \u5201, \u5202, \u5203, \u5204, \u5205, \u5206, \u5207, \u5208, \u5209, \u520A, \u520B, \u520C, \u520D, \u520E, \u520F, "
 			"\u5210, \u5211, \u5212, \u5213, \u5214, \u5215, \u5216, \u5217, \u5218, \u5219, \u521A, \u521B, \u521C, \u521D, \u521E, \u521F, "
@@ -1993,7 +1828,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u5270, \u5271, \u5272, \u5273, \u5274, \u5275, \u5276, \u5277, \u5278, \u5279, \u527A, \u527B, \u527C, \u527D, \u527E, \u527F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u5280, \u5281, \u5282, \u5283, \u5284, \u5285, \u5286, \u5287, \u5288, \u5289, \u528A, \u528B, \u528C, \u528D, \u528E, \u528F, "
 			"\u5290, \u5291, \u5292, \u5293, \u5294, \u5295, \u5296, \u5297, \u5298, \u5299, \u529A, \u529B, \u529C, \u529D, \u529E, \u529F, "
@@ -2005,7 +1839,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u52FF, \u52FF, \u52FF, \u52FF, \u52FF, \u52FF, \u52FF, \u52FF, \u52FF, \u52FF, \u52FF, \u52FF, \u52FF, \u52FF, \u52FF, \u52FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u5300, \u5301, \u5302, \u5303, \u5304, \u5305, \u5306, \u5307, \u5308, \u5309, \u530A, \u530B, \u530C, \u530D, \u530E, \u530F, "
 			"\u5310, \u5311, \u5312, \u5313, \u5314, \u5315, \u5316, \u5317, \u5318, \u5319, \u531A, \u531B, \u531C, \u531D, \u531E, \u531F, "
@@ -2017,7 +1850,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u5370, \u5371, \u5372, \u5373, \u5374, \u5375, \u5376, \u5377, \u5378, \u5379, \u537A, \u537B, \u537C, \u537D, \u537E, \u537F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u5380, \u5381, \u5382, \u5383, \u5384, \u5385, \u5386, \u5387, \u5388, \u5389, \u538A, \u538B, \u538C, \u538D, \u538E, \u538F, "
 			"\u5390, \u5391, \u5392, \u5393, \u5394, \u5395, \u5396, \u5397, \u5398, \u5399, \u539A, \u539B, \u539C, \u539D, \u539E, \u539F, "
@@ -2029,7 +1861,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u53FF, \u53FF, \u53FF, \u53FF, \u53FF, \u53FF, \u53FF, \u53FF, \u53FF, \u53FF, \u53FF, \u53FF, \u53FF, \u53FF, \u53FF, \u53FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u5400, \u5401, \u5402, \u5403, \u5404, \u5405, \u5406, \u5407, \u5408, \u5409, \u540A, \u540B, \u540C, \u540D, \u540E, \u540F, "
 			"\u5410, \u5411, \u5412, \u5413, \u5414, \u5415, \u5416, \u5417, \u5418, \u5419, \u541A, \u541B, \u541C, \u541D, \u541E, \u541F, "
@@ -2041,7 +1872,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u5470, \u5471, \u5472, \u5473, \u5474, \u5475, \u5476, \u5477, \u5478, \u5479, \u547A, \u547B, \u547C, \u547D, \u547E, \u547F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u5480, \u5481, \u5482, \u5483, \u5484, \u5485, \u5486, \u5487, \u5488, \u5489, \u548A, \u548B, \u548C, \u548D, \u548E, \u548F, "
 			"\u5490, \u5491, \u5492, \u5493, \u5494, \u5495, \u5496, \u5497, \u5498, \u5499, \u549A, \u549B, \u549C, \u549D, \u549E, \u549F, "
@@ -2053,7 +1883,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u54FF, \u54FF, \u54FF, \u54FF, \u54FF, \u54FF, \u54FF, \u54FF, \u54FF, \u54FF, \u54FF, \u54FF, \u54FF, \u54FF, \u54FF, \u54FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u5500, \u5501, \u5502, \u5503, \u5504, \u5505, \u5506, \u5507, \u5508, \u5509, \u550A, \u550B, \u550C, \u550D, \u550E, \u550F, "
 			"\u5510, \u5511, \u5512, \u5513, \u5514, \u5515, \u5516, \u5517, \u5518, \u5519, \u551A, \u551B, \u551C, \u551D, \u551E, \u551F, "
@@ -2065,7 +1894,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u5570, \u5571, \u5572, \u5573, \u5574, \u5575, \u5576, \u5577, \u5578, \u5579, \u557A, \u557B, \u557C, \u557D, \u557E, \u557F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u5580, \u5581, \u5582, \u5583, \u5584, \u5585, \u5586, \u5587, \u5588, \u5589, \u558A, \u558B, \u558C, \u558D, \u558E, \u558F, "
 			"\u5590, \u5591, \u5592, \u5593, \u5594, \u5595, \u5596, \u5597, \u5598, \u5599, \u559A, \u559B, \u559C, \u559D, \u559E, \u559F, "
@@ -2077,7 +1905,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u55FF, \u55FF, \u55FF, \u55FF, \u55FF, \u55FF, \u55FF, \u55FF, \u55FF, \u55FF, \u55FF, \u55FF, \u55FF, \u55FF, \u55FF, \u55FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u5600, \u5601, \u5602, \u5603, \u5604, \u5605, \u5606, \u5607, \u5608, \u5609, \u560A, \u560B, \u560C, \u560D, \u560E, \u560F, "
 			"\u5610, \u5611, \u5612, \u5613, \u5614, \u5615, \u5616, \u5617, \u5618, \u5619, \u561A, \u561B, \u561C, \u561D, \u561E, \u561F, "
@@ -2089,7 +1916,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u5670, \u5671, \u5672, \u5673, \u5674, \u5675, \u5676, \u5677, \u5678, \u5679, \u567A, \u567B, \u567C, \u567D, \u567E, \u567F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u5680, \u5681, \u5682, \u5683, \u5684, \u5685, \u5686, \u5687, \u5688, \u5689, \u568A, \u568B, \u568C, \u568D, \u568E, \u568F, "
 			"\u5690, \u5691, \u5692, \u5693, \u5694, \u5695, \u5696, \u5697, \u5698, \u5699, \u569A, \u569B, \u569C, \u569D, \u569E, \u569F, "
@@ -2101,7 +1927,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u56FF, \u56FF, \u56FF, \u56FF, \u56FF, \u56FF, \u56FF, \u56FF, \u56FF, \u56FF, \u56FF, \u56FF, \u56FF, \u56FF, \u56FF, \u56FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u5700, \u5701, \u5702, \u5703, \u5704, \u5705, \u5706, \u5707, \u5708, \u5709, \u570A, \u570B, \u570C, \u570D, \u570E, \u570F, "
 			"\u5710, \u5711, \u5712, \u5713, \u5714, \u5715, \u5716, \u5717, \u5718, \u5719, \u571A, \u571B, \u571C, \u571D, \u571E, \u571F, "
@@ -2113,7 +1938,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u5770, \u5771, \u5772, \u5773, \u5774, \u5775, \u5776, \u5777, \u5778, \u5779, \u577A, \u577B, \u577C, \u577D, \u577E, \u577F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u5780, \u5781, \u5782, \u5783, \u5784, \u5785, \u5786, \u5787, \u5788, \u5789, \u578A, \u578B, \u578C, \u578D, \u578E, \u578F, "
 			"\u5790, \u5791, \u5792, \u5793, \u5794, \u5795, \u5796, \u5797, \u5798, \u5799, \u579A, \u579B, \u579C, \u579D, \u579E, \u579F, "
@@ -2125,7 +1949,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u57FF, \u57FF, \u57FF, \u57FF, \u57FF, \u57FF, \u57FF, \u57FF, \u57FF, \u57FF, \u57FF, \u57FF, \u57FF, \u57FF, \u57FF, \u57FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u5800, \u5801, \u5802, \u5803, \u5804, \u5805, \u5806, \u5807, \u5808, \u5809, \u580A, \u580B, \u580C, \u580D, \u580E, \u580F, "
 			"\u5810, \u5811, \u5812, \u5813, \u5814, \u5815, \u5816, \u5817, \u5818, \u5819, \u581A, \u581B, \u581C, \u581D, \u581E, \u581F, "
@@ -2137,7 +1960,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u5870, \u5871, \u5872, \u5873, \u5874, \u5875, \u5876, \u5877, \u5878, \u5879, \u587A, \u587B, \u587C, \u587D, \u587E, \u587F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u5880, \u5881, \u5882, \u5883, \u5884, \u5885, \u5886, \u5887, \u5888, \u5889, \u588A, \u588B, \u588C, \u588D, \u588E, \u588F, "
 			"\u5890, \u5891, \u5892, \u5893, \u5894, \u5895, \u5896, \u5897, \u5898, \u5899, \u589A, \u589B, \u589C, \u589D, \u589E, \u589F, "
@@ -2149,7 +1971,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u58FF, \u58FF, \u58FF, \u58FF, \u58FF, \u58FF, \u58FF, \u58FF, \u58FF, \u58FF, \u58FF, \u58FF, \u58FF, \u58FF, \u58FF, \u58FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u5900, \u5901, \u5902, \u5903, \u5904, \u5905, \u5906, \u5907, \u5908, \u5909, \u590A, \u590B, \u590C, \u590D, \u590E, \u590F, "
 			"\u5910, \u5911, \u5912, \u5913, \u5914, \u5915, \u5916, \u5917, \u5918, \u5919, \u591A, \u591B, \u591C, \u591D, \u591E, \u591F, "
@@ -2161,7 +1982,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u5970, \u5971, \u5972, \u5973, \u5974, \u5975, \u5976, \u5977, \u5978, \u5979, \u597A, \u597B, \u597C, \u597D, \u597E, \u597F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u5980, \u5981, \u5982, \u5983, \u5984, \u5985, \u5986, \u5987, \u5988, \u5989, \u598A, \u598B, \u598C, \u598D, \u598E, \u598F, "
 			"\u5990, \u5991, \u5992, \u5993, \u5994, \u5995, \u5996, \u5997, \u5998, \u5999, \u599A, \u599B, \u599C, \u599D, \u599E, \u599F, "
@@ -2173,7 +1993,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u59FF, \u59FF, \u59FF, \u59FF, \u59FF, \u59FF, \u59FF, \u59FF, \u59FF, \u59FF, \u59FF, \u59FF, \u59FF, \u59FF, \u59FF, \u59FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u5A00, \u5A01, \u5A02, \u5A03, \u5A04, \u5A05, \u5A06, \u5A07, \u5A08, \u5A09, \u5A0A, \u5A0B, \u5A0C, \u5A0D, \u5A0E, \u5A0F, "
 			"\u5A10, \u5A11, \u5A12, \u5A13, \u5A14, \u5A15, \u5A16, \u5A17, \u5A18, \u5A19, \u5A1A, \u5A1B, \u5A1C, \u5A1D, \u5A1E, \u5A1F, "
@@ -2185,7 +2004,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u5A70, \u5A71, \u5A72, \u5A73, \u5A74, \u5A75, \u5A76, \u5A77, \u5A78, \u5A79, \u5A7A, \u5A7B, \u5A7C, \u5A7D, \u5A7E, \u5A7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u5A80, \u5A81, \u5A82, \u5A83, \u5A84, \u5A85, \u5A86, \u5A87, \u5A88, \u5A89, \u5A8A, \u5A8B, \u5A8C, \u5A8D, \u5A8E, \u5A8F, "
 			"\u5A90, \u5A91, \u5A92, \u5A93, \u5A94, \u5A95, \u5A96, \u5A97, \u5A98, \u5A99, \u5A9A, \u5A9B, \u5A9C, \u5A9D, \u5A9E, \u5A9F, "
@@ -2197,7 +2015,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u5AFF, \u5AFF, \u5AFF, \u5AFF, \u5AFF, \u5AFF, \u5AFF, \u5AFF, \u5AFF, \u5AFF, \u5AFF, \u5AFF, \u5AFF, \u5AFF, \u5AFF, \u5AFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u5B00, \u5B01, \u5B02, \u5B03, \u5B04, \u5B05, \u5B06, \u5B07, \u5B08, \u5B09, \u5B0A, \u5B0B, \u5B0C, \u5B0D, \u5B0E, \u5B0F, "
 			"\u5B10, \u5B11, \u5B12, \u5B13, \u5B14, \u5B15, \u5B16, \u5B17, \u5B18, \u5B19, \u5B1A, \u5B1B, \u5B1C, \u5B1D, \u5B1E, \u5B1F, "
@@ -2209,7 +2026,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u5B70, \u5B71, \u5B72, \u5B73, \u5B74, \u5B75, \u5B76, \u5B77, \u5B78, \u5B79, \u5B7A, \u5B7B, \u5B7C, \u5B7D, \u5B7E, \u5B7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u5B80, \u5B81, \u5B82, \u5B83, \u5B84, \u5B85, \u5B86, \u5B87, \u5B88, \u5B89, \u5B8A, \u5B8B, \u5B8C, \u5B8D, \u5B8E, \u5B8F, "
 			"\u5B90, \u5B91, \u5B92, \u5B93, \u5B94, \u5B95, \u5B96, \u5B97, \u5B98, \u5B99, \u5B9A, \u5B9B, \u5B9C, \u5B9D, \u5B9E, \u5B9F, "
@@ -2221,7 +2037,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u5BFF, \u5BFF, \u5BFF, \u5BFF, \u5BFF, \u5BFF, \u5BFF, \u5BFF, \u5BFF, \u5BFF, \u5BFF, \u5BFF, \u5BFF, \u5BFF, \u5BFF, \u5BFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u5C00, \u5C01, \u5C02, \u5C03, \u5C04, \u5C05, \u5C06, \u5C07, \u5C08, \u5C09, \u5C0A, \u5C0B, \u5C0C, \u5C0D, \u5C0E, \u5C0F, "
 			"\u5C10, \u5C11, \u5C12, \u5C13, \u5C14, \u5C15, \u5C16, \u5C17, \u5C18, \u5C19, \u5C1A, \u5C1B, \u5C1C, \u5C1D, \u5C1E, \u5C1F, "
@@ -2233,7 +2048,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u5C70, \u5C71, \u5C72, \u5C73, \u5C74, \u5C75, \u5C76, \u5C77, \u5C78, \u5C79, \u5C7A, \u5C7B, \u5C7C, \u5C7D, \u5C7E, \u5C7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u5C80, \u5C81, \u5C82, \u5C83, \u5C84, \u5C85, \u5C86, \u5C87, \u5C88, \u5C89, \u5C8A, \u5C8B, \u5C8C, \u5C8D, \u5C8E, \u5C8F, "
 			"\u5C90, \u5C91, \u5C92, \u5C93, \u5C94, \u5C95, \u5C96, \u5C97, \u5C98, \u5C99, \u5C9A, \u5C9B, \u5C9C, \u5C9D, \u5C9E, \u5C9F, "
@@ -2245,7 +2059,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u5CFF, \u5CFF, \u5CFF, \u5CFF, \u5CFF, \u5CFF, \u5CFF, \u5CFF, \u5CFF, \u5CFF, \u5CFF, \u5CFF, \u5CFF, \u5CFF, \u5CFF, \u5CFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u5D00, \u5D01, \u5D02, \u5D03, \u5D04, \u5D05, \u5D06, \u5D07, \u5D08, \u5D09, \u5D0A, \u5D0B, \u5D0C, \u5D0D, \u5D0E, \u5D0F, "
 			"\u5D10, \u5D11, \u5D12, \u5D13, \u5D14, \u5D15, \u5D16, \u5D17, \u5D18, \u5D19, \u5D1A, \u5D1B, \u5D1C, \u5D1D, \u5D1E, \u5D1F, "
@@ -2257,7 +2070,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u5D70, \u5D71, \u5D72, \u5D73, \u5D74, \u5D75, \u5D76, \u5D77, \u5D78, \u5D79, \u5D7A, \u5D7B, \u5D7C, \u5D7D, \u5D7E, \u5D7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u5D80, \u5D81, \u5D82, \u5D83, \u5D84, \u5D85, \u5D86, \u5D87, \u5D88, \u5D89, \u5D8A, \u5D8B, \u5D8C, \u5D8D, \u5D8E, \u5D8F, "
 			"\u5D90, \u5D91, \u5D92, \u5D93, \u5D94, \u5D95, \u5D96, \u5D97, \u5D98, \u5D99, \u5D9A, \u5D9B, \u5D9C, \u5D9D, \u5D9E, \u5D9F, "
@@ -2269,7 +2081,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u5DFF, \u5DFF, \u5DFF, \u5DFF, \u5DFF, \u5DFF, \u5DFF, \u5DFF, \u5DFF, \u5DFF, \u5DFF, \u5DFF, \u5DFF, \u5DFF, \u5DFF, \u5DFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u5E00, \u5E01, \u5E02, \u5E03, \u5E04, \u5E05, \u5E06, \u5E07, \u5E08, \u5E09, \u5E0A, \u5E0B, \u5E0C, \u5E0D, \u5E0E, \u5E0F, "
 			"\u5E10, \u5E11, \u5E12, \u5E13, \u5E14, \u5E15, \u5E16, \u5E17, \u5E18, \u5E19, \u5E1A, \u5E1B, \u5E1C, \u5E1D, \u5E1E, \u5E1F, "
@@ -2281,7 +2092,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u5E70, \u5E71, \u5E72, \u5E73, \u5E74, \u5E75, \u5E76, \u5E77, \u5E78, \u5E79, \u5E7A, \u5E7B, \u5E7C, \u5E7D, \u5E7E, \u5E7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u5E80, \u5E81, \u5E82, \u5E83, \u5E84, \u5E85, \u5E86, \u5E87, \u5E88, \u5E89, \u5E8A, \u5E8B, \u5E8C, \u5E8D, \u5E8E, \u5E8F, "
 			"\u5E90, \u5E91, \u5E92, \u5E93, \u5E94, \u5E95, \u5E96, \u5E97, \u5E98, \u5E99, \u5E9A, \u5E9B, \u5E9C, \u5E9D, \u5E9E, \u5E9F, "
@@ -2293,7 +2103,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u5EFF, \u5EFF, \u5EFF, \u5EFF, \u5EFF, \u5EFF, \u5EFF, \u5EFF, \u5EFF, \u5EFF, \u5EFF, \u5EFF, \u5EFF, \u5EFF, \u5EFF, \u5EFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u5F00, \u5F01, \u5F02, \u5F03, \u5F04, \u5F05, \u5F06, \u5F07, \u5F08, \u5F09, \u5F0A, \u5F0B, \u5F0C, \u5F0D, \u5F0E, \u5F0F, "
 			"\u5F10, \u5F11, \u5F12, \u5F13, \u5F14, \u5F15, \u5F16, \u5F17, \u5F18, \u5F19, \u5F1A, \u5F1B, \u5F1C, \u5F1D, \u5F1E, \u5F1F, "
@@ -2305,7 +2114,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u5F70, \u5F71, \u5F72, \u5F73, \u5F74, \u5F75, \u5F76, \u5F77, \u5F78, \u5F79, \u5F7A, \u5F7B, \u5F7C, \u5F7D, \u5F7E, \u5F7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u5F80, \u5F81, \u5F82, \u5F83, \u5F84, \u5F85, \u5F86, \u5F87, \u5F88, \u5F89, \u5F8A, \u5F8B, \u5F8C, \u5F8D, \u5F8E, \u5F8F, "
 			"\u5F90, \u5F91, \u5F92, \u5F93, \u5F94, \u5F95, \u5F96, \u5F97, \u5F98, \u5F99, \u5F9A, \u5F9B, \u5F9C, \u5F9D, \u5F9E, \u5F9F, "
@@ -2317,7 +2125,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u5FFF, \u5FFF, \u5FFF, \u5FFF, \u5FFF, \u5FFF, \u5FFF, \u5FFF, \u5FFF, \u5FFF, \u5FFF, \u5FFF, \u5FFF, \u5FFF, \u5FFF, \u5FFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
             "\u6000, \u6001, \u6002, \u6003, \u6004, \u6005, \u6006, \u6007, \u6008, \u6009, \u600A, \u600B, \u600C, \u600D, \u600E, \u600F, "
             "\u6010, \u6011, \uE012, \u6013, \u6014, \u6015, \u6016, \u6017, \u6018, \u6019, \u601A, \u601B, \u601C, \u601D, \u601E, \u601F, "
@@ -2329,7 +2136,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
             "\u6070, \u6071, \u6072, \u6073, \u6074, \u6075, \u6076, \u6077, \u6078, \u6079, \u607A, \u607B, \u607C, \u607D, \u607E, \u607F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u6080, \u6081, \u6082, \u6083, \u6084, \u6085, \u6086, \u6087, \u6088, \u6089, \u608A, \u608B, \u608C, \u608D, \u608E, \u608F, "
 			"\u6090, \u6091, \u6092, \u6093, \u6094, \u6095, \u6096, \u6097, \u6098, \u6099, \u609A, \u609B, \u609C, \u609D, \u609E, \u609F, "
@@ -2341,7 +2147,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u60FF, \u60FF, \u60FF, \u60FF, \u60FF, \u60FF, \u60FF, \u60FF, \u60FF, \u60FF, \u60FF, \u60FF, \u60FF, \u60FF, \u60FF, \u60FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u6100, \u6101, \u6102, \u6103, \u6104, \u6105, \u6106, \u6107, \u6108, \u6109, \u610A, \u610B, \u610C, \u610D, \u610E, \u610F, "
 			"\u6110, \u6111, \u6112, \u6113, \u6114, \u6115, \u6116, \u6117, \u6118, \u6119, \u611A, \u611B, \u611C, \u611D, \u611E, \u611F, "
@@ -2353,7 +2158,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u6170, \u6171, \u6172, \u6173, \u6174, \u6175, \u6176, \u6177, \u6178, \u6179, \u617A, \u617B, \u617C, \u617D, \u617E, \u617F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u6180, \u6181, \u6182, \u6183, \u6184, \u6185, \u6186, \u6187, \u6188, \u6189, \u618A, \u618B, \u618C, \u618D, \u618E, \u618F, "
 			"\u6190, \u6191, \u6192, \u6193, \u6194, \u6195, \u6196, \u6197, \u6198, \u6199, \u619A, \u619B, \u619C, \u619D, \u619E, \u619F, "
@@ -2365,7 +2169,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u61FF, \u61FF, \u61FF, \u61FF, \u61FF, \u61FF, \u61FF, \u61FF, \u61FF, \u61FF, \u61FF, \u61FF, \u61FF, \u61FF, \u61FF, \u61FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u6200, \u6201, \u6202, \u6203, \u6204, \u6205, \u6206, \u6207, \u6208, \u6209, \u620A, \u620B, \u620C, \u620D, \u620E, \u620F, "
 			"\u6210, \u6211, \u6212, \u6213, \u6214, \u6215, \u6216, \u6217, \u6218, \u6219, \u621A, \u621B, \u621C, \u621D, \u621E, \u621F, "
@@ -2377,7 +2180,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u6270, \u6271, \u6272, \u6273, \u6274, \u6275, \u6276, \u6277, \u6278, \u6279, \u627A, \u627B, \u627C, \u627D, \u627E, \u627F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u6280, \u6281, \u6282, \u6283, \u6284, \u6285, \u6286, \u6287, \u6288, \u6289, \u628A, \u628B, \u628C, \u628D, \u628E, \u628F, "
 			"\u6290, \u6291, \u6292, \u6293, \u6294, \u6295, \u6296, \u6297, \u6298, \u6299, \u629A, \u629B, \u629C, \u629D, \u629E, \u629F, "
@@ -2389,7 +2191,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u62FF, \u62FF, \u62FF, \u62FF, \u62FF, \u62FF, \u62FF, \u62FF, \u62FF, \u62FF, \u62FF, \u62FF, \u62FF, \u62FF, \u62FF, \u62FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u6300, \u6301, \u6302, \u6303, \u6304, \u6305, \u6306, \u6307, \u6308, \u6309, \u630A, \u630B, \u630C, \u630D, \u630E, \u630F, "
 			"\u6310, \u6311, \u6312, \u6313, \u6314, \u6315, \u6316, \u6317, \u6318, \u6319, \u631A, \u631B, \u631C, \u631D, \u631E, \u631F, "
@@ -2401,7 +2202,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u6370, \u6371, \u6372, \u6373, \u6374, \u6375, \u6376, \u6377, \u6378, \u6379, \u637A, \u637B, \u637C, \u637D, \u637E, \u637F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u6380, \u6381, \u6382, \u6383, \u6384, \u6385, \u6386, \u6387, \u6388, \u6389, \u638A, \u638B, \u638C, \u638D, \u638E, \u638F, "
 			"\u6390, \u6391, \u6392, \u6393, \u6394, \u6395, \u6396, \u6397, \u6398, \u6399, \u639A, \u639B, \u639C, \u639D, \u639E, \u639F, "
@@ -2413,7 +2213,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u63FF, \u63FF, \u63FF, \u63FF, \u63FF, \u63FF, \u63FF, \u63FF, \u63FF, \u63FF, \u63FF, \u63FF, \u63FF, \u63FF, \u63FF, \u63FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u6400, \u6401, \u6402, \u6403, \u6404, \u6405, \u6406, \u6407, \u6408, \u6409, \u640A, \u640B, \u640C, \u640D, \u640E, \u640F, "
 			"\u6410, \u6411, \u6412, \u6413, \u6414, \u6415, \u6416, \u6417, \u6418, \u6419, \u641A, \u641B, \u641C, \u641D, \u641E, \u641F, "
@@ -2425,7 +2224,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u6470, \u6471, \u6472, \u6473, \u6474, \u6475, \u6476, \u6477, \u6478, \u6479, \u647A, \u647B, \u647C, \u647D, \u647E, \u647F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u6480, \u6481, \u6482, \u6483, \u6484, \u6485, \u6486, \u6487, \u6488, \u6489, \u648A, \u648B, \u648C, \u648D, \u648E, \u648F, "
 			"\u6490, \u6491, \u6492, \u6493, \u6494, \u6495, \u6496, \u6497, \u6498, \u6499, \u649A, \u649B, \u649C, \u649D, \u649E, \u649F, "
@@ -2437,7 +2235,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u64FF, \u64FF, \u64FF, \u64FF, \u64FF, \u64FF, \u64FF, \u64FF, \u64FF, \u64FF, \u64FF, \u64FF, \u64FF, \u64FF, \u64FF, \u64FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u6500, \u6501, \u6502, \u6503, \u6504, \u6505, \u6506, \u6507, \u6508, \u6509, \u650A, \u650B, \u650C, \u650D, \u650E, \u650F, "
 			"\u6510, \u6511, \u6512, \u6513, \u6514, \u6515, \u6516, \u6517, \u6518, \u6519, \u651A, \u651B, \u651C, \u651D, \u651E, \u651F, "
@@ -2449,7 +2246,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u6570, \u6571, \u6572, \u6573, \u6574, \u6575, \u6576, \u6577, \u6578, \u6579, \u657A, \u657B, \u657C, \u657D, \u657E, \u657F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u6580, \u6581, \u6582, \u6583, \u6584, \u6585, \u6586, \u6587, \u6588, \u6589, \u658A, \u658B, \u658C, \u658D, \u658E, \u658F, "
 			"\u6590, \u6591, \u6592, \u6593, \u6594, \u6595, \u6596, \u6597, \u6598, \u6599, \u659A, \u659B, \u659C, \u659D, \u659E, \u659F, "
@@ -2461,7 +2257,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u65FF, \u65FF, \u65FF, \u65FF, \u65FF, \u65FF, \u65FF, \u65FF, \u65FF, \u65FF, \u65FF, \u65FF, \u65FF, \u65FF, \u65FF, \u65FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u6600, \u6601, \u6602, \u6603, \u6604, \u6605, \u6606, \u6607, \u6608, \u6609, \u660A, \u660B, \u660C, \u660D, \u660E, \u660F, "
 			"\u6610, \u6611, \u6612, \u6613, \u6614, \u6615, \u6616, \u6617, \u6618, \u6619, \u661A, \u661B, \u661C, \u661D, \u661E, \u661F, "
@@ -2473,7 +2268,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u6670, \u6671, \u6672, \u6673, \u6674, \u6675, \u6676, \u6677, \u6678, \u6679, \u667A, \u667B, \u667C, \u667D, \u667E, \u667F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u6680, \u6681, \u6682, \u6683, \u6684, \u6685, \u6686, \u6687, \u6688, \u6689, \u668A, \u668B, \u668C, \u668D, \u668E, \u668F, "
 			"\u6690, \u6691, \u6692, \u6693, \u6694, \u6695, \u6696, \u6697, \u6698, \u6699, \u669A, \u669B, \u669C, \u669D, \u669E, \u669F, "
@@ -2485,7 +2279,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u66FF, \u66FF, \u66FF, \u66FF, \u66FF, \u66FF, \u66FF, \u66FF, \u66FF, \u66FF, \u66FF, \u66FF, \u66FF, \u66FF, \u66FF, \u66FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u6700, \u6701, \u6702, \u6703, \u6704, \u6705, \u6706, \u6707, \u6708, \u6709, \u670A, \u670B, \u670C, \u670D, \u670E, \u670F, "
 			"\u6710, \u6711, \u6712, \u6713, \u6714, \u6715, \u6716, \u6717, \u6718, \u6719, \u671A, \u671B, \u671C, \u671D, \u671E, \u671F, "
@@ -2497,7 +2290,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u6770, \u6771, \u6772, \u6773, \u6774, \u6775, \u6776, \u6777, \u6778, \u6779, \u677A, \u677B, \u677C, \u677D, \u677E, \u677F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u6780, \u6781, \u6782, \u6783, \u6784, \u6785, \u6786, \u6787, \u6788, \u6789, \u678A, \u678B, \u678C, \u678D, \u678E, \u678F, "
 			"\u6790, \u6791, \u6792, \u6793, \u6794, \u6795, \u6796, \u6797, \u6798, \u6799, \u679A, \u679B, \u679C, \u679D, \u679E, \u679F, "
@@ -2509,7 +2301,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u67FF, \u67FF, \u67FF, \u67FF, \u67FF, \u67FF, \u67FF, \u67FF, \u67FF, \u67FF, \u67FF, \u67FF, \u67FF, \u67FF, \u67FF, \u67FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u6800, \u6801, \u6802, \u6803, \u6804, \u6805, \u6806, \u6807, \u6808, \u6809, \u680A, \u680B, \u680C, \u680D, \u680E, \u680F, "
 			"\u6810, \u6811, \u6812, \u6813, \u6814, \u6815, \u6816, \u6817, \u6818, \u6819, \u681A, \u681B, \u681C, \u681D, \u681E, \u681F, "
@@ -2521,7 +2312,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u6870, \u6871, \u6872, \u6873, \u6874, \u6875, \u6876, \u6877, \u6878, \u6879, \u687A, \u687B, \u687C, \u687D, \u687E, \u687F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u6880, \u6881, \u6882, \u6883, \u6884, \u6885, \u6886, \u6887, \u6888, \u6889, \u688A, \u688B, \u688C, \u688D, \u688E, \u688F, "
 			"\u6890, \u6891, \u6892, \u6893, \u6894, \u6895, \u6896, \u6897, \u6898, \u6899, \u689A, \u689B, \u689C, \u689D, \u689E, \u689F, "
@@ -2533,7 +2323,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u68FF, \u68FF, \u68FF, \u68FF, \u68FF, \u68FF, \u68FF, \u68FF, \u68FF, \u68FF, \u68FF, \u68FF, \u68FF, \u68FF, \u68FF, \u68FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u6900, \u6901, \u6902, \u6903, \u6904, \u6905, \u6906, \u6907, \u6908, \u6909, \u690A, \u690B, \u690C, \u690D, \u690E, \u690F, "
 			"\u6910, \u6911, \u6912, \u6913, \u6914, \u6915, \u6916, \u6917, \u6918, \u6919, \u691A, \u691B, \u691C, \u691D, \u691E, \u691F, "
@@ -2545,7 +2334,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u6970, \u6971, \u6972, \u6973, \u6974, \u6975, \u6976, \u6977, \u6978, \u6979, \u697A, \u697B, \u697C, \u697D, \u697E, \u697F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u6980, \u6981, \u6982, \u6983, \u6984, \u6985, \u6986, \u6987, \u6988, \u6989, \u698A, \u698B, \u698C, \u698D, \u698E, \u698F, "
 			"\u6990, \u6991, \u6992, \u6993, \u6994, \u6995, \u6996, \u6997, \u6998, \u6999, \u699A, \u699B, \u699C, \u699D, \u699E, \u699F, "
@@ -2557,7 +2345,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u69FF, \u69FF, \u69FF, \u69FF, \u69FF, \u69FF, \u69FF, \u69FF, \u69FF, \u69FF, \u69FF, \u69FF, \u69FF, \u69FF, \u69FF, \u69FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u6A00, \u6A01, \u6A02, \u6A03, \u6A04, \u6A05, \u6A06, \u6A07, \u6A08, \u6A09, \u6A0A, \u6A0B, \u6A0C, \u6A0D, \u6A0E, \u6A0F, "
 			"\u6A10, \u6A11, \u6A12, \u6A13, \u6A14, \u6A15, \u6A16, \u6A17, \u6A18, \u6A19, \u6A1A, \u6A1B, \u6A1C, \u6A1D, \u6A1E, \u6A1F, "
@@ -2569,7 +2356,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u6A70, \u6A71, \u6A72, \u6A73, \u6A74, \u6A75, \u6A76, \u6A77, \u6A78, \u6A79, \u6A7A, \u6A7B, \u6A7C, \u6A7D, \u6A7E, \u6A7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u6A80, \u6A81, \u6A82, \u6A83, \u6A84, \u6A85, \u6A86, \u6A87, \u6A88, \u6A89, \u6A8A, \u6A8B, \u6A8C, \u6A8D, \u6A8E, \u6A8F, "
 			"\u6A90, \u6A91, \u6A92, \u6A93, \u6A94, \u6A95, \u6A96, \u6A97, \u6A98, \u6A99, \u6A9A, \u6A9B, \u6A9C, \u6A9D, \u6A9E, \u6A9F, "
@@ -2581,7 +2367,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u6AFF, \u6AFF, \u6AFF, \u6AFF, \u6AFF, \u6AFF, \u6AFF, \u6AFF, \u6AFF, \u6AFF, \u6AFF, \u6AFF, \u6AFF, \u6AFF, \u6AFF, \u6AFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u6B00, \u6B01, \u6B02, \u6B03, \u6B04, \u6B05, \u6B06, \u6B07, \u6B08, \u6B09, \u6B0A, \u6B0B, \u6B0C, \u6B0D, \u6B0E, \u6B0F, "
 			"\u6B10, \u6B11, \u6B12, \u6B13, \u6B14, \u6B15, \u6B16, \u6B17, \u6B18, \u6B19, \u6B1A, \u6B1B, \u6B1C, \u6B1D, \u6B1E, \u6B1F, "
@@ -2593,7 +2378,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u6B70, \u6B71, \u6B72, \u6B73, \u6B74, \u6B75, \u6B76, \u6B77, \u6B78, \u6B79, \u6B7A, \u6B7B, \u6B7C, \u6B7D, \u6B7E, \u6B7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u6B80, \u6B81, \u6B82, \u6B83, \u6B84, \u6B85, \u6B86, \u6B87, \u6B88, \u6B89, \u6B8A, \u6B8B, \u6B8C, \u6B8D, \u6B8E, \u6B8F, "
 			"\u6B90, \u6B91, \u6B92, \u6B93, \u6B94, \u6B95, \u6B96, \u6B97, \u6B98, \u6B99, \u6B9A, \u6B9B, \u6B9C, \u6B9D, \u6B9E, \u6B9F, "
@@ -2605,7 +2389,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u6BFF, \u6BFF, \u6BFF, \u6BFF, \u6BFF, \u6BFF, \u6BFF, \u6BFF, \u6BFF, \u6BFF, \u6BFF, \u6BFF, \u6BFF, \u6BFF, \u6BFF, \u6BFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u6C00, \u6C01, \u6C02, \u6C03, \u6C04, \u6C05, \u6C06, \u6C07, \u6C08, \u6C09, \u6C0A, \u6C0B, \u6C0C, \u6C0D, \u6C0E, \u6C0F, "
 			"\u6C10, \u6C11, \u6C12, \u6C13, \u6C14, \u6C15, \u6C16, \u6C17, \u6C18, \u6C19, \u6C1A, \u6C1B, \u6C1C, \u6C1D, \u6C1E, \u6C1F, "
@@ -2617,7 +2400,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u6C70, \u6C71, \u6C72, \u6C73, \u6C74, \u6C75, \u6C76, \u6C77, \u6C78, \u6C79, \u6C7A, \u6C7B, \u6C7C, \u6C7D, \u6C7E, \u6C7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u6C80, \u6C81, \u6C82, \u6C83, \u6C84, \u6C85, \u6C86, \u6C87, \u6C88, \u6C89, \u6C8A, \u6C8B, \u6C8C, \u6C8D, \u6C8E, \u6C8F, "
 			"\u6C90, \u6C91, \u6C92, \u6C93, \u6C94, \u6C95, \u6C96, \u6C97, \u6C98, \u6C99, \u6C9A, \u6C9B, \u6C9C, \u6C9D, \u6C9E, \u6C9F, "
@@ -2629,7 +2411,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u6CFF, \u6CFF, \u6CFF, \u6CFF, \u6CFF, \u6CFF, \u6CFF, \u6CFF, \u6CFF, \u6CFF, \u6CFF, \u6CFF, \u6CFF, \u6CFF, \u6CFF, \u6CFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u6D00, \u6D01, \u6D02, \u6D03, \u6D04, \u6D05, \u6D06, \u6D07, \u6D08, \u6D09, \u6D0A, \u6D0B, \u6D0C, \u6D0D, \u6D0E, \u6D0F, "
 			"\u6D10, \u6D11, \u6D12, \u6D13, \u6D14, \u6D15, \u6D16, \u6D17, \u6D18, \u6D19, \u6D1A, \u6D1B, \u6D1C, \u6D1D, \u6D1E, \u6D1F, "
@@ -2641,7 +2422,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u6D70, \u6D71, \u6D72, \u6D73, \u6D74, \u6D75, \u6D76, \u6D77, \u6D78, \u6D79, \u6D7A, \u6D7B, \u6D7C, \u6D7D, \u6D7E, \u6D7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u6D80, \u6D81, \u6D82, \u6D83, \u6D84, \u6D85, \u6D86, \u6D87, \u6D88, \u6D89, \u6D8A, \u6D8B, \u6D8C, \u6D8D, \u6D8E, \u6D8F, "
 			"\u6D90, \u6D91, \u6D92, \u6D93, \u6D94, \u6D95, \u6D96, \u6D97, \u6D98, \u6D99, \u6D9A, \u6D9B, \u6D9C, \u6D9D, \u6D9E, \u6D9F, "
@@ -2653,7 +2433,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u6DFF, \u6DFF, \u6DFF, \u6DFF, \u6DFF, \u6DFF, \u6DFF, \u6DFF, \u6DFF, \u6DFF, \u6DFF, \u6DFF, \u6DFF, \u6DFF, \u6DFF, \u6DFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u6E00, \u6E01, \u6E02, \u6E03, \u6E04, \u6E05, \u6E06, \u6E07, \u6E08, \u6E09, \u6E0A, \u6E0B, \u6E0C, \u6E0D, \u6E0E, \u6E0F, "
 			"\u6E10, \u6E11, \u6E12, \u6E13, \u6E14, \u6E15, \u6E16, \u6E17, \u6E18, \u6E19, \u6E1A, \u6E1B, \u6E1C, \u6E1D, \u6E1E, \u6E1F, "
@@ -2665,7 +2444,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u6E70, \u6E71, \u6E72, \u6E73, \u6E74, \u6E75, \u6E76, \u6E77, \u6E78, \u6E79, \u6E7A, \u6E7B, \u6E7C, \u6E7D, \u6E7E, \u6E7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u6E80, \u6E81, \u6E82, \u6E83, \u6E84, \u6E85, \u6E86, \u6E87, \u6E88, \u6E89, \u6E8A, \u6E8B, \u6E8C, \u6E8D, \u6E8E, \u6E8F, "
 			"\u6E90, \u6E91, \u6E92, \u6E93, \u6E94, \u6E95, \u6E96, \u6E97, \u6E98, \u6E99, \u6E9A, \u6E9B, \u6E9C, \u6E9D, \u6E9E, \u6E9F, "
@@ -2677,7 +2455,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u6EFF, \u6EFF, \u6EFF, \u6EFF, \u6EFF, \u6EFF, \u6EFF, \u6EFF, \u6EFF, \u6EFF, \u6EFF, \u6EFF, \u6EFF, \u6EFF, \u6EFF, \u6EFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u6F00, \u6F01, \u6F02, \u6F03, \u6F04, \u6F05, \u6F06, \u6F07, \u6F08, \u6F09, \u6F0A, \u6F0B, \u6F0C, \u6F0D, \u6F0E, \u6F0F, "
 			"\u6F10, \u6F11, \u6F12, \u6F13, \u6F14, \u6F15, \u6F16, \u6F17, \u6F18, \u6F19, \u6F1A, \u6F1B, \u6F1C, \u6F1D, \u6F1E, \u6F1F, "
@@ -2689,7 +2466,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u6F70, \u6F71, \u6F72, \u6F73, \u6F74, \u6F75, \u6F76, \u6F77, \u6F78, \u6F79, \u6F7A, \u6F7B, \u6F7C, \u6F7D, \u6F7E, \u6F7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u6F80, \u6F81, \u6F82, \u6F83, \u6F84, \u6F85, \u6F86, \u6F87, \u6F88, \u6F89, \u6F8A, \u6F8B, \u6F8C, \u6F8D, \u6F8E, \u6F8F, "
 			"\u6F90, \u6F91, \u6F92, \u6F93, \u6F94, \u6F95, \u6F96, \u6F97, \u6F98, \u6F99, \u6F9A, \u6F9B, \u6F9C, \u6F9D, \u6F9E, \u6F9F, "
@@ -2701,7 +2477,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u6FFF, \u6FFF, \u6FFF, \u6FFF, \u6FFF, \u6FFF, \u6FFF, \u6FFF, \u6FFF, \u6FFF, \u6FFF, \u6FFF, \u6FFF, \u6FFF, \u6FFF, \u6FFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
             "\u7000, \u7001, \u7002, \u7003, \u7004, \u7005, \u7006, \u7007, \u7008, \u7009, \u700A, \u700B, \u700C, \u700D, \u700E, \u700F, "
             "\u7010, \u7011, \uE012, \u7013, \u7014, \u7015, \u7016, \u7017, \u7018, \u7019, \u701A, \u701B, \u701C, \u701D, \u701E, \u701F, "
@@ -2713,7 +2488,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
             "\u7070, \u7071, \u7072, \u7073, \u7074, \u7075, \u7076, \u7077, \u7078, \u7079, \u707A, \u707B, \u707C, \u707D, \u707E, \u707F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u7080, \u7081, \u7082, \u7083, \u7084, \u7085, \u7086, \u7087, \u7088, \u7089, \u708A, \u708B, \u708C, \u708D, \u708E, \u708F, "
 			"\u7090, \u7091, \u7092, \u7093, \u7094, \u7095, \u7096, \u7097, \u7098, \u7099, \u709A, \u709B, \u709C, \u709D, \u709E, \u709F, "
@@ -2725,7 +2499,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u70FF, \u70FF, \u70FF, \u70FF, \u70FF, \u70FF, \u70FF, \u70FF, \u70FF, \u70FF, \u70FF, \u70FF, \u70FF, \u70FF, \u70FF, \u70FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u7100, \u7101, \u7102, \u7103, \u7104, \u7105, \u7106, \u7107, \u7108, \u7109, \u710A, \u710B, \u710C, \u710D, \u710E, \u710F, "
 			"\u7110, \u7111, \u7112, \u7113, \u7114, \u7115, \u7116, \u7117, \u7118, \u7119, \u711A, \u711B, \u711C, \u711D, \u711E, \u711F, "
@@ -2737,7 +2510,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u7170, \u7171, \u7172, \u7173, \u7174, \u7175, \u7176, \u7177, \u7178, \u7179, \u717A, \u717B, \u717C, \u717D, \u717E, \u717F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u7180, \u7181, \u7182, \u7183, \u7184, \u7185, \u7186, \u7187, \u7188, \u7189, \u718A, \u718B, \u718C, \u718D, \u718E, \u718F, "
 			"\u7190, \u7191, \u7192, \u7193, \u7194, \u7195, \u7196, \u7197, \u7198, \u7199, \u719A, \u719B, \u719C, \u719D, \u719E, \u719F, "
@@ -2749,7 +2521,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u71FF, \u71FF, \u71FF, \u71FF, \u71FF, \u71FF, \u71FF, \u71FF, \u71FF, \u71FF, \u71FF, \u71FF, \u71FF, \u71FF, \u71FF, \u71FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u7200, \u7201, \u7202, \u7203, \u7204, \u7205, \u7206, \u7207, \u7208, \u7209, \u720A, \u720B, \u720C, \u720D, \u720E, \u720F, "
 			"\u7210, \u7211, \u7212, \u7213, \u7214, \u7215, \u7216, \u7217, \u7218, \u7219, \u721A, \u721B, \u721C, \u721D, \u721E, \u721F, "
@@ -2761,7 +2532,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u7270, \u7271, \u7272, \u7273, \u7274, \u7275, \u7276, \u7277, \u7278, \u7279, \u727A, \u727B, \u727C, \u727D, \u727E, \u727F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u7280, \u7281, \u7282, \u7283, \u7284, \u7285, \u7286, \u7287, \u7288, \u7289, \u728A, \u728B, \u728C, \u728D, \u728E, \u728F, "
 			"\u7290, \u7291, \u7292, \u7293, \u7294, \u7295, \u7296, \u7297, \u7298, \u7299, \u729A, \u729B, \u729C, \u729D, \u729E, \u729F, "
@@ -2773,7 +2543,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u72FF, \u72FF, \u72FF, \u72FF, \u72FF, \u72FF, \u72FF, \u72FF, \u72FF, \u72FF, \u72FF, \u72FF, \u72FF, \u72FF, \u72FF, \u72FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u7300, \u7301, \u7302, \u7303, \u7304, \u7305, \u7306, \u7307, \u7308, \u7309, \u730A, \u730B, \u730C, \u730D, \u730E, \u730F, "
 			"\u7310, \u7311, \u7312, \u7313, \u7314, \u7315, \u7316, \u7317, \u7318, \u7319, \u731A, \u731B, \u731C, \u731D, \u731E, \u731F, "
@@ -2785,7 +2554,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u7370, \u7371, \u7372, \u7373, \u7374, \u7375, \u7376, \u7377, \u7378, \u7379, \u737A, \u737B, \u737C, \u737D, \u737E, \u737F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u7380, \u7381, \u7382, \u7383, \u7384, \u7385, \u7386, \u7387, \u7388, \u7389, \u738A, \u738B, \u738C, \u738D, \u738E, \u738F, "
 			"\u7390, \u7391, \u7392, \u7393, \u7394, \u7395, \u7396, \u7397, \u7398, \u7399, \u739A, \u739B, \u739C, \u739D, \u739E, \u739F, "
@@ -2797,7 +2565,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u73FF, \u73FF, \u73FF, \u73FF, \u73FF, \u73FF, \u73FF, \u73FF, \u73FF, \u73FF, \u73FF, \u73FF, \u73FF, \u73FF, \u73FF, \u73FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u7400, \u7401, \u7402, \u7403, \u7404, \u7405, \u7406, \u7407, \u7408, \u7409, \u740A, \u740B, \u740C, \u740D, \u740E, \u740F, "
 			"\u7410, \u7411, \u7412, \u7413, \u7414, \u7415, \u7416, \u7417, \u7418, \u7419, \u741A, \u741B, \u741C, \u741D, \u741E, \u741F, "
@@ -2809,7 +2576,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u7470, \u7471, \u7472, \u7473, \u7474, \u7475, \u7476, \u7477, \u7478, \u7479, \u747A, \u747B, \u747C, \u747D, \u747E, \u747F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u7480, \u7481, \u7482, \u7483, \u7484, \u7485, \u7486, \u7487, \u7488, \u7489, \u748A, \u748B, \u748C, \u748D, \u748E, \u748F, "
 			"\u7490, \u7491, \u7492, \u7493, \u7494, \u7495, \u7496, \u7497, \u7498, \u7499, \u749A, \u749B, \u749C, \u749D, \u749E, \u749F, "
@@ -2821,7 +2587,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u74FF, \u74FF, \u74FF, \u74FF, \u74FF, \u74FF, \u74FF, \u74FF, \u74FF, \u74FF, \u74FF, \u74FF, \u74FF, \u74FF, \u74FF, \u74FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u7500, \u7501, \u7502, \u7503, \u7504, \u7505, \u7506, \u7507, \u7508, \u7509, \u750A, \u750B, \u750C, \u750D, \u750E, \u750F, "
 			"\u7510, \u7511, \u7512, \u7513, \u7514, \u7515, \u7516, \u7517, \u7518, \u7519, \u751A, \u751B, \u751C, \u751D, \u751E, \u751F, "
@@ -2833,7 +2598,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u7570, \u7571, \u7572, \u7573, \u7574, \u7575, \u7576, \u7577, \u7578, \u7579, \u757A, \u757B, \u757C, \u757D, \u757E, \u757F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u7580, \u7581, \u7582, \u7583, \u7584, \u7585, \u7586, \u7587, \u7588, \u7589, \u758A, \u758B, \u758C, \u758D, \u758E, \u758F, "
 			"\u7590, \u7591, \u7592, \u7593, \u7594, \u7595, \u7596, \u7597, \u7598, \u7599, \u759A, \u759B, \u759C, \u759D, \u759E, \u759F, "
@@ -2845,7 +2609,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u75FF, \u75FF, \u75FF, \u75FF, \u75FF, \u75FF, \u75FF, \u75FF, \u75FF, \u75FF, \u75FF, \u75FF, \u75FF, \u75FF, \u75FF, \u75FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u7600, \u7601, \u7602, \u7603, \u7604, \u7605, \u7606, \u7607, \u7608, \u7609, \u760A, \u760B, \u760C, \u760D, \u760E, \u760F, "
 			"\u7610, \u7611, \u7612, \u7613, \u7614, \u7615, \u7616, \u7617, \u7618, \u7619, \u761A, \u761B, \u761C, \u761D, \u761E, \u761F, "
@@ -2857,7 +2620,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u7670, \u7671, \u7672, \u7673, \u7674, \u7675, \u7676, \u7677, \u7678, \u7679, \u767A, \u767B, \u767C, \u767D, \u767E, \u767F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u7680, \u7681, \u7682, \u7683, \u7684, \u7685, \u7686, \u7687, \u7688, \u7689, \u768A, \u768B, \u768C, \u768D, \u768E, \u768F, "
 			"\u7690, \u7691, \u7692, \u7693, \u7694, \u7695, \u7696, \u7697, \u7698, \u7699, \u769A, \u769B, \u769C, \u769D, \u769E, \u769F, "
@@ -2869,7 +2631,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u76FF, \u76FF, \u76FF, \u76FF, \u76FF, \u76FF, \u76FF, \u76FF, \u76FF, \u76FF, \u76FF, \u76FF, \u76FF, \u76FF, \u76FF, \u76FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u7700, \u7701, \u7702, \u7703, \u7704, \u7705, \u7706, \u7707, \u7708, \u7709, \u770A, \u770B, \u770C, \u770D, \u770E, \u770F, "
 			"\u7710, \u7711, \u7712, \u7713, \u7714, \u7715, \u7716, \u7717, \u7718, \u7719, \u771A, \u771B, \u771C, \u771D, \u771E, \u771F, "
@@ -2881,7 +2642,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u7770, \u7771, \u7772, \u7773, \u7774, \u7775, \u7776, \u7777, \u7778, \u7779, \u777A, \u777B, \u777C, \u777D, \u777E, \u777F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u7780, \u7781, \u7782, \u7783, \u7784, \u7785, \u7786, \u7787, \u7788, \u7789, \u778A, \u778B, \u778C, \u778D, \u778E, \u778F, "
 			"\u7790, \u7791, \u7792, \u7793, \u7794, \u7795, \u7796, \u7797, \u7798, \u7799, \u779A, \u779B, \u779C, \u779D, \u779E, \u779F, "
@@ -2893,7 +2653,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u77FF, \u77FF, \u77FF, \u77FF, \u77FF, \u77FF, \u77FF, \u77FF, \u77FF, \u77FF, \u77FF, \u77FF, \u77FF, \u77FF, \u77FF, \u77FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u7800, \u7801, \u7802, \u7803, \u7804, \u7805, \u7806, \u7807, \u7808, \u7809, \u780A, \u780B, \u780C, \u780D, \u780E, \u780F, "
 			"\u7810, \u7811, \u7812, \u7813, \u7814, \u7815, \u7816, \u7817, \u7818, \u7819, \u781A, \u781B, \u781C, \u781D, \u781E, \u781F, "
@@ -2905,7 +2664,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u7870, \u7871, \u7872, \u7873, \u7874, \u7875, \u7876, \u7877, \u7878, \u7879, \u787A, \u787B, \u787C, \u787D, \u787E, \u787F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u7880, \u7881, \u7882, \u7883, \u7884, \u7885, \u7886, \u7887, \u7888, \u7889, \u788A, \u788B, \u788C, \u788D, \u788E, \u788F, "
 			"\u7890, \u7891, \u7892, \u7893, \u7894, \u7895, \u7896, \u7897, \u7898, \u7899, \u789A, \u789B, \u789C, \u789D, \u789E, \u789F, "
@@ -2917,7 +2675,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u78FF, \u78FF, \u78FF, \u78FF, \u78FF, \u78FF, \u78FF, \u78FF, \u78FF, \u78FF, \u78FF, \u78FF, \u78FF, \u78FF, \u78FF, \u78FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u7900, \u7901, \u7902, \u7903, \u7904, \u7905, \u7906, \u7907, \u7908, \u7909, \u790A, \u790B, \u790C, \u790D, \u790E, \u790F, "
 			"\u7910, \u7911, \u7912, \u7913, \u7914, \u7915, \u7916, \u7917, \u7918, \u7919, \u791A, \u791B, \u791C, \u791D, \u791E, \u791F, "
@@ -2929,7 +2686,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u7970, \u7971, \u7972, \u7973, \u7974, \u7975, \u7976, \u7977, \u7978, \u7979, \u797A, \u797B, \u797C, \u797D, \u797E, \u797F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u7980, \u7981, \u7982, \u7983, \u7984, \u7985, \u7986, \u7987, \u7988, \u7989, \u798A, \u798B, \u798C, \u798D, \u798E, \u798F, "
 			"\u7990, \u7991, \u7992, \u7993, \u7994, \u7995, \u7996, \u7997, \u7998, \u7999, \u799A, \u799B, \u799C, \u799D, \u799E, \u799F, "
@@ -2941,7 +2697,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u79FF, \u79FF, \u79FF, \u79FF, \u79FF, \u79FF, \u79FF, \u79FF, \u79FF, \u79FF, \u79FF, \u79FF, \u79FF, \u79FF, \u79FF, \u79FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u7A00, \u7A01, \u7A02, \u7A03, \u7A04, \u7A05, \u7A06, \u7A07, \u7A08, \u7A09, \u7A0A, \u7A0B, \u7A0C, \u7A0D, \u7A0E, \u7A0F, "
 			"\u7A10, \u7A11, \u7A12, \u7A13, \u7A14, \u7A15, \u7A16, \u7A17, \u7A18, \u7A19, \u7A1A, \u7A1B, \u7A1C, \u7A1D, \u7A1E, \u7A1F, "
@@ -2953,7 +2708,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u7A70, \u7A71, \u7A72, \u7A73, \u7A74, \u7A75, \u7A76, \u7A77, \u7A78, \u7A79, \u7A7A, \u7A7B, \u7A7C, \u7A7D, \u7A7E, \u7A7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u7A80, \u7A81, \u7A82, \u7A83, \u7A84, \u7A85, \u7A86, \u7A87, \u7A88, \u7A89, \u7A8A, \u7A8B, \u7A8C, \u7A8D, \u7A8E, \u7A8F, "
 			"\u7A90, \u7A91, \u7A92, \u7A93, \u7A94, \u7A95, \u7A96, \u7A97, \u7A98, \u7A99, \u7A9A, \u7A9B, \u7A9C, \u7A9D, \u7A9E, \u7A9F, "
@@ -2965,7 +2719,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u7AFF, \u7AFF, \u7AFF, \u7AFF, \u7AFF, \u7AFF, \u7AFF, \u7AFF, \u7AFF, \u7AFF, \u7AFF, \u7AFF, \u7AFF, \u7AFF, \u7AFF, \u7AFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u7B00, \u7B01, \u7B02, \u7B03, \u7B04, \u7B05, \u7B06, \u7B07, \u7B08, \u7B09, \u7B0A, \u7B0B, \u7B0C, \u7B0D, \u7B0E, \u7B0F, "
 			"\u7B10, \u7B11, \u7B12, \u7B13, \u7B14, \u7B15, \u7B16, \u7B17, \u7B18, \u7B19, \u7B1A, \u7B1B, \u7B1C, \u7B1D, \u7B1E, \u7B1F, "
@@ -2977,7 +2730,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u7B70, \u7B71, \u7B72, \u7B73, \u7B74, \u7B75, \u7B76, \u7B77, \u7B78, \u7B79, \u7B7A, \u7B7B, \u7B7C, \u7B7D, \u7B7E, \u7B7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u7B80, \u7B81, \u7B82, \u7B83, \u7B84, \u7B85, \u7B86, \u7B87, \u7B88, \u7B89, \u7B8A, \u7B8B, \u7B8C, \u7B8D, \u7B8E, \u7B8F, "
 			"\u7B90, \u7B91, \u7B92, \u7B93, \u7B94, \u7B95, \u7B96, \u7B97, \u7B98, \u7B99, \u7B9A, \u7B9B, \u7B9C, \u7B9D, \u7B9E, \u7B9F, "
@@ -2989,7 +2741,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u7BFF, \u7BFF, \u7BFF, \u7BFF, \u7BFF, \u7BFF, \u7BFF, \u7BFF, \u7BFF, \u7BFF, \u7BFF, \u7BFF, \u7BFF, \u7BFF, \u7BFF, \u7BFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u7C00, \u7C01, \u7C02, \u7C03, \u7C04, \u7C05, \u7C06, \u7C07, \u7C08, \u7C09, \u7C0A, \u7C0B, \u7C0C, \u7C0D, \u7C0E, \u7C0F, "
 			"\u7C10, \u7C11, \u7C12, \u7C13, \u7C14, \u7C15, \u7C16, \u7C17, \u7C18, \u7C19, \u7C1A, \u7C1B, \u7C1C, \u7C1D, \u7C1E, \u7C1F, "
@@ -3001,7 +2752,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u7C70, \u7C71, \u7C72, \u7C73, \u7C74, \u7C75, \u7C76, \u7C77, \u7C78, \u7C79, \u7C7A, \u7C7B, \u7C7C, \u7C7D, \u7C7E, \u7C7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u7C80, \u7C81, \u7C82, \u7C83, \u7C84, \u7C85, \u7C86, \u7C87, \u7C88, \u7C89, \u7C8A, \u7C8B, \u7C8C, \u7C8D, \u7C8E, \u7C8F, "
 			"\u7C90, \u7C91, \u7C92, \u7C93, \u7C94, \u7C95, \u7C96, \u7C97, \u7C98, \u7C99, \u7C9A, \u7C9B, \u7C9C, \u7C9D, \u7C9E, \u7C9F, "
@@ -3013,7 +2763,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u7CFF, \u7CFF, \u7CFF, \u7CFF, \u7CFF, \u7CFF, \u7CFF, \u7CFF, \u7CFF, \u7CFF, \u7CFF, \u7CFF, \u7CFF, \u7CFF, \u7CFF, \u7CFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u7D00, \u7D01, \u7D02, \u7D03, \u7D04, \u7D05, \u7D06, \u7D07, \u7D08, \u7D09, \u7D0A, \u7D0B, \u7D0C, \u7D0D, \u7D0E, \u7D0F, "
 			"\u7D10, \u7D11, \u7D12, \u7D13, \u7D14, \u7D15, \u7D16, \u7D17, \u7D18, \u7D19, \u7D1A, \u7D1B, \u7D1C, \u7D1D, \u7D1E, \u7D1F, "
@@ -3025,7 +2774,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u7D70, \u7D71, \u7D72, \u7D73, \u7D74, \u7D75, \u7D76, \u7D77, \u7D78, \u7D79, \u7D7A, \u7D7B, \u7D7C, \u7D7D, \u7D7E, \u7D7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u7D80, \u7D81, \u7D82, \u7D83, \u7D84, \u7D85, \u7D86, \u7D87, \u7D88, \u7D89, \u7D8A, \u7D8B, \u7D8C, \u7D8D, \u7D8E, \u7D8F, "
 			"\u7D90, \u7D91, \u7D92, \u7D93, \u7D94, \u7D95, \u7D96, \u7D97, \u7D98, \u7D99, \u7D9A, \u7D9B, \u7D9C, \u7D9D, \u7D9E, \u7D9F, "
@@ -3037,7 +2785,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u7DFF, \u7DFF, \u7DFF, \u7DFF, \u7DFF, \u7DFF, \u7DFF, \u7DFF, \u7DFF, \u7DFF, \u7DFF, \u7DFF, \u7DFF, \u7DFF, \u7DFF, \u7DFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u7E00, \u7E01, \u7E02, \u7E03, \u7E04, \u7E05, \u7E06, \u7E07, \u7E08, \u7E09, \u7E0A, \u7E0B, \u7E0C, \u7E0D, \u7E0E, \u7E0F, "
 			"\u7E10, \u7E11, \u7E12, \u7E13, \u7E14, \u7E15, \u7E16, \u7E17, \u7E18, \u7E19, \u7E1A, \u7E1B, \u7E1C, \u7E1D, \u7E1E, \u7E1F, "
@@ -3049,7 +2796,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u7E70, \u7E71, \u7E72, \u7E73, \u7E74, \u7E75, \u7E76, \u7E77, \u7E78, \u7E79, \u7E7A, \u7E7B, \u7E7C, \u7E7D, \u7E7E, \u7E7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u7E80, \u7E81, \u7E82, \u7E83, \u7E84, \u7E85, \u7E86, \u7E87, \u7E88, \u7E89, \u7E8A, \u7E8B, \u7E8C, \u7E8D, \u7E8E, \u7E8F, "
 			"\u7E90, \u7E91, \u7E92, \u7E93, \u7E94, \u7E95, \u7E96, \u7E97, \u7E98, \u7E99, \u7E9A, \u7E9B, \u7E9C, \u7E9D, \u7E9E, \u7E9F, "
@@ -3061,7 +2807,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u7EFF, \u7EFF, \u7EFF, \u7EFF, \u7EFF, \u7EFF, \u7EFF, \u7EFF, \u7EFF, \u7EFF, \u7EFF, \u7EFF, \u7EFF, \u7EFF, \u7EFF, \u7EFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u7F00, \u7F01, \u7F02, \u7F03, \u7F04, \u7F05, \u7F06, \u7F07, \u7F08, \u7F09, \u7F0A, \u7F0B, \u7F0C, \u7F0D, \u7F0E, \u7F0F, "
 			"\u7F10, \u7F11, \u7F12, \u7F13, \u7F14, \u7F15, \u7F16, \u7F17, \u7F18, \u7F19, \u7F1A, \u7F1B, \u7F1C, \u7F1D, \u7F1E, \u7F1F, "
@@ -3073,7 +2818,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u7F70, \u7F71, \u7F72, \u7F73, \u7F74, \u7F75, \u7F76, \u7F77, \u7F78, \u7F79, \u7F7A, \u7F7B, \u7F7C, \u7F7D, \u7F7E, \u7F7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u7F80, \u7F81, \u7F82, \u7F83, \u7F84, \u7F85, \u7F86, \u7F87, \u7F88, \u7F89, \u7F8A, \u7F8B, \u7F8C, \u7F8D, \u7F8E, \u7F8F, "
 			"\u7F90, \u7F91, \u7F92, \u7F93, \u7F94, \u7F95, \u7F96, \u7F97, \u7F98, \u7F99, \u7F9A, \u7F9B, \u7F9C, \u7F9D, \u7F9E, \u7F9F, "
@@ -3085,7 +2829,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u7FFF, \u7FFF, \u7FFF, \u7FFF, \u7FFF, \u7FFF, \u7FFF, \u7FFF, \u7FFF, \u7FFF, \u7FFF, \u7FFF, \u7FFF, \u7FFF, \u7FFF, \u7FFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
             "\u8000, \u8001, \u8002, \u8003, \u8004, \u8005, \u8006, \u8007, \u8008, \u8009, \u800A, \u800B, \u800C, \u800D, \u800E, \u800F, "
             "\u8010, \u8011, \uE012, \u8013, \u8014, \u8015, \u8016, \u8017, \u8018, \u8019, \u801A, \u801B, \u801C, \u801D, \u801E, \u801F, "
@@ -3097,7 +2840,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
             "\u8070, \u8071, \u8072, \u8073, \u8074, \u8075, \u8076, \u8077, \u8078, \u8079, \u807A, \u807B, \u807C, \u807D, \u807E, \u807F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u8080, \u8081, \u8082, \u8083, \u8084, \u8085, \u8086, \u8087, \u8088, \u8089, \u808A, \u808B, \u808C, \u808D, \u808E, \u808F, "
 			"\u8090, \u8091, \u8092, \u8093, \u8094, \u8095, \u8096, \u8097, \u8098, \u8099, \u809A, \u809B, \u809C, \u809D, \u809E, \u809F, "
@@ -3109,7 +2851,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u80FF, \u80FF, \u80FF, \u80FF, \u80FF, \u80FF, \u80FF, \u80FF, \u80FF, \u80FF, \u80FF, \u80FF, \u80FF, \u80FF, \u80FF, \u80FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u8100, \u8101, \u8102, \u8103, \u8104, \u8105, \u8106, \u8107, \u8108, \u8109, \u810A, \u810B, \u810C, \u810D, \u810E, \u810F, "
 			"\u8110, \u8111, \u8112, \u8113, \u8114, \u8115, \u8116, \u8117, \u8118, \u8119, \u811A, \u811B, \u811C, \u811D, \u811E, \u811F, "
@@ -3121,7 +2862,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u8170, \u8171, \u8172, \u8173, \u8174, \u8175, \u8176, \u8177, \u8178, \u8179, \u817A, \u817B, \u817C, \u817D, \u817E, \u817F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u8180, \u8181, \u8182, \u8183, \u8184, \u8185, \u8186, \u8187, \u8188, \u8189, \u818A, \u818B, \u818C, \u818D, \u818E, \u818F, "
 			"\u8190, \u8191, \u8192, \u8193, \u8194, \u8195, \u8196, \u8197, \u8198, \u8199, \u819A, \u819B, \u819C, \u819D, \u819E, \u819F, "
@@ -3133,7 +2873,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u81FF, \u81FF, \u81FF, \u81FF, \u81FF, \u81FF, \u81FF, \u81FF, \u81FF, \u81FF, \u81FF, \u81FF, \u81FF, \u81FF, \u81FF, \u81FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u8200, \u8201, \u8202, \u8203, \u8204, \u8205, \u8206, \u8207, \u8208, \u8209, \u820A, \u820B, \u820C, \u820D, \u820E, \u820F, "
 			"\u8210, \u8211, \u8212, \u8213, \u8214, \u8215, \u8216, \u8217, \u8218, \u8219, \u821A, \u821B, \u821C, \u821D, \u821E, \u821F, "
@@ -3145,7 +2884,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u8270, \u8271, \u8272, \u8273, \u8274, \u8275, \u8276, \u8277, \u8278, \u8279, \u827A, \u827B, \u827C, \u827D, \u827E, \u827F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u8280, \u8281, \u8282, \u8283, \u8284, \u8285, \u8286, \u8287, \u8288, \u8289, \u828A, \u828B, \u828C, \u828D, \u828E, \u828F, "
 			"\u8290, \u8291, \u8292, \u8293, \u8294, \u8295, \u8296, \u8297, \u8298, \u8299, \u829A, \u829B, \u829C, \u829D, \u829E, \u829F, "
@@ -3157,7 +2895,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u82FF, \u82FF, \u82FF, \u82FF, \u82FF, \u82FF, \u82FF, \u82FF, \u82FF, \u82FF, \u82FF, \u82FF, \u82FF, \u82FF, \u82FF, \u82FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u8300, \u8301, \u8302, \u8303, \u8304, \u8305, \u8306, \u8307, \u8308, \u8309, \u830A, \u830B, \u830C, \u830D, \u830E, \u830F, "
 			"\u8310, \u8311, \u8312, \u8313, \u8314, \u8315, \u8316, \u8317, \u8318, \u8319, \u831A, \u831B, \u831C, \u831D, \u831E, \u831F, "
@@ -3169,7 +2906,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u8370, \u8371, \u8372, \u8373, \u8374, \u8375, \u8376, \u8377, \u8378, \u8379, \u837A, \u837B, \u837C, \u837D, \u837E, \u837F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u8380, \u8381, \u8382, \u8383, \u8384, \u8385, \u8386, \u8387, \u8388, \u8389, \u838A, \u838B, \u838C, \u838D, \u838E, \u838F, "
 			"\u8390, \u8391, \u8392, \u8393, \u8394, \u8395, \u8396, \u8397, \u8398, \u8399, \u839A, \u839B, \u839C, \u839D, \u839E, \u839F, "
@@ -3181,7 +2917,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u83FF, \u83FF, \u83FF, \u83FF, \u83FF, \u83FF, \u83FF, \u83FF, \u83FF, \u83FF, \u83FF, \u83FF, \u83FF, \u83FF, \u83FF, \u83FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u8400, \u8401, \u8402, \u8403, \u8404, \u8405, \u8406, \u8407, \u8408, \u8409, \u840A, \u840B, \u840C, \u840D, \u840E, \u840F, "
 			"\u8410, \u8411, \u8412, \u8413, \u8414, \u8415, \u8416, \u8417, \u8418, \u8419, \u841A, \u841B, \u841C, \u841D, \u841E, \u841F, "
@@ -3193,7 +2928,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u8470, \u8471, \u8472, \u8473, \u8474, \u8475, \u8476, \u8477, \u8478, \u8479, \u847A, \u847B, \u847C, \u847D, \u847E, \u847F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u8480, \u8481, \u8482, \u8483, \u8484, \u8485, \u8486, \u8487, \u8488, \u8489, \u848A, \u848B, \u848C, \u848D, \u848E, \u848F, "
 			"\u8490, \u8491, \u8492, \u8493, \u8494, \u8495, \u8496, \u8497, \u8498, \u8499, \u849A, \u849B, \u849C, \u849D, \u849E, \u849F, "
@@ -3205,7 +2939,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u84FF, \u84FF, \u84FF, \u84FF, \u84FF, \u84FF, \u84FF, \u84FF, \u84FF, \u84FF, \u84FF, \u84FF, \u84FF, \u84FF, \u84FF, \u84FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u8500, \u8501, \u8502, \u8503, \u8504, \u8505, \u8506, \u8507, \u8508, \u8509, \u850A, \u850B, \u850C, \u850D, \u850E, \u850F, "
 			"\u8510, \u8511, \u8512, \u8513, \u8514, \u8515, \u8516, \u8517, \u8518, \u8519, \u851A, \u851B, \u851C, \u851D, \u851E, \u851F, "
@@ -3217,7 +2950,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u8570, \u8571, \u8572, \u8573, \u8574, \u8575, \u8576, \u8577, \u8578, \u8579, \u857A, \u857B, \u857C, \u857D, \u857E, \u857F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u8580, \u8581, \u8582, \u8583, \u8584, \u8585, \u8586, \u8587, \u8588, \u8589, \u858A, \u858B, \u858C, \u858D, \u858E, \u858F, "
 			"\u8590, \u8591, \u8592, \u8593, \u8594, \u8595, \u8596, \u8597, \u8598, \u8599, \u859A, \u859B, \u859C, \u859D, \u859E, \u859F, "
@@ -3229,7 +2961,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u85FF, \u85FF, \u85FF, \u85FF, \u85FF, \u85FF, \u85FF, \u85FF, \u85FF, \u85FF, \u85FF, \u85FF, \u85FF, \u85FF, \u85FF, \u85FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u8600, \u8601, \u8602, \u8603, \u8604, \u8605, \u8606, \u8607, \u8608, \u8609, \u860A, \u860B, \u860C, \u860D, \u860E, \u860F, "
 			"\u8610, \u8611, \u8612, \u8613, \u8614, \u8615, \u8616, \u8617, \u8618, \u8619, \u861A, \u861B, \u861C, \u861D, \u861E, \u861F, "
@@ -3241,7 +2972,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u8670, \u8671, \u8672, \u8673, \u8674, \u8675, \u8676, \u8677, \u8678, \u8679, \u867A, \u867B, \u867C, \u867D, \u867E, \u867F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u8680, \u8681, \u8682, \u8683, \u8684, \u8685, \u8686, \u8687, \u8688, \u8689, \u868A, \u868B, \u868C, \u868D, \u868E, \u868F, "
 			"\u8690, \u8691, \u8692, \u8693, \u8694, \u8695, \u8696, \u8697, \u8698, \u8699, \u869A, \u869B, \u869C, \u869D, \u869E, \u869F, "
@@ -3253,7 +2983,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u86FF, \u86FF, \u86FF, \u86FF, \u86FF, \u86FF, \u86FF, \u86FF, \u86FF, \u86FF, \u86FF, \u86FF, \u86FF, \u86FF, \u86FF, \u86FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u8700, \u8701, \u8702, \u8703, \u8704, \u8705, \u8706, \u8707, \u8708, \u8709, \u870A, \u870B, \u870C, \u870D, \u870E, \u870F, "
 			"\u8710, \u8711, \u8712, \u8713, \u8714, \u8715, \u8716, \u8717, \u8718, \u8719, \u871A, \u871B, \u871C, \u871D, \u871E, \u871F, "
@@ -3265,7 +2994,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u8770, \u8771, \u8772, \u8773, \u8774, \u8775, \u8776, \u8777, \u8778, \u8779, \u877A, \u877B, \u877C, \u877D, \u877E, \u877F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u8780, \u8781, \u8782, \u8783, \u8784, \u8785, \u8786, \u8787, \u8788, \u8789, \u878A, \u878B, \u878C, \u878D, \u878E, \u878F, "
 			"\u8790, \u8791, \u8792, \u8793, \u8794, \u8795, \u8796, \u8797, \u8798, \u8799, \u879A, \u879B, \u879C, \u879D, \u879E, \u879F, "
@@ -3277,7 +3005,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u87FF, \u87FF, \u87FF, \u87FF, \u87FF, \u87FF, \u87FF, \u87FF, \u87FF, \u87FF, \u87FF, \u87FF, \u87FF, \u87FF, \u87FF, \u87FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u8800, \u8801, \u8802, \u8803, \u8804, \u8805, \u8806, \u8807, \u8808, \u8809, \u880A, \u880B, \u880C, \u880D, \u880E, \u880F, "
 			"\u8810, \u8811, \u8812, \u8813, \u8814, \u8815, \u8816, \u8817, \u8818, \u8819, \u881A, \u881B, \u881C, \u881D, \u881E, \u881F, "
@@ -3289,7 +3016,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u8870, \u8871, \u8872, \u8873, \u8874, \u8875, \u8876, \u8877, \u8878, \u8879, \u887A, \u887B, \u887C, \u887D, \u887E, \u887F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u8880, \u8881, \u8882, \u8883, \u8884, \u8885, \u8886, \u8887, \u8888, \u8889, \u888A, \u888B, \u888C, \u888D, \u888E, \u888F, "
 			"\u8890, \u8891, \u8892, \u8893, \u8894, \u8895, \u8896, \u8897, \u8898, \u8899, \u889A, \u889B, \u889C, \u889D, \u889E, \u889F, "
@@ -3301,7 +3027,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u88FF, \u88FF, \u88FF, \u88FF, \u88FF, \u88FF, \u88FF, \u88FF, \u88FF, \u88FF, \u88FF, \u88FF, \u88FF, \u88FF, \u88FF, \u88FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u8900, \u8901, \u8902, \u8903, \u8904, \u8905, \u8906, \u8907, \u8908, \u8909, \u890A, \u890B, \u890C, \u890D, \u890E, \u890F, "
 			"\u8910, \u8911, \u8912, \u8913, \u8914, \u8915, \u8916, \u8917, \u8918, \u8919, \u891A, \u891B, \u891C, \u891D, \u891E, \u891F, "
@@ -3313,7 +3038,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u8970, \u8971, \u8972, \u8973, \u8974, \u8975, \u8976, \u8977, \u8978, \u8979, \u897A, \u897B, \u897C, \u897D, \u897E, \u897F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u8980, \u8981, \u8982, \u8983, \u8984, \u8985, \u8986, \u8987, \u8988, \u8989, \u898A, \u898B, \u898C, \u898D, \u898E, \u898F, "
 			"\u8990, \u8991, \u8992, \u8993, \u8994, \u8995, \u8996, \u8997, \u8998, \u8999, \u899A, \u899B, \u899C, \u899D, \u899E, \u899F, "
@@ -3325,7 +3049,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u89FF, \u89FF, \u89FF, \u89FF, \u89FF, \u89FF, \u89FF, \u89FF, \u89FF, \u89FF, \u89FF, \u89FF, \u89FF, \u89FF, \u89FF, \u89FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u8A00, \u8A01, \u8A02, \u8A03, \u8A04, \u8A05, \u8A06, \u8A07, \u8A08, \u8A09, \u8A0A, \u8A0B, \u8A0C, \u8A0D, \u8A0E, \u8A0F, "
 			"\u8A10, \u8A11, \u8A12, \u8A13, \u8A14, \u8A15, \u8A16, \u8A17, \u8A18, \u8A19, \u8A1A, \u8A1B, \u8A1C, \u8A1D, \u8A1E, \u8A1F, "
@@ -3337,7 +3060,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u8A70, \u8A71, \u8A72, \u8A73, \u8A74, \u8A75, \u8A76, \u8A77, \u8A78, \u8A79, \u8A7A, \u8A7B, \u8A7C, \u8A7D, \u8A7E, \u8A7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u8A80, \u8A81, \u8A82, \u8A83, \u8A84, \u8A85, \u8A86, \u8A87, \u8A88, \u8A89, \u8A8A, \u8A8B, \u8A8C, \u8A8D, \u8A8E, \u8A8F, "
 			"\u8A90, \u8A91, \u8A92, \u8A93, \u8A94, \u8A95, \u8A96, \u8A97, \u8A98, \u8A99, \u8A9A, \u8A9B, \u8A9C, \u8A9D, \u8A9E, \u8A9F, "
@@ -3349,7 +3071,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u8AFF, \u8AFF, \u8AFF, \u8AFF, \u8AFF, \u8AFF, \u8AFF, \u8AFF, \u8AFF, \u8AFF, \u8AFF, \u8AFF, \u8AFF, \u8AFF, \u8AFF, \u8AFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u8B00, \u8B01, \u8B02, \u8B03, \u8B04, \u8B05, \u8B06, \u8B07, \u8B08, \u8B09, \u8B0A, \u8B0B, \u8B0C, \u8B0D, \u8B0E, \u8B0F, "
 			"\u8B10, \u8B11, \u8B12, \u8B13, \u8B14, \u8B15, \u8B16, \u8B17, \u8B18, \u8B19, \u8B1A, \u8B1B, \u8B1C, \u8B1D, \u8B1E, \u8B1F, "
@@ -3361,7 +3082,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u8B70, \u8B71, \u8B72, \u8B73, \u8B74, \u8B75, \u8B76, \u8B77, \u8B78, \u8B79, \u8B7A, \u8B7B, \u8B7C, \u8B7D, \u8B7E, \u8B7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u8B80, \u8B81, \u8B82, \u8B83, \u8B84, \u8B85, \u8B86, \u8B87, \u8B88, \u8B89, \u8B8A, \u8B8B, \u8B8C, \u8B8D, \u8B8E, \u8B8F, "
 			"\u8B90, \u8B91, \u8B92, \u8B93, \u8B94, \u8B95, \u8B96, \u8B97, \u8B98, \u8B99, \u8B9A, \u8B9B, \u8B9C, \u8B9D, \u8B9E, \u8B9F, "
@@ -3373,7 +3093,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u8BFF, \u8BFF, \u8BFF, \u8BFF, \u8BFF, \u8BFF, \u8BFF, \u8BFF, \u8BFF, \u8BFF, \u8BFF, \u8BFF, \u8BFF, \u8BFF, \u8BFF, \u8BFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u8C00, \u8C01, \u8C02, \u8C03, \u8C04, \u8C05, \u8C06, \u8C07, \u8C08, \u8C09, \u8C0A, \u8C0B, \u8C0C, \u8C0D, \u8C0E, \u8C0F, "
 			"\u8C10, \u8C11, \u8C12, \u8C13, \u8C14, \u8C15, \u8C16, \u8C17, \u8C18, \u8C19, \u8C1A, \u8C1B, \u8C1C, \u8C1D, \u8C1E, \u8C1F, "
@@ -3385,7 +3104,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u8C70, \u8C71, \u8C72, \u8C73, \u8C74, \u8C75, \u8C76, \u8C77, \u8C78, \u8C79, \u8C7A, \u8C7B, \u8C7C, \u8C7D, \u8C7E, \u8C7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u8C80, \u8C81, \u8C82, \u8C83, \u8C84, \u8C85, \u8C86, \u8C87, \u8C88, \u8C89, \u8C8A, \u8C8B, \u8C8C, \u8C8D, \u8C8E, \u8C8F, "
 			"\u8C90, \u8C91, \u8C92, \u8C93, \u8C94, \u8C95, \u8C96, \u8C97, \u8C98, \u8C99, \u8C9A, \u8C9B, \u8C9C, \u8C9D, \u8C9E, \u8C9F, "
@@ -3397,7 +3115,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u8CFF, \u8CFF, \u8CFF, \u8CFF, \u8CFF, \u8CFF, \u8CFF, \u8CFF, \u8CFF, \u8CFF, \u8CFF, \u8CFF, \u8CFF, \u8CFF, \u8CFF, \u8CFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u8D00, \u8D01, \u8D02, \u8D03, \u8D04, \u8D05, \u8D06, \u8D07, \u8D08, \u8D09, \u8D0A, \u8D0B, \u8D0C, \u8D0D, \u8D0E, \u8D0F, "
 			"\u8D10, \u8D11, \u8D12, \u8D13, \u8D14, \u8D15, \u8D16, \u8D17, \u8D18, \u8D19, \u8D1A, \u8D1B, \u8D1C, \u8D1D, \u8D1E, \u8D1F, "
@@ -3409,7 +3126,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u8D70, \u8D71, \u8D72, \u8D73, \u8D74, \u8D75, \u8D76, \u8D77, \u8D78, \u8D79, \u8D7A, \u8D7B, \u8D7C, \u8D7D, \u8D7E, \u8D7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u8D80, \u8D81, \u8D82, \u8D83, \u8D84, \u8D85, \u8D86, \u8D87, \u8D88, \u8D89, \u8D8A, \u8D8B, \u8D8C, \u8D8D, \u8D8E, \u8D8F, "
 			"\u8D90, \u8D91, \u8D92, \u8D93, \u8D94, \u8D95, \u8D96, \u8D97, \u8D98, \u8D99, \u8D9A, \u8D9B, \u8D9C, \u8D9D, \u8D9E, \u8D9F, "
@@ -3421,7 +3137,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u8DFF, \u8DFF, \u8DFF, \u8DFF, \u8DFF, \u8DFF, \u8DFF, \u8DFF, \u8DFF, \u8DFF, \u8DFF, \u8DFF, \u8DFF, \u8DFF, \u8DFF, \u8DFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u8E00, \u8E01, \u8E02, \u8E03, \u8E04, \u8E05, \u8E06, \u8E07, \u8E08, \u8E09, \u8E0A, \u8E0B, \u8E0C, \u8E0D, \u8E0E, \u8E0F, "
 			"\u8E10, \u8E11, \u8E12, \u8E13, \u8E14, \u8E15, \u8E16, \u8E17, \u8E18, \u8E19, \u8E1A, \u8E1B, \u8E1C, \u8E1D, \u8E1E, \u8E1F, "
@@ -3433,7 +3148,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u8E70, \u8E71, \u8E72, \u8E73, \u8E74, \u8E75, \u8E76, \u8E77, \u8E78, \u8E79, \u8E7A, \u8E7B, \u8E7C, \u8E7D, \u8E7E, \u8E7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u8E80, \u8E81, \u8E82, \u8E83, \u8E84, \u8E85, \u8E86, \u8E87, \u8E88, \u8E89, \u8E8A, \u8E8B, \u8E8C, \u8E8D, \u8E8E, \u8E8F, "
 			"\u8E90, \u8E91, \u8E92, \u8E93, \u8E94, \u8E95, \u8E96, \u8E97, \u8E98, \u8E99, \u8E9A, \u8E9B, \u8E9C, \u8E9D, \u8E9E, \u8E9F, "
@@ -3445,7 +3159,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u8EFF, \u8EFF, \u8EFF, \u8EFF, \u8EFF, \u8EFF, \u8EFF, \u8EFF, \u8EFF, \u8EFF, \u8EFF, \u8EFF, \u8EFF, \u8EFF, \u8EFF, \u8EFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u8F00, \u8F01, \u8F02, \u8F03, \u8F04, \u8F05, \u8F06, \u8F07, \u8F08, \u8F09, \u8F0A, \u8F0B, \u8F0C, \u8F0D, \u8F0E, \u8F0F, "
 			"\u8F10, \u8F11, \u8F12, \u8F13, \u8F14, \u8F15, \u8F16, \u8F17, \u8F18, \u8F19, \u8F1A, \u8F1B, \u8F1C, \u8F1D, \u8F1E, \u8F1F, "
@@ -3457,7 +3170,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u8F70, \u8F71, \u8F72, \u8F73, \u8F74, \u8F75, \u8F76, \u8F77, \u8F78, \u8F79, \u8F7A, \u8F7B, \u8F7C, \u8F7D, \u8F7E, \u8F7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u8F80, \u8F81, \u8F82, \u8F83, \u8F84, \u8F85, \u8F86, \u8F87, \u8F88, \u8F89, \u8F8A, \u8F8B, \u8F8C, \u8F8D, \u8F8E, \u8F8F, "
 			"\u8F90, \u8F91, \u8F92, \u8F93, \u8F94, \u8F95, \u8F96, \u8F97, \u8F98, \u8F99, \u8F9A, \u8F9B, \u8F9C, \u8F9D, \u8F9E, \u8F9F, "
@@ -3469,7 +3181,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u8FFF, \u8FFF, \u8FFF, \u8FFF, \u8FFF, \u8FFF, \u8FFF, \u8FFF, \u8FFF, \u8FFF, \u8FFF, \u8FFF, \u8FFF, \u8FFF, \u8FFF, \u8FFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
             "\u9000, \u9001, \u9002, \u9003, \u9004, \u9005, \u9006, \u9007, \u9008, \u9009, \u900A, \u900B, \u900C, \u900D, \u900E, \u900F, "
             "\u9010, \u9011, \uE012, \u9013, \u9014, \u9015, \u9016, \u9017, \u9018, \u9019, \u901A, \u901B, \u901C, \u901D, \u901E, \u901F, "
@@ -3481,7 +3192,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
             "\u9070, \u9071, \u9072, \u9073, \u9074, \u9075, \u9076, \u9077, \u9078, \u9079, \u907A, \u907B, \u907C, \u907D, \u907E, \u907F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u9080, \u9081, \u9082, \u9083, \u9084, \u9085, \u9086, \u9087, \u9088, \u9089, \u908A, \u908B, \u908C, \u908D, \u908E, \u908F, "
 			"\u9090, \u9091, \u9092, \u9093, \u9094, \u9095, \u9096, \u9097, \u9098, \u9099, \u909A, \u909B, \u909C, \u909D, \u909E, \u909F, "
@@ -3493,7 +3203,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u90FF, \u90FF, \u90FF, \u90FF, \u90FF, \u90FF, \u90FF, \u90FF, \u90FF, \u90FF, \u90FF, \u90FF, \u90FF, \u90FF, \u90FF, \u90FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u9100, \u9101, \u9102, \u9103, \u9104, \u9105, \u9106, \u9107, \u9108, \u9109, \u910A, \u910B, \u910C, \u910D, \u910E, \u910F, "
 			"\u9110, \u9111, \u9112, \u9113, \u9114, \u9115, \u9116, \u9117, \u9118, \u9119, \u911A, \u911B, \u911C, \u911D, \u911E, \u911F, "
@@ -3505,7 +3214,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u9170, \u9171, \u9172, \u9173, \u9174, \u9175, \u9176, \u9177, \u9178, \u9179, \u917A, \u917B, \u917C, \u917D, \u917E, \u917F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u9180, \u9181, \u9182, \u9183, \u9184, \u9185, \u9186, \u9187, \u9188, \u9189, \u918A, \u918B, \u918C, \u918D, \u918E, \u918F, "
 			"\u9190, \u9191, \u9192, \u9193, \u9194, \u9195, \u9196, \u9197, \u9198, \u9199, \u919A, \u919B, \u919C, \u919D, \u919E, \u919F, "
@@ -3517,7 +3225,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u91FF, \u91FF, \u91FF, \u91FF, \u91FF, \u91FF, \u91FF, \u91FF, \u91FF, \u91FF, \u91FF, \u91FF, \u91FF, \u91FF, \u91FF, \u91FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u9200, \u9201, \u9202, \u9203, \u9204, \u9205, \u9206, \u9207, \u9208, \u9209, \u920A, \u920B, \u920C, \u920D, \u920E, \u920F, "
 			"\u9210, \u9211, \u9212, \u9213, \u9214, \u9215, \u9216, \u9217, \u9218, \u9219, \u921A, \u921B, \u921C, \u921D, \u921E, \u921F, "
@@ -3529,7 +3236,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u9270, \u9271, \u9272, \u9273, \u9274, \u9275, \u9276, \u9277, \u9278, \u9279, \u927A, \u927B, \u927C, \u927D, \u927E, \u927F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u9280, \u9281, \u9282, \u9283, \u9284, \u9285, \u9286, \u9287, \u9288, \u9289, \u928A, \u928B, \u928C, \u928D, \u928E, \u928F, "
 			"\u9290, \u9291, \u9292, \u9293, \u9294, \u9295, \u9296, \u9297, \u9298, \u9299, \u929A, \u929B, \u929C, \u929D, \u929E, \u929F, "
@@ -3541,7 +3247,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u92FF, \u92FF, \u92FF, \u92FF, \u92FF, \u92FF, \u92FF, \u92FF, \u92FF, \u92FF, \u92FF, \u92FF, \u92FF, \u92FF, \u92FF, \u92FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u9300, \u9301, \u9302, \u9303, \u9304, \u9305, \u9306, \u9307, \u9308, \u9309, \u930A, \u930B, \u930C, \u930D, \u930E, \u930F, "
 			"\u9310, \u9311, \u9312, \u9313, \u9314, \u9315, \u9316, \u9317, \u9318, \u9319, \u931A, \u931B, \u931C, \u931D, \u931E, \u931F, "
@@ -3553,7 +3258,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u9370, \u9371, \u9372, \u9373, \u9374, \u9375, \u9376, \u9377, \u9378, \u9379, \u937A, \u937B, \u937C, \u937D, \u937E, \u937F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u9380, \u9381, \u9382, \u9383, \u9384, \u9385, \u9386, \u9387, \u9388, \u9389, \u938A, \u938B, \u938C, \u938D, \u938E, \u938F, "
 			"\u9390, \u9391, \u9392, \u9393, \u9394, \u9395, \u9396, \u9397, \u9398, \u9399, \u939A, \u939B, \u939C, \u939D, \u939E, \u939F, "
@@ -3565,7 +3269,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u93FF, \u93FF, \u93FF, \u93FF, \u93FF, \u93FF, \u93FF, \u93FF, \u93FF, \u93FF, \u93FF, \u93FF, \u93FF, \u93FF, \u93FF, \u93FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u9400, \u9401, \u9402, \u9403, \u9404, \u9405, \u9406, \u9407, \u9408, \u9409, \u940A, \u940B, \u940C, \u940D, \u940E, \u940F, "
 			"\u9410, \u9411, \u9412, \u9413, \u9414, \u9415, \u9416, \u9417, \u9418, \u9419, \u941A, \u941B, \u941C, \u941D, \u941E, \u941F, "
@@ -3577,7 +3280,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u9470, \u9471, \u9472, \u9473, \u9474, \u9475, \u9476, \u9477, \u9478, \u9479, \u947A, \u947B, \u947C, \u947D, \u947E, \u947F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u9480, \u9481, \u9482, \u9483, \u9484, \u9485, \u9486, \u9487, \u9488, \u9489, \u948A, \u948B, \u948C, \u948D, \u948E, \u948F, "
 			"\u9490, \u9491, \u9492, \u9493, \u9494, \u9495, \u9496, \u9497, \u9498, \u9499, \u949A, \u949B, \u949C, \u949D, \u949E, \u949F, "
@@ -3589,7 +3291,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u94FF, \u94FF, \u94FF, \u94FF, \u94FF, \u94FF, \u94FF, \u94FF, \u94FF, \u94FF, \u94FF, \u94FF, \u94FF, \u94FF, \u94FF, \u94FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u9500, \u9501, \u9502, \u9503, \u9504, \u9505, \u9506, \u9507, \u9508, \u9509, \u950A, \u950B, \u950C, \u950D, \u950E, \u950F, "
 			"\u9510, \u9511, \u9512, \u9513, \u9514, \u9515, \u9516, \u9517, \u9518, \u9519, \u951A, \u951B, \u951C, \u951D, \u951E, \u951F, "
@@ -3601,7 +3302,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u9570, \u9571, \u9572, \u9573, \u9574, \u9575, \u9576, \u9577, \u9578, \u9579, \u957A, \u957B, \u957C, \u957D, \u957E, \u957F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u9580, \u9581, \u9582, \u9583, \u9584, \u9585, \u9586, \u9587, \u9588, \u9589, \u958A, \u958B, \u958C, \u958D, \u958E, \u958F, "
 			"\u9590, \u9591, \u9592, \u9593, \u9594, \u9595, \u9596, \u9597, \u9598, \u9599, \u959A, \u959B, \u959C, \u959D, \u959E, \u959F, "
@@ -3613,7 +3313,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u95FF, \u95FF, \u95FF, \u95FF, \u95FF, \u95FF, \u95FF, \u95FF, \u95FF, \u95FF, \u95FF, \u95FF, \u95FF, \u95FF, \u95FF, \u95FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u9600, \u9601, \u9602, \u9603, \u9604, \u9605, \u9606, \u9607, \u9608, \u9609, \u960A, \u960B, \u960C, \u960D, \u960E, \u960F, "
 			"\u9610, \u9611, \u9612, \u9613, \u9614, \u9615, \u9616, \u9617, \u9618, \u9619, \u961A, \u961B, \u961C, \u961D, \u961E, \u961F, "
@@ -3625,7 +3324,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u9670, \u9671, \u9672, \u9673, \u9674, \u9675, \u9676, \u9677, \u9678, \u9679, \u967A, \u967B, \u967C, \u967D, \u967E, \u967F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u9680, \u9681, \u9682, \u9683, \u9684, \u9685, \u9686, \u9687, \u9688, \u9689, \u968A, \u968B, \u968C, \u968D, \u968E, \u968F, "
 			"\u9690, \u9691, \u9692, \u9693, \u9694, \u9695, \u9696, \u9697, \u9698, \u9699, \u969A, \u969B, \u969C, \u969D, \u969E, \u969F, "
@@ -3637,7 +3335,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u96FF, \u96FF, \u96FF, \u96FF, \u96FF, \u96FF, \u96FF, \u96FF, \u96FF, \u96FF, \u96FF, \u96FF, \u96FF, \u96FF, \u96FF, \u96FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u9700, \u9701, \u9702, \u9703, \u9704, \u9705, \u9706, \u9707, \u9708, \u9709, \u970A, \u970B, \u970C, \u970D, \u970E, \u970F, "
 			"\u9710, \u9711, \u9712, \u9713, \u9714, \u9715, \u9716, \u9717, \u9718, \u9719, \u971A, \u971B, \u971C, \u971D, \u971E, \u971F, "
@@ -3649,7 +3346,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u9770, \u9771, \u9772, \u9773, \u9774, \u9775, \u9776, \u9777, \u9778, \u9779, \u977A, \u977B, \u977C, \u977D, \u977E, \u977F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u9780, \u9781, \u9782, \u9783, \u9784, \u9785, \u9786, \u9787, \u9788, \u9789, \u978A, \u978B, \u978C, \u978D, \u978E, \u978F, "
 			"\u9790, \u9791, \u9792, \u9793, \u9794, \u9795, \u9796, \u9797, \u9798, \u9799, \u979A, \u979B, \u979C, \u979D, \u979E, \u979F, "
@@ -3661,7 +3357,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u97FF, \u97FF, \u97FF, \u97FF, \u97FF, \u97FF, \u97FF, \u97FF, \u97FF, \u97FF, \u97FF, \u97FF, \u97FF, \u97FF, \u97FF, \u97FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u9800, \u9801, \u9802, \u9803, \u9804, \u9805, \u9806, \u9807, \u9808, \u9809, \u980A, \u980B, \u980C, \u980D, \u980E, \u980F, "
 			"\u9810, \u9811, \u9812, \u9813, \u9814, \u9815, \u9816, \u9817, \u9818, \u9819, \u981A, \u981B, \u981C, \u981D, \u981E, \u981F, "
@@ -3673,7 +3368,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u9870, \u9871, \u9872, \u9873, \u9874, \u9875, \u9876, \u9877, \u9878, \u9879, \u987A, \u987B, \u987C, \u987D, \u987E, \u987F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u9880, \u9881, \u9882, \u9883, \u9884, \u9885, \u9886, \u9887, \u9888, \u9889, \u988A, \u988B, \u988C, \u988D, \u988E, \u988F, "
 			"\u9890, \u9891, \u9892, \u9893, \u9894, \u9895, \u9896, \u9897, \u9898, \u9899, \u989A, \u989B, \u989C, \u989D, \u989E, \u989F, "
@@ -3685,7 +3379,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u98FF, \u98FF, \u98FF, \u98FF, \u98FF, \u98FF, \u98FF, \u98FF, \u98FF, \u98FF, \u98FF, \u98FF, \u98FF, \u98FF, \u98FF, \u98FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u9900, \u9901, \u9902, \u9903, \u9904, \u9905, \u9906, \u9907, \u9908, \u9909, \u990A, \u990B, \u990C, \u990D, \u990E, \u990F, "
 			"\u9910, \u9911, \u9912, \u9913, \u9914, \u9915, \u9916, \u9917, \u9918, \u9919, \u991A, \u991B, \u991C, \u991D, \u991E, \u991F, "
@@ -3697,7 +3390,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u9970, \u9971, \u9972, \u9973, \u9974, \u9975, \u9976, \u9977, \u9978, \u9979, \u997A, \u997B, \u997C, \u997D, \u997E, \u997F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u9980, \u9981, \u9982, \u9983, \u9984, \u9985, \u9986, \u9987, \u9988, \u9989, \u998A, \u998B, \u998C, \u998D, \u998E, \u998F, "
 			"\u9990, \u9991, \u9992, \u9993, \u9994, \u9995, \u9996, \u9997, \u9998, \u9999, \u999A, \u999B, \u999C, \u999D, \u999E, \u999F, "
@@ -3709,7 +3401,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u99FF, \u99FF, \u99FF, \u99FF, \u99FF, \u99FF, \u99FF, \u99FF, \u99FF, \u99FF, \u99FF, \u99FF, \u99FF, \u99FF, \u99FF, \u99FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u9A00, \u9A01, \u9A02, \u9A03, \u9A04, \u9A05, \u9A06, \u9A07, \u9A08, \u9A09, \u9A0A, \u9A0B, \u9A0C, \u9A0D, \u9A0E, \u9A0F, "
 			"\u9A10, \u9A11, \u9A12, \u9A13, \u9A14, \u9A15, \u9A16, \u9A17, \u9A18, \u9A19, \u9A1A, \u9A1B, \u9A1C, \u9A1D, \u9A1E, \u9A1F, "
@@ -3721,7 +3412,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u9A70, \u9A71, \u9A72, \u9A73, \u9A74, \u9A75, \u9A76, \u9A77, \u9A78, \u9A79, \u9A7A, \u9A7B, \u9A7C, \u9A7D, \u9A7E, \u9A7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u9A80, \u9A81, \u9A82, \u9A83, \u9A84, \u9A85, \u9A86, \u9A87, \u9A88, \u9A89, \u9A8A, \u9A8B, \u9A8C, \u9A8D, \u9A8E, \u9A8F, "
 			"\u9A90, \u9A91, \u9A92, \u9A93, \u9A94, \u9A95, \u9A96, \u9A97, \u9A98, \u9A99, \u9A9A, \u9A9B, \u9A9C, \u9A9D, \u9A9E, \u9A9F, "
@@ -3733,7 +3423,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u9AFF, \u9AFF, \u9AFF, \u9AFF, \u9AFF, \u9AFF, \u9AFF, \u9AFF, \u9AFF, \u9AFF, \u9AFF, \u9AFF, \u9AFF, \u9AFF, \u9AFF, \u9AFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u9B00, \u9B01, \u9B02, \u9B03, \u9B04, \u9B05, \u9B06, \u9B07, \u9B08, \u9B09, \u9B0A, \u9B0B, \u9B0C, \u9B0D, \u9B0E, \u9B0F, "
 			"\u9B10, \u9B11, \u9B12, \u9B13, \u9B14, \u9B15, \u9B16, \u9B17, \u9B18, \u9B19, \u9B1A, \u9B1B, \u9B1C, \u9B1D, \u9B1E, \u9B1F, "
@@ -3745,7 +3434,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u9B70, \u9B71, \u9B72, \u9B73, \u9B74, \u9B75, \u9B76, \u9B77, \u9B78, \u9B79, \u9B7A, \u9B7B, \u9B7C, \u9B7D, \u9B7E, \u9B7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u9B80, \u9B81, \u9B82, \u9B83, \u9B84, \u9B85, \u9B86, \u9B87, \u9B88, \u9B89, \u9B8A, \u9B8B, \u9B8C, \u9B8D, \u9B8E, \u9B8F, "
 			"\u9B90, \u9B91, \u9B92, \u9B93, \u9B94, \u9B95, \u9B96, \u9B97, \u9B98, \u9B99, \u9B9A, \u9B9B, \u9B9C, \u9B9D, \u9B9E, \u9B9F, "
@@ -3757,7 +3445,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u9BFF, \u9BFF, \u9BFF, \u9BFF, \u9BFF, \u9BFF, \u9BFF, \u9BFF, \u9BFF, \u9BFF, \u9BFF, \u9BFF, \u9BFF, \u9BFF, \u9BFF, \u9BFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u9C00, \u9C01, \u9C02, \u9C03, \u9C04, \u9C05, \u9C06, \u9C07, \u9C08, \u9C09, \u9C0A, \u9C0B, \u9C0C, \u9C0D, \u9C0E, \u9C0F, "
 			"\u9C10, \u9C11, \u9C12, \u9C13, \u9C14, \u9C15, \u9C16, \u9C17, \u9C18, \u9C19, \u9C1A, \u9C1B, \u9C1C, \u9C1D, \u9C1E, \u9C1F, "
@@ -3769,7 +3456,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u9C70, \u9C71, \u9C72, \u9C73, \u9C74, \u9C75, \u9C76, \u9C77, \u9C78, \u9C79, \u9C7A, \u9C7B, \u9C7C, \u9C7D, \u9C7E, \u9C7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u9C80, \u9C81, \u9C82, \u9C83, \u9C84, \u9C85, \u9C86, \u9C87, \u9C88, \u9C89, \u9C8A, \u9C8B, \u9C8C, \u9C8D, \u9C8E, \u9C8F, "
 			"\u9C90, \u9C91, \u9C92, \u9C93, \u9C94, \u9C95, \u9C96, \u9C97, \u9C98, \u9C99, \u9C9A, \u9C9B, \u9C9C, \u9C9D, \u9C9E, \u9C9F, "
@@ -3781,7 +3467,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u9CFF, \u9CFF, \u9CFF, \u9CFF, \u9CFF, \u9CFF, \u9CFF, \u9CFF, \u9CFF, \u9CFF, \u9CFF, \u9CFF, \u9CFF, \u9CFF, \u9CFF, \u9CFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u9D00, \u9D01, \u9D02, \u9D03, \u9D04, \u9D05, \u9D06, \u9D07, \u9D08, \u9D09, \u9D0A, \u9D0B, \u9D0C, \u9D0D, \u9D0E, \u9D0F, "
 			"\u9D10, \u9D11, \u9D12, \u9D13, \u9D14, \u9D15, \u9D16, \u9D17, \u9D18, \u9D19, \u9D1A, \u9D1B, \u9D1C, \u9D1D, \u9D1E, \u9D1F, "
@@ -3793,7 +3478,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u9D70, \u9D71, \u9D72, \u9D73, \u9D74, \u9D75, \u9D76, \u9D77, \u9D78, \u9D79, \u9D7A, \u9D7B, \u9D7C, \u9D7D, \u9D7E, \u9D7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u9D80, \u9D81, \u9D82, \u9D83, \u9D84, \u9D85, \u9D86, \u9D87, \u9D88, \u9D89, \u9D8A, \u9D8B, \u9D8C, \u9D8D, \u9D8E, \u9D8F, "
 			"\u9D90, \u9D91, \u9D92, \u9D93, \u9D94, \u9D95, \u9D96, \u9D97, \u9D98, \u9D99, \u9D9A, \u9D9B, \u9D9C, \u9D9D, \u9D9E, \u9D9F, "
@@ -3805,7 +3489,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u9DFF, \u9DFF, \u9DFF, \u9DFF, \u9DFF, \u9DFF, \u9DFF, \u9DFF, \u9DFF, \u9DFF, \u9DFF, \u9DFF, \u9DFF, \u9DFF, \u9DFF, \u9DFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u9E00, \u9E01, \u9E02, \u9E03, \u9E04, \u9E05, \u9E06, \u9E07, \u9E08, \u9E09, \u9E0A, \u9E0B, \u9E0C, \u9E0D, \u9E0E, \u9E0F, "
 			"\u9E10, \u9E11, \u9E12, \u9E13, \u9E14, \u9E15, \u9E16, \u9E17, \u9E18, \u9E19, \u9E1A, \u9E1B, \u9E1C, \u9E1D, \u9E1E, \u9E1F, "
@@ -3817,7 +3500,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u9E70, \u9E71, \u9E72, \u9E73, \u9E74, \u9E75, \u9E76, \u9E77, \u9E78, \u9E79, \u9E7A, \u9E7B, \u9E7C, \u9E7D, \u9E7E, \u9E7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u9E80, \u9E81, \u9E82, \u9E83, \u9E84, \u9E85, \u9E86, \u9E87, \u9E88, \u9E89, \u9E8A, \u9E8B, \u9E8C, \u9E8D, \u9E8E, \u9E8F, "
 			"\u9E90, \u9E91, \u9E92, \u9E93, \u9E94, \u9E95, \u9E96, \u9E97, \u9E98, \u9E99, \u9E9A, \u9E9B, \u9E9C, \u9E9D, \u9E9E, \u9E9F, "
@@ -3829,7 +3511,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u9EFF, \u9EFF, \u9EFF, \u9EFF, \u9EFF, \u9EFF, \u9EFF, \u9EFF, \u9EFF, \u9EFF, \u9EFF, \u9EFF, \u9EFF, \u9EFF, \u9EFF, \u9EFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u9F00, \u9F01, \u9F02, \u9F03, \u9F04, \u9F05, \u9F06, \u9F07, \u9F08, \u9F09, \u9F0A, \u9F0B, \u9F0C, \u9F0D, \u9F0E, \u9F0F, "
 			"\u9F10, \u9F11, \u9F12, \u9F13, \u9F14, \u9F15, \u9F16, \u9F17, \u9F18, \u9F19, \u9F1A, \u9F1B, \u9F1C, \u9F1D, \u9F1E, \u9F1F, "
@@ -3841,7 +3522,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u9F70, \u9F71, \u9F72, \u9F73, \u9F74, \u9F75, \u9F76, \u9F77, \u9F78, \u9F79, \u9F7A, \u9F7B, \u9F7C, \u9F7D, \u9F7E, \u9F7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\u9F80, \u9F81, \u9F82, \u9F83, \u9F84, \u9F85, \u9F86, \u9F87, \u9F88, \u9F89, \u9F8A, \u9F8B, \u9F8C, \u9F8D, \u9F8E, \u9F8F, "
 			"\u9F90, \u9F91, \u9F92, \u9F93, \u9F94, \u9F95, \u9F96, \u9F97, \u9F98, \u9F99, \u9F9A, \u9F9B, \u9F9C, \u9F9D, \u9F9E, \u9F9F, "
@@ -3853,7 +3533,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\u9FFF, \u9FFF, \u9FFF, \u9FFF, \u9FFF, \u9FFF, \u9FFF, \u9FFF, \u9FFF, \u9FFF, \u9FFF, \u9FFF, \u9FFF, \u9FFF, \u9FFF, \u9FFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
             "\uA000, \uA001, \uA002, \uA003, \uA004, \uA005, \uA006, \uA007, \uA008, \uA009, \uA00A, \uA00B, \uA00C, \uA00D, \uA00E, \uA00F, "
             "\uA010, \uA011, \uE012, \uA013, \uA014, \uA015, \uA016, \uA017, \uA018, \uA019, \uA01A, \uA01B, \uA01C, \uA01D, \uA01E, \uA01F, "
@@ -3865,7 +3544,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
             "\uA070, \uA071, \uA072, \uA073, \uA074, \uA075, \uA076, \uA077, \uA078, \uA079, \uA07A, \uA07B, \uA07C, \uA07D, \uA07E, \uA07F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uA080, \uA081, \uA082, \uA083, \uA084, \uA085, \uA086, \uA087, \uA088, \uA089, \uA08A, \uA08B, \uA08C, \uA08D, \uA08E, \uA08F, "
 			"\uA090, \uA091, \uA092, \uA093, \uA094, \uA095, \uA096, \uA097, \uA098, \uA099, \uA09A, \uA09B, \uA09C, \uA09D, \uA09E, \uA09F, "
@@ -3877,7 +3555,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uA0FF, \uA0FF, \uA0FF, \uA0FF, \uA0FF, \uA0FF, \uA0FF, \uA0FF, \uA0FF, \uA0FF, \uA0FF, \uA0FF, \uA0FF, \uA0FF, \uA0FF, \uA0FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uA100, \uA101, \uA102, \uA103, \uA104, \uA105, \uA106, \uA107, \uA108, \uA109, \uA10A, \uA10B, \uA10C, \uA10D, \uA10E, \uA10F, "
 			"\uA110, \uA111, \uA112, \uA113, \uA114, \uA115, \uA116, \uA117, \uA118, \uA119, \uA11A, \uA11B, \uA11C, \uA11D, \uA11E, \uA11F, "
@@ -3889,7 +3566,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uA170, \uA171, \uA172, \uA173, \uA174, \uA175, \uA176, \uA177, \uA178, \uA179, \uA17A, \uA17B, \uA17C, \uA17D, \uA17E, \uA17F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uA180, \uA181, \uA182, \uA183, \uA184, \uA185, \uA186, \uA187, \uA188, \uA189, \uA18A, \uA18B, \uA18C, \uA18D, \uA18E, \uA18F, "
 			"\uA190, \uA191, \uA192, \uA193, \uA194, \uA195, \uA196, \uA197, \uA198, \uA199, \uA19A, \uA19B, \uA19C, \uA19D, \uA19E, \uA19F, "
@@ -3901,7 +3577,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uA1FF, \uA1FF, \uA1FF, \uA1FF, \uA1FF, \uA1FF, \uA1FF, \uA1FF, \uA1FF, \uA1FF, \uA1FF, \uA1FF, \uA1FF, \uA1FF, \uA1FF, \uA1FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uA200, \uA201, \uA202, \uA203, \uA204, \uA205, \uA206, \uA207, \uA208, \uA209, \uA20A, \uA20B, \uA20C, \uA20D, \uA20E, \uA20F, "
 			"\uA210, \uA211, \uA212, \uA213, \uA214, \uA215, \uA216, \uA217, \uA218, \uA219, \uA21A, \uA21B, \uA21C, \uA21D, \uA21E, \uA21F, "
@@ -3913,7 +3588,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uA270, \uA271, \uA272, \uA273, \uA274, \uA275, \uA276, \uA277, \uA278, \uA279, \uA27A, \uA27B, \uA27C, \uA27D, \uA27E, \uA27F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uA280, \uA281, \uA282, \uA283, \uA284, \uA285, \uA286, \uA287, \uA288, \uA289, \uA28A, \uA28B, \uA28C, \uA28D, \uA28E, \uA28F, "
 			"\uA290, \uA291, \uA292, \uA293, \uA294, \uA295, \uA296, \uA297, \uA298, \uA299, \uA29A, \uA29B, \uA29C, \uA29D, \uA29E, \uA29F, "
@@ -3925,7 +3599,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uA2FF, \uA2FF, \uA2FF, \uA2FF, \uA2FF, \uA2FF, \uA2FF, \uA2FF, \uA2FF, \uA2FF, \uA2FF, \uA2FF, \uA2FF, \uA2FF, \uA2FF, \uA2FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uA300, \uA301, \uA302, \uA303, \uA304, \uA305, \uA306, \uA307, \uA308, \uA309, \uA30A, \uA30B, \uA30C, \uA30D, \uA30E, \uA30F, "
 			"\uA310, \uA311, \uA312, \uA313, \uA314, \uA315, \uA316, \uA317, \uA318, \uA319, \uA31A, \uA31B, \uA31C, \uA31D, \uA31E, \uA31F, "
@@ -3937,7 +3610,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uA370, \uA371, \uA372, \uA373, \uA374, \uA375, \uA376, \uA377, \uA378, \uA379, \uA37A, \uA37B, \uA37C, \uA37D, \uA37E, \uA37F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uA380, \uA381, \uA382, \uA383, \uA384, \uA385, \uA386, \uA387, \uA388, \uA389, \uA38A, \uA38B, \uA38C, \uA38D, \uA38E, \uA38F, "
 			"\uA390, \uA391, \uA392, \uA393, \uA394, \uA395, \uA396, \uA397, \uA398, \uA399, \uA39A, \uA39B, \uA39C, \uA39D, \uA39E, \uA39F, "
@@ -3949,7 +3621,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uA3FF, \uA3FF, \uA3FF, \uA3FF, \uA3FF, \uA3FF, \uA3FF, \uA3FF, \uA3FF, \uA3FF, \uA3FF, \uA3FF, \uA3FF, \uA3FF, \uA3FF, \uA3FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uA400, \uA401, \uA402, \uA403, \uA404, \uA405, \uA406, \uA407, \uA408, \uA409, \uA40A, \uA40B, \uA40C, \uA40D, \uA40E, \uA40F, "
 			"\uA410, \uA411, \uA412, \uA413, \uA414, \uA415, \uA416, \uA417, \uA418, \uA419, \uA41A, \uA41B, \uA41C, \uA41D, \uA41E, \uA41F, "
@@ -3961,7 +3632,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uA470, \uA471, \uA472, \uA473, \uA474, \uA475, \uA476, \uA477, \uA478, \uA479, \uA47A, \uA47B, \uA47C, \uA47D, \uA47E, \uA47F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uA480, \uA481, \uA482, \uA483, \uA484, \uA485, \uA486, \uA487, \uA488, \uA489, \uA48A, \uA48B, \uA48C, \uA48D, \uA48E, \uA48F, "
 			"\uA490, \uA491, \uA492, \uA493, \uA494, \uA495, \uA496, \uA497, \uA498, \uA499, \uA49A, \uA49B, \uA49C, \uA49D, \uA49E, \uA49F, "
@@ -3973,7 +3643,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uA4FF, \uA4FF, \uA4FF, \uA4FF, \uA4FF, \uA4FF, \uA4FF, \uA4FF, \uA4FF, \uA4FF, \uA4FF, \uA4FF, \uA4FF, \uA4FF, \uA4FF, \uA4FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uA500, \uA501, \uA502, \uA503, \uA504, \uA505, \uA506, \uA507, \uA508, \uA509, \uA50A, \uA50B, \uA50C, \uA50D, \uA50E, \uA50F, "
 			"\uA510, \uA511, \uA512, \uA513, \uA514, \uA515, \uA516, \uA517, \uA518, \uA519, \uA51A, \uA51B, \uA51C, \uA51D, \uA51E, \uA51F, "
@@ -3985,7 +3654,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uA570, \uA571, \uA572, \uA573, \uA574, \uA575, \uA576, \uA577, \uA578, \uA579, \uA57A, \uA57B, \uA57C, \uA57D, \uA57E, \uA57F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uA580, \uA581, \uA582, \uA583, \uA584, \uA585, \uA586, \uA587, \uA588, \uA589, \uA58A, \uA58B, \uA58C, \uA58D, \uA58E, \uA58F, "
 			"\uA590, \uA591, \uA592, \uA593, \uA594, \uA595, \uA596, \uA597, \uA598, \uA599, \uA59A, \uA59B, \uA59C, \uA59D, \uA59E, \uA59F, "
@@ -3997,7 +3665,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uA5FF, \uA5FF, \uA5FF, \uA5FF, \uA5FF, \uA5FF, \uA5FF, \uA5FF, \uA5FF, \uA5FF, \uA5FF, \uA5FF, \uA5FF, \uA5FF, \uA5FF, \uA5FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uA600, \uA601, \uA602, \uA603, \uA604, \uA605, \uA606, \uA607, \uA608, \uA609, \uA60A, \uA60B, \uA60C, \uA60D, \uA60E, \uA60F, "
 			"\uA610, \uA611, \uA612, \uA613, \uA614, \uA615, \uA616, \uA617, \uA618, \uA619, \uA61A, \uA61B, \uA61C, \uA61D, \uA61E, \uA61F, "
@@ -4009,7 +3676,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uA670, \uA671, \uA672, \uA673, \uA674, \uA675, \uA676, \uA677, \uA678, \uA679, \uA67A, \uA67B, \uA67C, \uA67D, \uA67E, \uA67F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uA680, \uA681, \uA682, \uA683, \uA684, \uA685, \uA686, \uA687, \uA688, \uA689, \uA68A, \uA68B, \uA68C, \uA68D, \uA68E, \uA68F, "
 			"\uA690, \uA691, \uA692, \uA693, \uA694, \uA695, \uA696, \uA697, \uA698, \uA699, \uA69A, \uA69B, \uA69C, \uA69D, \uA69E, \uA69F, "
@@ -4021,7 +3687,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uA6FF, \uA6FF, \uA6FF, \uA6FF, \uA6FF, \uA6FF, \uA6FF, \uA6FF, \uA6FF, \uA6FF, \uA6FF, \uA6FF, \uA6FF, \uA6FF, \uA6FF, \uA6FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uA700, \uA701, \uA702, \uA703, \uA704, \uA705, \uA706, \uA707, \uA708, \uA709, \uA70A, \uA70B, \uA70C, \uA70D, \uA70E, \uA70F, "
 			"\uA710, \uA711, \uA712, \uA713, \uA714, \uA715, \uA716, \uA717, \uA718, \uA719, \uA71A, \uA71B, \uA71C, \uA71D, \uA71E, \uA71F, "
@@ -4033,7 +3698,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uA770, \uA771, \uA772, \uA773, \uA774, \uA775, \uA776, \uA777, \uA778, \uA779, \uA77A, \uA77B, \uA77C, \uA77D, \uA77E, \uA77F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uA780, \uA781, \uA782, \uA783, \uA784, \uA785, \uA786, \uA787, \uA788, \uA789, \uA78A, \uA78B, \uA78C, \uA78D, \uA78E, \uA78F, "
 			"\uA790, \uA791, \uA792, \uA793, \uA794, \uA795, \uA796, \uA797, \uA798, \uA799, \uA79A, \uA79B, \uA79C, \uA79D, \uA79E, \uA79F, "
@@ -4045,7 +3709,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uA7FF, \uA7FF, \uA7FF, \uA7FF, \uA7FF, \uA7FF, \uA7FF, \uA7FF, \uA7FF, \uA7FF, \uA7FF, \uA7FF, \uA7FF, \uA7FF, \uA7FF, \uA7FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uA800, \uA801, \uA802, \uA803, \uA804, \uA805, \uA806, \uA807, \uA808, \uA809, \uA80A, \uA80B, \uA80C, \uA80D, \uA80E, \uA80F, "
 			"\uA810, \uA811, \uA812, \uA813, \uA814, \uA815, \uA816, \uA817, \uA818, \uA819, \uA81A, \uA81B, \uA81C, \uA81D, \uA81E, \uA81F, "
@@ -4057,7 +3720,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uA870, \uA871, \uA872, \uA873, \uA874, \uA875, \uA876, \uA877, \uA878, \uA879, \uA87A, \uA87B, \uA87C, \uA87D, \uA87E, \uA87F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uA880, \uA881, \uA882, \uA883, \uA884, \uA885, \uA886, \uA887, \uA888, \uA889, \uA88A, \uA88B, \uA88C, \uA88D, \uA88E, \uA88F, "
 			"\uA890, \uA891, \uA892, \uA893, \uA894, \uA895, \uA896, \uA897, \uA898, \uA899, \uA89A, \uA89B, \uA89C, \uA89D, \uA89E, \uA89F, "
@@ -4069,7 +3731,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uA8FF, \uA8FF, \uA8FF, \uA8FF, \uA8FF, \uA8FF, \uA8FF, \uA8FF, \uA8FF, \uA8FF, \uA8FF, \uA8FF, \uA8FF, \uA8FF, \uA8FF, \uA8FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uA900, \uA901, \uA902, \uA903, \uA904, \uA905, \uA906, \uA907, \uA908, \uA909, \uA90A, \uA90B, \uA90C, \uA90D, \uA90E, \uA90F, "
 			"\uA910, \uA911, \uA912, \uA913, \uA914, \uA915, \uA916, \uA917, \uA918, \uA919, \uA91A, \uA91B, \uA91C, \uA91D, \uA91E, \uA91F, "
@@ -4081,7 +3742,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uA970, \uA971, \uA972, \uA973, \uA974, \uA975, \uA976, \uA977, \uA978, \uA979, \uA97A, \uA97B, \uA97C, \uA97D, \uA97E, \uA97F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uA980, \uA981, \uA982, \uA983, \uA984, \uA985, \uA986, \uA987, \uA988, \uA989, \uA98A, \uA98B, \uA98C, \uA98D, \uA98E, \uA98F, "
 			"\uA990, \uA991, \uA992, \uA993, \uA994, \uA995, \uA996, \uA997, \uA998, \uA999, \uA99A, \uA99B, \uA99C, \uA99D, \uA99E, \uA99F, "
@@ -4093,7 +3753,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uA9FF, \uA9FF, \uA9FF, \uA9FF, \uA9FF, \uA9FF, \uA9FF, \uA9FF, \uA9FF, \uA9FF, \uA9FF, \uA9FF, \uA9FF, \uA9FF, \uA9FF, \uA9FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uAA00, \uAA01, \uAA02, \uAA03, \uAA04, \uAA05, \uAA06, \uAA07, \uAA08, \uAA09, \uAA0A, \uAA0B, \uAA0C, \uAA0D, \uAA0E, \uAA0F, "
 			"\uAA10, \uAA11, \uAA12, \uAA13, \uAA14, \uAA15, \uAA16, \uAA17, \uAA18, \uAA19, \uAA1A, \uAA1B, \uAA1C, \uAA1D, \uAA1E, \uAA1F, "
@@ -4105,7 +3764,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uAA70, \uAA71, \uAA72, \uAA73, \uAA74, \uAA75, \uAA76, \uAA77, \uAA78, \uAA79, \uAA7A, \uAA7B, \uAA7C, \uAA7D, \uAA7E, \uAA7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uAA80, \uAA81, \uAA82, \uAA83, \uAA84, \uAA85, \uAA86, \uAA87, \uAA88, \uAA89, \uAA8A, \uAA8B, \uAA8C, \uAA8D, \uAA8E, \uAA8F, "
 			"\uAA90, \uAA91, \uAA92, \uAA93, \uAA94, \uAA95, \uAA96, \uAA97, \uAA98, \uAA99, \uAA9A, \uAA9B, \uAA9C, \uAA9D, \uAA9E, \uAA9F, "
@@ -4117,7 +3775,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uAAFF, \uAAFF, \uAAFF, \uAAFF, \uAAFF, \uAAFF, \uAAFF, \uAAFF, \uAAFF, \uAAFF, \uAAFF, \uAAFF, \uAAFF, \uAAFF, \uAAFF, \uAAFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uAB00, \uAB01, \uAB02, \uAB03, \uAB04, \uAB05, \uAB06, \uAB07, \uAB08, \uAB09, \uAB0A, \uAB0B, \uAB0C, \uAB0D, \uAB0E, \uAB0F, "
 			"\uAB10, \uAB11, \uAB12, \uAB13, \uAB14, \uAB15, \uAB16, \uAB17, \uAB18, \uAB19, \uAB1A, \uAB1B, \uAB1C, \uAB1D, \uAB1E, \uAB1F, "
@@ -4129,7 +3786,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uAB70, \uAB71, \uAB72, \uAB73, \uAB74, \uAB75, \uAB76, \uAB77, \uAB78, \uAB79, \uAB7A, \uAB7B, \uAB7C, \uAB7D, \uAB7E, \uAB7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uAB80, \uAB81, \uAB82, \uAB83, \uAB84, \uAB85, \uAB86, \uAB87, \uAB88, \uAB89, \uAB8A, \uAB8B, \uAB8C, \uAB8D, \uAB8E, \uAB8F, "
 			"\uAB90, \uAB91, \uAB92, \uAB93, \uAB94, \uAB95, \uAB96, \uAB97, \uAB98, \uAB99, \uAB9A, \uAB9B, \uAB9C, \uAB9D, \uAB9E, \uAB9F, "
@@ -4141,7 +3797,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uABFF, \uABFF, \uABFF, \uABFF, \uABFF, \uABFF, \uABFF, \uABFF, \uABFF, \uABFF, \uABFF, \uABFF, \uABFF, \uABFF, \uABFF, \uABFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uAC00, \uAC01, \uAC02, \uAC03, \uAC04, \uAC05, \uAC06, \uAC07, \uAC08, \uAC09, \uAC0A, \uAC0B, \uAC0C, \uAC0D, \uAC0E, \uAC0F, "
 			"\uAC10, \uAC11, \uAC12, \uAC13, \uAC14, \uAC15, \uAC16, \uAC17, \uAC18, \uAC19, \uAC1A, \uAC1B, \uAC1C, \uAC1D, \uAC1E, \uAC1F, "
@@ -4153,7 +3808,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uAC70, \uAC71, \uAC72, \uAC73, \uAC74, \uAC75, \uAC76, \uAC77, \uAC78, \uAC79, \uAC7A, \uAC7B, \uAC7C, \uAC7D, \uAC7E, \uAC7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uAC80, \uAC81, \uAC82, \uAC83, \uAC84, \uAC85, \uAC86, \uAC87, \uAC88, \uAC89, \uAC8A, \uAC8B, \uAC8C, \uAC8D, \uAC8E, \uAC8F, "
 			"\uAC90, \uAC91, \uAC92, \uAC93, \uAC94, \uAC95, \uAC96, \uAC97, \uAC98, \uAC99, \uAC9A, \uAC9B, \uAC9C, \uAC9D, \uAC9E, \uAC9F, "
@@ -4165,7 +3819,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uACFF, \uACFF, \uACFF, \uACFF, \uACFF, \uACFF, \uACFF, \uACFF, \uACFF, \uACFF, \uACFF, \uACFF, \uACFF, \uACFF, \uACFF, \uACFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uAD00, \uAD01, \uAD02, \uAD03, \uAD04, \uAD05, \uAD06, \uAD07, \uAD08, \uAD09, \uAD0A, \uAD0B, \uAD0C, \uAD0D, \uAD0E, \uAD0F, "
 			"\uAD10, \uAD11, \uAD12, \uAD13, \uAD14, \uAD15, \uAD16, \uAD17, \uAD18, \uAD19, \uAD1A, \uAD1B, \uAD1C, \uAD1D, \uAD1E, \uAD1F, "
@@ -4177,7 +3830,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uAD70, \uAD71, \uAD72, \uAD73, \uAD74, \uAD75, \uAD76, \uAD77, \uAD78, \uAD79, \uAD7A, \uAD7B, \uAD7C, \uAD7D, \uAD7E, \uAD7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uAD80, \uAD81, \uAD82, \uAD83, \uAD84, \uAD85, \uAD86, \uAD87, \uAD88, \uAD89, \uAD8A, \uAD8B, \uAD8C, \uAD8D, \uAD8E, \uAD8F, "
 			"\uAD90, \uAD91, \uAD92, \uAD93, \uAD94, \uAD95, \uAD96, \uAD97, \uAD98, \uAD99, \uAD9A, \uAD9B, \uAD9C, \uAD9D, \uAD9E, \uAD9F, "
@@ -4189,7 +3841,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uADFF, \uADFF, \uADFF, \uADFF, \uADFF, \uADFF, \uADFF, \uADFF, \uADFF, \uADFF, \uADFF, \uADFF, \uADFF, \uADFF, \uADFF, \uADFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uAE00, \uAE01, \uAE02, \uAE03, \uAE04, \uAE05, \uAE06, \uAE07, \uAE08, \uAE09, \uAE0A, \uAE0B, \uAE0C, \uAE0D, \uAE0E, \uAE0F, "
 			"\uAE10, \uAE11, \uAE12, \uAE13, \uAE14, \uAE15, \uAE16, \uAE17, \uAE18, \uAE19, \uAE1A, \uAE1B, \uAE1C, \uAE1D, \uAE1E, \uAE1F, "
@@ -4201,7 +3852,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uAE70, \uAE71, \uAE72, \uAE73, \uAE74, \uAE75, \uAE76, \uAE77, \uAE78, \uAE79, \uAE7A, \uAE7B, \uAE7C, \uAE7D, \uAE7E, \uAE7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uAE80, \uAE81, \uAE82, \uAE83, \uAE84, \uAE85, \uAE86, \uAE87, \uAE88, \uAE89, \uAE8A, \uAE8B, \uAE8C, \uAE8D, \uAE8E, \uAE8F, "
 			"\uAE90, \uAE91, \uAE92, \uAE93, \uAE94, \uAE95, \uAE96, \uAE97, \uAE98, \uAE99, \uAE9A, \uAE9B, \uAE9C, \uAE9D, \uAE9E, \uAE9F, "
@@ -4213,7 +3863,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uAEFF, \uAEFF, \uAEFF, \uAEFF, \uAEFF, \uAEFF, \uAEFF, \uAEFF, \uAEFF, \uAEFF, \uAEFF, \uAEFF, \uAEFF, \uAEFF, \uAEFF, \uAEFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uAF00, \uAF01, \uAF02, \uAF03, \uAF04, \uAF05, \uAF06, \uAF07, \uAF08, \uAF09, \uAF0A, \uAF0B, \uAF0C, \uAF0D, \uAF0E, \uAF0F, "
 			"\uAF10, \uAF11, \uAF12, \uAF13, \uAF14, \uAF15, \uAF16, \uAF17, \uAF18, \uAF19, \uAF1A, \uAF1B, \uAF1C, \uAF1D, \uAF1E, \uAF1F, "
@@ -4225,7 +3874,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uAF70, \uAF71, \uAF72, \uAF73, \uAF74, \uAF75, \uAF76, \uAF77, \uAF78, \uAF79, \uAF7A, \uAF7B, \uAF7C, \uAF7D, \uAF7E, \uAF7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uAF80, \uAF81, \uAF82, \uAF83, \uAF84, \uAF85, \uAF86, \uAF87, \uAF88, \uAF89, \uAF8A, \uAF8B, \uAF8C, \uAF8D, \uAF8E, \uAF8F, "
 			"\uAF90, \uAF91, \uAF92, \uAF93, \uAF94, \uAF95, \uAF96, \uAF97, \uAF98, \uAF99, \uAF9A, \uAF9B, \uAF9C, \uAF9D, \uAF9E, \uAF9F, "
@@ -4237,7 +3885,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uAFFF, \uAFFF, \uAFFF, \uAFFF, \uAFFF, \uAFFF, \uAFFF, \uAFFF, \uAFFF, \uAFFF, \uAFFF, \uAFFF, \uAFFF, \uAFFF, \uAFFF, \uAFFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
             "\uB000, \uB001, \uB002, \uB003, \uB004, \uB005, \uB006, \uB007, \uB008, \uB009, \uB00A, \uB00B, \uB00C, \uB00D, \uB00E, \uB00F, "
             "\uB010, \uB011, \uE012, \uB013, \uB014, \uB015, \uB016, \uB017, \uB018, \uB019, \uB01A, \uB01B, \uB01C, \uB01D, \uB01E, \uB01F, "
@@ -4249,7 +3896,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
             "\uB070, \uB071, \uB072, \uB073, \uB074, \uB075, \uB076, \uB077, \uB078, \uB079, \uB07A, \uB07B, \uB07C, \uB07D, \uB07E, \uB07F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uB080, \uB081, \uB082, \uB083, \uB084, \uB085, \uB086, \uB087, \uB088, \uB089, \uB08A, \uB08B, \uB08C, \uB08D, \uB08E, \uB08F, "
 			"\uB090, \uB091, \uB092, \uB093, \uB094, \uB095, \uB096, \uB097, \uB098, \uB099, \uB09A, \uB09B, \uB09C, \uB09D, \uB09E, \uB09F, "
@@ -4261,7 +3907,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uB0FF, \uB0FF, \uB0FF, \uB0FF, \uB0FF, \uB0FF, \uB0FF, \uB0FF, \uB0FF, \uB0FF, \uB0FF, \uB0FF, \uB0FF, \uB0FF, \uB0FF, \uB0FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uB100, \uB101, \uB102, \uB103, \uB104, \uB105, \uB106, \uB107, \uB108, \uB109, \uB10A, \uB10B, \uB10C, \uB10D, \uB10E, \uB10F, "
 			"\uB110, \uB111, \uB112, \uB113, \uB114, \uB115, \uB116, \uB117, \uB118, \uB119, \uB11A, \uB11B, \uB11C, \uB11D, \uB11E, \uB11F, "
@@ -4273,7 +3918,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uB170, \uB171, \uB172, \uB173, \uB174, \uB175, \uB176, \uB177, \uB178, \uB179, \uB17A, \uB17B, \uB17C, \uB17D, \uB17E, \uB17F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uB180, \uB181, \uB182, \uB183, \uB184, \uB185, \uB186, \uB187, \uB188, \uB189, \uB18A, \uB18B, \uB18C, \uB18D, \uB18E, \uB18F, "
 			"\uB190, \uB191, \uB192, \uB193, \uB194, \uB195, \uB196, \uB197, \uB198, \uB199, \uB19A, \uB19B, \uB19C, \uB19D, \uB19E, \uB19F, "
@@ -4285,7 +3929,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uB1FF, \uB1FF, \uB1FF, \uB1FF, \uB1FF, \uB1FF, \uB1FF, \uB1FF, \uB1FF, \uB1FF, \uB1FF, \uB1FF, \uB1FF, \uB1FF, \uB1FF, \uB1FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uB200, \uB201, \uB202, \uB203, \uB204, \uB205, \uB206, \uB207, \uB208, \uB209, \uB20A, \uB20B, \uB20C, \uB20D, \uB20E, \uB20F, "
 			"\uB210, \uB211, \uB212, \uB213, \uB214, \uB215, \uB216, \uB217, \uB218, \uB219, \uB21A, \uB21B, \uB21C, \uB21D, \uB21E, \uB21F, "
@@ -4297,7 +3940,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uB270, \uB271, \uB272, \uB273, \uB274, \uB275, \uB276, \uB277, \uB278, \uB279, \uB27A, \uB27B, \uB27C, \uB27D, \uB27E, \uB27F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uB280, \uB281, \uB282, \uB283, \uB284, \uB285, \uB286, \uB287, \uB288, \uB289, \uB28A, \uB28B, \uB28C, \uB28D, \uB28E, \uB28F, "
 			"\uB290, \uB291, \uB292, \uB293, \uB294, \uB295, \uB296, \uB297, \uB298, \uB299, \uB29A, \uB29B, \uB29C, \uB29D, \uB29E, \uB29F, "
@@ -4309,7 +3951,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uB2FF, \uB2FF, \uB2FF, \uB2FF, \uB2FF, \uB2FF, \uB2FF, \uB2FF, \uB2FF, \uB2FF, \uB2FF, \uB2FF, \uB2FF, \uB2FF, \uB2FF, \uB2FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uB300, \uB301, \uB302, \uB303, \uB304, \uB305, \uB306, \uB307, \uB308, \uB309, \uB30A, \uB30B, \uB30C, \uB30D, \uB30E, \uB30F, "
 			"\uB310, \uB311, \uB312, \uB313, \uB314, \uB315, \uB316, \uB317, \uB318, \uB319, \uB31A, \uB31B, \uB31C, \uB31D, \uB31E, \uB31F, "
@@ -4321,7 +3962,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uB370, \uB371, \uB372, \uB373, \uB374, \uB375, \uB376, \uB377, \uB378, \uB379, \uB37A, \uB37B, \uB37C, \uB37D, \uB37E, \uB37F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uB380, \uB381, \uB382, \uB383, \uB384, \uB385, \uB386, \uB387, \uB388, \uB389, \uB38A, \uB38B, \uB38C, \uB38D, \uB38E, \uB38F, "
 			"\uB390, \uB391, \uB392, \uB393, \uB394, \uB395, \uB396, \uB397, \uB398, \uB399, \uB39A, \uB39B, \uB39C, \uB39D, \uB39E, \uB39F, "
@@ -4333,7 +3973,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uB3FF, \uB3FF, \uB3FF, \uB3FF, \uB3FF, \uB3FF, \uB3FF, \uB3FF, \uB3FF, \uB3FF, \uB3FF, \uB3FF, \uB3FF, \uB3FF, \uB3FF, \uB3FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uB400, \uB401, \uB402, \uB403, \uB404, \uB405, \uB406, \uB407, \uB408, \uB409, \uB40A, \uB40B, \uB40C, \uB40D, \uB40E, \uB40F, "
 			"\uB410, \uB411, \uB412, \uB413, \uB414, \uB415, \uB416, \uB417, \uB418, \uB419, \uB41A, \uB41B, \uB41C, \uB41D, \uB41E, \uB41F, "
@@ -4345,7 +3984,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uB470, \uB471, \uB472, \uB473, \uB474, \uB475, \uB476, \uB477, \uB478, \uB479, \uB47A, \uB47B, \uB47C, \uB47D, \uB47E, \uB47F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uB480, \uB481, \uB482, \uB483, \uB484, \uB485, \uB486, \uB487, \uB488, \uB489, \uB48A, \uB48B, \uB48C, \uB48D, \uB48E, \uB48F, "
 			"\uB490, \uB491, \uB492, \uB493, \uB494, \uB495, \uB496, \uB497, \uB498, \uB499, \uB49A, \uB49B, \uB49C, \uB49D, \uB49E, \uB49F, "
@@ -4357,7 +3995,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uB4FF, \uB4FF, \uB4FF, \uB4FF, \uB4FF, \uB4FF, \uB4FF, \uB4FF, \uB4FF, \uB4FF, \uB4FF, \uB4FF, \uB4FF, \uB4FF, \uB4FF, \uB4FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uB500, \uB501, \uB502, \uB503, \uB504, \uB505, \uB506, \uB507, \uB508, \uB509, \uB50A, \uB50B, \uB50C, \uB50D, \uB50E, \uB50F, "
 			"\uB510, \uB511, \uB512, \uB513, \uB514, \uB515, \uB516, \uB517, \uB518, \uB519, \uB51A, \uB51B, \uB51C, \uB51D, \uB51E, \uB51F, "
@@ -4369,7 +4006,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uB570, \uB571, \uB572, \uB573, \uB574, \uB575, \uB576, \uB577, \uB578, \uB579, \uB57A, \uB57B, \uB57C, \uB57D, \uB57E, \uB57F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uB580, \uB581, \uB582, \uB583, \uB584, \uB585, \uB586, \uB587, \uB588, \uB589, \uB58A, \uB58B, \uB58C, \uB58D, \uB58E, \uB58F, "
 			"\uB590, \uB591, \uB592, \uB593, \uB594, \uB595, \uB596, \uB597, \uB598, \uB599, \uB59A, \uB59B, \uB59C, \uB59D, \uB59E, \uB59F, "
@@ -4381,7 +4017,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uB5FF, \uB5FF, \uB5FF, \uB5FF, \uB5FF, \uB5FF, \uB5FF, \uB5FF, \uB5FF, \uB5FF, \uB5FF, \uB5FF, \uB5FF, \uB5FF, \uB5FF, \uB5FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uB600, \uB601, \uB602, \uB603, \uB604, \uB605, \uB606, \uB607, \uB608, \uB609, \uB60A, \uB60B, \uB60C, \uB60D, \uB60E, \uB60F, "
 			"\uB610, \uB611, \uB612, \uB613, \uB614, \uB615, \uB616, \uB617, \uB618, \uB619, \uB61A, \uB61B, \uB61C, \uB61D, \uB61E, \uB61F, "
@@ -4393,7 +4028,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uB670, \uB671, \uB672, \uB673, \uB674, \uB675, \uB676, \uB677, \uB678, \uB679, \uB67A, \uB67B, \uB67C, \uB67D, \uB67E, \uB67F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uB680, \uB681, \uB682, \uB683, \uB684, \uB685, \uB686, \uB687, \uB688, \uB689, \uB68A, \uB68B, \uB68C, \uB68D, \uB68E, \uB68F, "
 			"\uB690, \uB691, \uB692, \uB693, \uB694, \uB695, \uB696, \uB697, \uB698, \uB699, \uB69A, \uB69B, \uB69C, \uB69D, \uB69E, \uB69F, "
@@ -4405,7 +4039,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uB6FF, \uB6FF, \uB6FF, \uB6FF, \uB6FF, \uB6FF, \uB6FF, \uB6FF, \uB6FF, \uB6FF, \uB6FF, \uB6FF, \uB6FF, \uB6FF, \uB6FF, \uB6FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uB700, \uB701, \uB702, \uB703, \uB704, \uB705, \uB706, \uB707, \uB708, \uB709, \uB70A, \uB70B, \uB70C, \uB70D, \uB70E, \uB70F, "
 			"\uB710, \uB711, \uB712, \uB713, \uB714, \uB715, \uB716, \uB717, \uB718, \uB719, \uB71A, \uB71B, \uB71C, \uB71D, \uB71E, \uB71F, "
@@ -4417,7 +4050,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uB770, \uB771, \uB772, \uB773, \uB774, \uB775, \uB776, \uB777, \uB778, \uB779, \uB77A, \uB77B, \uB77C, \uB77D, \uB77E, \uB77F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uB780, \uB781, \uB782, \uB783, \uB784, \uB785, \uB786, \uB787, \uB788, \uB789, \uB78A, \uB78B, \uB78C, \uB78D, \uB78E, \uB78F, "
 			"\uB790, \uB791, \uB792, \uB793, \uB794, \uB795, \uB796, \uB797, \uB798, \uB799, \uB79A, \uB79B, \uB79C, \uB79D, \uB79E, \uB79F, "
@@ -4429,7 +4061,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uB7FF, \uB7FF, \uB7FF, \uB7FF, \uB7FF, \uB7FF, \uB7FF, \uB7FF, \uB7FF, \uB7FF, \uB7FF, \uB7FF, \uB7FF, \uB7FF, \uB7FF, \uB7FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uB800, \uB801, \uB802, \uB803, \uB804, \uB805, \uB806, \uB807, \uB808, \uB809, \uB80A, \uB80B, \uB80C, \uB80D, \uB80E, \uB80F, "
 			"\uB810, \uB811, \uB812, \uB813, \uB814, \uB815, \uB816, \uB817, \uB818, \uB819, \uB81A, \uB81B, \uB81C, \uB81D, \uB81E, \uB81F, "
@@ -4441,7 +4072,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uB870, \uB871, \uB872, \uB873, \uB874, \uB875, \uB876, \uB877, \uB878, \uB879, \uB87A, \uB87B, \uB87C, \uB87D, \uB87E, \uB87F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uB880, \uB881, \uB882, \uB883, \uB884, \uB885, \uB886, \uB887, \uB888, \uB889, \uB88A, \uB88B, \uB88C, \uB88D, \uB88E, \uB88F, "
 			"\uB890, \uB891, \uB892, \uB893, \uB894, \uB895, \uB896, \uB897, \uB898, \uB899, \uB89A, \uB89B, \uB89C, \uB89D, \uB89E, \uB89F, "
@@ -4453,7 +4083,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uB8FF, \uB8FF, \uB8FF, \uB8FF, \uB8FF, \uB8FF, \uB8FF, \uB8FF, \uB8FF, \uB8FF, \uB8FF, \uB8FF, \uB8FF, \uB8FF, \uB8FF, \uB8FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uB900, \uB901, \uB902, \uB903, \uB904, \uB905, \uB906, \uB907, \uB908, \uB909, \uB90A, \uB90B, \uB90C, \uB90D, \uB90E, \uB90F, "
 			"\uB910, \uB911, \uB912, \uB913, \uB914, \uB915, \uB916, \uB917, \uB918, \uB919, \uB91A, \uB91B, \uB91C, \uB91D, \uB91E, \uB91F, "
@@ -4465,7 +4094,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uB970, \uB971, \uB972, \uB973, \uB974, \uB975, \uB976, \uB977, \uB978, \uB979, \uB97A, \uB97B, \uB97C, \uB97D, \uB97E, \uB97F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uB980, \uB981, \uB982, \uB983, \uB984, \uB985, \uB986, \uB987, \uB988, \uB989, \uB98A, \uB98B, \uB98C, \uB98D, \uB98E, \uB98F, "
 			"\uB990, \uB991, \uB992, \uB993, \uB994, \uB995, \uB996, \uB997, \uB998, \uB999, \uB99A, \uB99B, \uB99C, \uB99D, \uB99E, \uB99F, "
@@ -4477,7 +4105,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uB9FF, \uB9FF, \uB9FF, \uB9FF, \uB9FF, \uB9FF, \uB9FF, \uB9FF, \uB9FF, \uB9FF, \uB9FF, \uB9FF, \uB9FF, \uB9FF, \uB9FF, \uB9FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uBA00, \uBA01, \uBA02, \uBA03, \uBA04, \uBA05, \uBA06, \uBA07, \uBA08, \uBA09, \uBA0A, \uBA0B, \uBA0C, \uBA0D, \uBA0E, \uBA0F, "
 			"\uBA10, \uBA11, \uBA12, \uBA13, \uBA14, \uBA15, \uBA16, \uBA17, \uBA18, \uBA19, \uBA1A, \uBA1B, \uBA1C, \uBA1D, \uBA1E, \uBA1F, "
@@ -4489,7 +4116,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uBA70, \uBA71, \uBA72, \uBA73, \uBA74, \uBA75, \uBA76, \uBA77, \uBA78, \uBA79, \uBA7A, \uBA7B, \uBA7C, \uBA7D, \uBA7E, \uBA7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uBA80, \uBA81, \uBA82, \uBA83, \uBA84, \uBA85, \uBA86, \uBA87, \uBA88, \uBA89, \uBA8A, \uBA8B, \uBA8C, \uBA8D, \uBA8E, \uBA8F, "
 			"\uBA90, \uBA91, \uBA92, \uBA93, \uBA94, \uBA95, \uBA96, \uBA97, \uBA98, \uBA99, \uBA9A, \uBA9B, \uBA9C, \uBA9D, \uBA9E, \uBA9F, "
@@ -4501,7 +4127,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uBAFF, \uBAFF, \uBAFF, \uBAFF, \uBAFF, \uBAFF, \uBAFF, \uBAFF, \uBAFF, \uBAFF, \uBAFF, \uBAFF, \uBAFF, \uBAFF, \uBAFF, \uBAFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uBB00, \uBB01, \uBB02, \uBB03, \uBB04, \uBB05, \uBB06, \uBB07, \uBB08, \uBB09, \uBB0A, \uBB0B, \uBB0C, \uBB0D, \uBB0E, \uBB0F, "
 			"\uBB10, \uBB11, \uBB12, \uBB13, \uBB14, \uBB15, \uBB16, \uBB17, \uBB18, \uBB19, \uBB1A, \uBB1B, \uBB1C, \uBB1D, \uBB1E, \uBB1F, "
@@ -4513,7 +4138,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uBB70, \uBB71, \uBB72, \uBB73, \uBB74, \uBB75, \uBB76, \uBB77, \uBB78, \uBB79, \uBB7A, \uBB7B, \uBB7C, \uBB7D, \uBB7E, \uBB7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uBB80, \uBB81, \uBB82, \uBB83, \uBB84, \uBB85, \uBB86, \uBB87, \uBB88, \uBB89, \uBB8A, \uBB8B, \uBB8C, \uBB8D, \uBB8E, \uBB8F, "
 			"\uBB90, \uBB91, \uBB92, \uBB93, \uBB94, \uBB95, \uBB96, \uBB97, \uBB98, \uBB99, \uBB9A, \uBB9B, \uBB9C, \uBB9D, \uBB9E, \uBB9F, "
@@ -4525,7 +4149,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uBBFF, \uBBFF, \uBBFF, \uBBFF, \uBBFF, \uBBFF, \uBBFF, \uBBFF, \uBBFF, \uBBFF, \uBBFF, \uBBFF, \uBBFF, \uBBFF, \uBBFF, \uBBFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uBC00, \uBC01, \uBC02, \uBC03, \uBC04, \uBC05, \uBC06, \uBC07, \uBC08, \uBC09, \uBC0A, \uBC0B, \uBC0C, \uBC0D, \uBC0E, \uBC0F, "
 			"\uBC10, \uBC11, \uBC12, \uBC13, \uBC14, \uBC15, \uBC16, \uBC17, \uBC18, \uBC19, \uBC1A, \uBC1B, \uBC1C, \uBC1D, \uBC1E, \uBC1F, "
@@ -4537,7 +4160,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uBC70, \uBC71, \uBC72, \uBC73, \uBC74, \uBC75, \uBC76, \uBC77, \uBC78, \uBC79, \uBC7A, \uBC7B, \uBC7C, \uBC7D, \uBC7E, \uBC7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uBC80, \uBC81, \uBC82, \uBC83, \uBC84, \uBC85, \uBC86, \uBC87, \uBC88, \uBC89, \uBC8A, \uBC8B, \uBC8C, \uBC8D, \uBC8E, \uBC8F, "
 			"\uBC90, \uBC91, \uBC92, \uBC93, \uBC94, \uBC95, \uBC96, \uBC97, \uBC98, \uBC99, \uBC9A, \uBC9B, \uBC9C, \uBC9D, \uBC9E, \uBC9F, "
@@ -4549,7 +4171,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uBCFF, \uBCFF, \uBCFF, \uBCFF, \uBCFF, \uBCFF, \uBCFF, \uBCFF, \uBCFF, \uBCFF, \uBCFF, \uBCFF, \uBCFF, \uBCFF, \uBCFF, \uBCFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uBD00, \uBD01, \uBD02, \uBD03, \uBD04, \uBD05, \uBD06, \uBD07, \uBD08, \uBD09, \uBD0A, \uBD0B, \uBD0C, \uBD0D, \uBD0E, \uBD0F, "
 			"\uBD10, \uBD11, \uBD12, \uBD13, \uBD14, \uBD15, \uBD16, \uBD17, \uBD18, \uBD19, \uBD1A, \uBD1B, \uBD1C, \uBD1D, \uBD1E, \uBD1F, "
@@ -4561,7 +4182,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uBD70, \uBD71, \uBD72, \uBD73, \uBD74, \uBD75, \uBD76, \uBD77, \uBD78, \uBD79, \uBD7A, \uBD7B, \uBD7C, \uBD7D, \uBD7E, \uBD7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uBD80, \uBD81, \uBD82, \uBD83, \uBD84, \uBD85, \uBD86, \uBD87, \uBD88, \uBD89, \uBD8A, \uBD8B, \uBD8C, \uBD8D, \uBD8E, \uBD8F, "
 			"\uBD90, \uBD91, \uBD92, \uBD93, \uBD94, \uBD95, \uBD96, \uBD97, \uBD98, \uBD99, \uBD9A, \uBD9B, \uBD9C, \uBD9D, \uBD9E, \uBD9F, "
@@ -4573,7 +4193,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uBDFF, \uBDFF, \uBDFF, \uBDFF, \uBDFF, \uBDFF, \uBDFF, \uBDFF, \uBDFF, \uBDFF, \uBDFF, \uBDFF, \uBDFF, \uBDFF, \uBDFF, \uBDFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uBE00, \uBE01, \uBE02, \uBE03, \uBE04, \uBE05, \uBE06, \uBE07, \uBE08, \uBE09, \uBE0A, \uBE0B, \uBE0C, \uBE0D, \uBE0E, \uBE0F, "
 			"\uBE10, \uBE11, \uBE12, \uBE13, \uBE14, \uBE15, \uBE16, \uBE17, \uBE18, \uBE19, \uBE1A, \uBE1B, \uBE1C, \uBE1D, \uBE1E, \uBE1F, "
@@ -4585,7 +4204,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uBE70, \uBE71, \uBE72, \uBE73, \uBE74, \uBE75, \uBE76, \uBE77, \uBE78, \uBE79, \uBE7A, \uBE7B, \uBE7C, \uBE7D, \uBE7E, \uBE7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uBE80, \uBE81, \uBE82, \uBE83, \uBE84, \uBE85, \uBE86, \uBE87, \uBE88, \uBE89, \uBE8A, \uBE8B, \uBE8C, \uBE8D, \uBE8E, \uBE8F, "
 			"\uBE90, \uBE91, \uBE92, \uBE93, \uBE94, \uBE95, \uBE96, \uBE97, \uBE98, \uBE99, \uBE9A, \uBE9B, \uBE9C, \uBE9D, \uBE9E, \uBE9F, "
@@ -4597,7 +4215,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uBEFF, \uBEFF, \uBEFF, \uBEFF, \uBEFF, \uBEFF, \uBEFF, \uBEFF, \uBEFF, \uBEFF, \uBEFF, \uBEFF, \uBEFF, \uBEFF, \uBEFF, \uBEFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uBF00, \uBF01, \uBF02, \uBF03, \uBF04, \uBF05, \uBF06, \uBF07, \uBF08, \uBF09, \uBF0A, \uBF0B, \uBF0C, \uBF0D, \uBF0E, \uBF0F, "
 			"\uBF10, \uBF11, \uBF12, \uBF13, \uBF14, \uBF15, \uBF16, \uBF17, \uBF18, \uBF19, \uBF1A, \uBF1B, \uBF1C, \uBF1D, \uBF1E, \uBF1F, "
@@ -4609,7 +4226,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uBF70, \uBF71, \uBF72, \uBF73, \uBF74, \uBF75, \uBF76, \uBF77, \uBF78, \uBF79, \uBF7A, \uBF7B, \uBF7C, \uBF7D, \uBF7E, \uBF7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uBF80, \uBF81, \uBF82, \uBF83, \uBF84, \uBF85, \uBF86, \uBF87, \uBF88, \uBF89, \uBF8A, \uBF8B, \uBF8C, \uBF8D, \uBF8E, \uBF8F, "
 			"\uBF90, \uBF91, \uBF92, \uBF93, \uBF94, \uBF95, \uBF96, \uBF97, \uBF98, \uBF99, \uBF9A, \uBF9B, \uBF9C, \uBF9D, \uBF9E, \uBF9F, "
@@ -4621,7 +4237,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uBFFF, \uBFFF, \uBFFF, \uBFFF, \uBFFF, \uBFFF, \uBFFF, \uBFFF, \uBFFF, \uBFFF, \uBFFF, \uBFFF, \uBFFF, \uBFFF, \uBFFF, \uBFFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
             "\uC000, \uC001, \uC002, \uC003, \uC004, \uC005, \uC006, \uC007, \uC008, \uC009, \uC00A, \uC00B, \uC00C, \uC00D, \uC00E, \uC00F, "
             "\uC010, \uC011, \uE012, \uC013, \uC014, \uC015, \uC016, \uC017, \uC018, \uC019, \uC01A, \uC01B, \uC01C, \uC01D, \uC01E, \uC01F, "
@@ -4633,7 +4248,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
             "\uC070, \uC071, \uC072, \uC073, \uC074, \uC075, \uC076, \uC077, \uC078, \uC079, \uC07A, \uC07B, \uC07C, \uC07D, \uC07E, \uC07F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uC080, \uC081, \uC082, \uC083, \uC084, \uC085, \uC086, \uC087, \uC088, \uC089, \uC08A, \uC08B, \uC08C, \uC08D, \uC08E, \uC08F, "
 			"\uC090, \uC091, \uC092, \uC093, \uC094, \uC095, \uC096, \uC097, \uC098, \uC099, \uC09A, \uC09B, \uC09C, \uC09D, \uC09E, \uC09F, "
@@ -4645,7 +4259,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uC0FF, \uC0FF, \uC0FF, \uC0FF, \uC0FF, \uC0FF, \uC0FF, \uC0FF, \uC0FF, \uC0FF, \uC0FF, \uC0FF, \uC0FF, \uC0FF, \uC0FF, \uC0FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uC100, \uC101, \uC102, \uC103, \uC104, \uC105, \uC106, \uC107, \uC108, \uC109, \uC10A, \uC10B, \uC10C, \uC10D, \uC10E, \uC10F, "
 			"\uC110, \uC111, \uC112, \uC113, \uC114, \uC115, \uC116, \uC117, \uC118, \uC119, \uC11A, \uC11B, \uC11C, \uC11D, \uC11E, \uC11F, "
@@ -4657,7 +4270,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uC170, \uC171, \uC172, \uC173, \uC174, \uC175, \uC176, \uC177, \uC178, \uC179, \uC17A, \uC17B, \uC17C, \uC17D, \uC17E, \uC17F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uC180, \uC181, \uC182, \uC183, \uC184, \uC185, \uC186, \uC187, \uC188, \uC189, \uC18A, \uC18B, \uC18C, \uC18D, \uC18E, \uC18F, "
 			"\uC190, \uC191, \uC192, \uC193, \uC194, \uC195, \uC196, \uC197, \uC198, \uC199, \uC19A, \uC19B, \uC19C, \uC19D, \uC19E, \uC19F, "
@@ -4669,7 +4281,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uC1FF, \uC1FF, \uC1FF, \uC1FF, \uC1FF, \uC1FF, \uC1FF, \uC1FF, \uC1FF, \uC1FF, \uC1FF, \uC1FF, \uC1FF, \uC1FF, \uC1FF, \uC1FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uC200, \uC201, \uC202, \uC203, \uC204, \uC205, \uC206, \uC207, \uC208, \uC209, \uC20A, \uC20B, \uC20C, \uC20D, \uC20E, \uC20F, "
 			"\uC210, \uC211, \uC212, \uC213, \uC214, \uC215, \uC216, \uC217, \uC218, \uC219, \uC21A, \uC21B, \uC21C, \uC21D, \uC21E, \uC21F, "
@@ -4681,7 +4292,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uC270, \uC271, \uC272, \uC273, \uC274, \uC275, \uC276, \uC277, \uC278, \uC279, \uC27A, \uC27B, \uC27C, \uC27D, \uC27E, \uC27F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uC280, \uC281, \uC282, \uC283, \uC284, \uC285, \uC286, \uC287, \uC288, \uC289, \uC28A, \uC28B, \uC28C, \uC28D, \uC28E, \uC28F, "
 			"\uC290, \uC291, \uC292, \uC293, \uC294, \uC295, \uC296, \uC297, \uC298, \uC299, \uC29A, \uC29B, \uC29C, \uC29D, \uC29E, \uC29F, "
@@ -4693,7 +4303,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uC2FF, \uC2FF, \uC2FF, \uC2FF, \uC2FF, \uC2FF, \uC2FF, \uC2FF, \uC2FF, \uC2FF, \uC2FF, \uC2FF, \uC2FF, \uC2FF, \uC2FF, \uC2FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uC300, \uC301, \uC302, \uC303, \uC304, \uC305, \uC306, \uC307, \uC308, \uC309, \uC30A, \uC30B, \uC30C, \uC30D, \uC30E, \uC30F, "
 			"\uC310, \uC311, \uC312, \uC313, \uC314, \uC315, \uC316, \uC317, \uC318, \uC319, \uC31A, \uC31B, \uC31C, \uC31D, \uC31E, \uC31F, "
@@ -4705,7 +4314,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uC370, \uC371, \uC372, \uC373, \uC374, \uC375, \uC376, \uC377, \uC378, \uC379, \uC37A, \uC37B, \uC37C, \uC37D, \uC37E, \uC37F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uC380, \uC381, \uC382, \uC383, \uC384, \uC385, \uC386, \uC387, \uC388, \uC389, \uC38A, \uC38B, \uC38C, \uC38D, \uC38E, \uC38F, "
 			"\uC390, \uC391, \uC392, \uC393, \uC394, \uC395, \uC396, \uC397, \uC398, \uC399, \uC39A, \uC39B, \uC39C, \uC39D, \uC39E, \uC39F, "
@@ -4717,7 +4325,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uC3FF, \uC3FF, \uC3FF, \uC3FF, \uC3FF, \uC3FF, \uC3FF, \uC3FF, \uC3FF, \uC3FF, \uC3FF, \uC3FF, \uC3FF, \uC3FF, \uC3FF, \uC3FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uC400, \uC401, \uC402, \uC403, \uC404, \uC405, \uC406, \uC407, \uC408, \uC409, \uC40A, \uC40B, \uC40C, \uC40D, \uC40E, \uC40F, "
 			"\uC410, \uC411, \uC412, \uC413, \uC414, \uC415, \uC416, \uC417, \uC418, \uC419, \uC41A, \uC41B, \uC41C, \uC41D, \uC41E, \uC41F, "
@@ -4729,7 +4336,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uC470, \uC471, \uC472, \uC473, \uC474, \uC475, \uC476, \uC477, \uC478, \uC479, \uC47A, \uC47B, \uC47C, \uC47D, \uC47E, \uC47F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uC480, \uC481, \uC482, \uC483, \uC484, \uC485, \uC486, \uC487, \uC488, \uC489, \uC48A, \uC48B, \uC48C, \uC48D, \uC48E, \uC48F, "
 			"\uC490, \uC491, \uC492, \uC493, \uC494, \uC495, \uC496, \uC497, \uC498, \uC499, \uC49A, \uC49B, \uC49C, \uC49D, \uC49E, \uC49F, "
@@ -4741,7 +4347,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uC4FF, \uC4FF, \uC4FF, \uC4FF, \uC4FF, \uC4FF, \uC4FF, \uC4FF, \uC4FF, \uC4FF, \uC4FF, \uC4FF, \uC4FF, \uC4FF, \uC4FF, \uC4FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uC500, \uC501, \uC502, \uC503, \uC504, \uC505, \uC506, \uC507, \uC508, \uC509, \uC50A, \uC50B, \uC50C, \uC50D, \uC50E, \uC50F, "
 			"\uC510, \uC511, \uC512, \uC513, \uC514, \uC515, \uC516, \uC517, \uC518, \uC519, \uC51A, \uC51B, \uC51C, \uC51D, \uC51E, \uC51F, "
@@ -4753,7 +4358,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uC570, \uC571, \uC572, \uC573, \uC574, \uC575, \uC576, \uC577, \uC578, \uC579, \uC57A, \uC57B, \uC57C, \uC57D, \uC57E, \uC57F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uC580, \uC581, \uC582, \uC583, \uC584, \uC585, \uC586, \uC587, \uC588, \uC589, \uC58A, \uC58B, \uC58C, \uC58D, \uC58E, \uC58F, "
 			"\uC590, \uC591, \uC592, \uC593, \uC594, \uC595, \uC596, \uC597, \uC598, \uC599, \uC59A, \uC59B, \uC59C, \uC59D, \uC59E, \uC59F, "
@@ -4765,7 +4369,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uC5FF, \uC5FF, \uC5FF, \uC5FF, \uC5FF, \uC5FF, \uC5FF, \uC5FF, \uC5FF, \uC5FF, \uC5FF, \uC5FF, \uC5FF, \uC5FF, \uC5FF, \uC5FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uC600, \uC601, \uC602, \uC603, \uC604, \uC605, \uC606, \uC607, \uC608, \uC609, \uC60A, \uC60B, \uC60C, \uC60D, \uC60E, \uC60F, "
 			"\uC610, \uC611, \uC612, \uC613, \uC614, \uC615, \uC616, \uC617, \uC618, \uC619, \uC61A, \uC61B, \uC61C, \uC61D, \uC61E, \uC61F, "
@@ -4777,7 +4380,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uC670, \uC671, \uC672, \uC673, \uC674, \uC675, \uC676, \uC677, \uC678, \uC679, \uC67A, \uC67B, \uC67C, \uC67D, \uC67E, \uC67F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uC680, \uC681, \uC682, \uC683, \uC684, \uC685, \uC686, \uC687, \uC688, \uC689, \uC68A, \uC68B, \uC68C, \uC68D, \uC68E, \uC68F, "
 			"\uC690, \uC691, \uC692, \uC693, \uC694, \uC695, \uC696, \uC697, \uC698, \uC699, \uC69A, \uC69B, \uC69C, \uC69D, \uC69E, \uC69F, "
@@ -4789,7 +4391,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uC6FF, \uC6FF, \uC6FF, \uC6FF, \uC6FF, \uC6FF, \uC6FF, \uC6FF, \uC6FF, \uC6FF, \uC6FF, \uC6FF, \uC6FF, \uC6FF, \uC6FF, \uC6FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uC700, \uC701, \uC702, \uC703, \uC704, \uC705, \uC706, \uC707, \uC708, \uC709, \uC70A, \uC70B, \uC70C, \uC70D, \uC70E, \uC70F, "
 			"\uC710, \uC711, \uC712, \uC713, \uC714, \uC715, \uC716, \uC717, \uC718, \uC719, \uC71A, \uC71B, \uC71C, \uC71D, \uC71E, \uC71F, "
@@ -4801,7 +4402,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uC770, \uC771, \uC772, \uC773, \uC774, \uC775, \uC776, \uC777, \uC778, \uC779, \uC77A, \uC77B, \uC77C, \uC77D, \uC77E, \uC77F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uC780, \uC781, \uC782, \uC783, \uC784, \uC785, \uC786, \uC787, \uC788, \uC789, \uC78A, \uC78B, \uC78C, \uC78D, \uC78E, \uC78F, "
 			"\uC790, \uC791, \uC792, \uC793, \uC794, \uC795, \uC796, \uC797, \uC798, \uC799, \uC79A, \uC79B, \uC79C, \uC79D, \uC79E, \uC79F, "
@@ -4813,7 +4413,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uC7FF, \uC7FF, \uC7FF, \uC7FF, \uC7FF, \uC7FF, \uC7FF, \uC7FF, \uC7FF, \uC7FF, \uC7FF, \uC7FF, \uC7FF, \uC7FF, \uC7FF, \uC7FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uC800, \uC801, \uC802, \uC803, \uC804, \uC805, \uC806, \uC807, \uC808, \uC809, \uC80A, \uC80B, \uC80C, \uC80D, \uC80E, \uC80F, "
 			"\uC810, \uC811, \uC812, \uC813, \uC814, \uC815, \uC816, \uC817, \uC818, \uC819, \uC81A, \uC81B, \uC81C, \uC81D, \uC81E, \uC81F, "
@@ -4825,7 +4424,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uC870, \uC871, \uC872, \uC873, \uC874, \uC875, \uC876, \uC877, \uC878, \uC879, \uC87A, \uC87B, \uC87C, \uC87D, \uC87E, \uC87F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uC880, \uC881, \uC882, \uC883, \uC884, \uC885, \uC886, \uC887, \uC888, \uC889, \uC88A, \uC88B, \uC88C, \uC88D, \uC88E, \uC88F, "
 			"\uC890, \uC891, \uC892, \uC893, \uC894, \uC895, \uC896, \uC897, \uC898, \uC899, \uC89A, \uC89B, \uC89C, \uC89D, \uC89E, \uC89F, "
@@ -4837,7 +4435,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uC8FF, \uC8FF, \uC8FF, \uC8FF, \uC8FF, \uC8FF, \uC8FF, \uC8FF, \uC8FF, \uC8FF, \uC8FF, \uC8FF, \uC8FF, \uC8FF, \uC8FF, \uC8FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uC900, \uC901, \uC902, \uC903, \uC904, \uC905, \uC906, \uC907, \uC908, \uC909, \uC90A, \uC90B, \uC90C, \uC90D, \uC90E, \uC90F, "
 			"\uC910, \uC911, \uC912, \uC913, \uC914, \uC915, \uC916, \uC917, \uC918, \uC919, \uC91A, \uC91B, \uC91C, \uC91D, \uC91E, \uC91F, "
@@ -4849,7 +4446,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uC970, \uC971, \uC972, \uC973, \uC974, \uC975, \uC976, \uC977, \uC978, \uC979, \uC97A, \uC97B, \uC97C, \uC97D, \uC97E, \uC97F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uC980, \uC981, \uC982, \uC983, \uC984, \uC985, \uC986, \uC987, \uC988, \uC989, \uC98A, \uC98B, \uC98C, \uC98D, \uC98E, \uC98F, "
 			"\uC990, \uC991, \uC992, \uC993, \uC994, \uC995, \uC996, \uC997, \uC998, \uC999, \uC99A, \uC99B, \uC99C, \uC99D, \uC99E, \uC99F, "
@@ -4861,7 +4457,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uC9FF, \uC9FF, \uC9FF, \uC9FF, \uC9FF, \uC9FF, \uC9FF, \uC9FF, \uC9FF, \uC9FF, \uC9FF, \uC9FF, \uC9FF, \uC9FF, \uC9FF, \uC9FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uCA00, \uCA01, \uCA02, \uCA03, \uCA04, \uCA05, \uCA06, \uCA07, \uCA08, \uCA09, \uCA0A, \uCA0B, \uCA0C, \uCA0D, \uCA0E, \uCA0F, "
 			"\uCA10, \uCA11, \uCA12, \uCA13, \uCA14, \uCA15, \uCA16, \uCA17, \uCA18, \uCA19, \uCA1A, \uCA1B, \uCA1C, \uCA1D, \uCA1E, \uCA1F, "
@@ -4873,7 +4468,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uCA70, \uCA71, \uCA72, \uCA73, \uCA74, \uCA75, \uCA76, \uCA77, \uCA78, \uCA79, \uCA7A, \uCA7B, \uCA7C, \uCA7D, \uCA7E, \uCA7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uCA80, \uCA81, \uCA82, \uCA83, \uCA84, \uCA85, \uCA86, \uCA87, \uCA88, \uCA89, \uCA8A, \uCA8B, \uCA8C, \uCA8D, \uCA8E, \uCA8F, "
 			"\uCA90, \uCA91, \uCA92, \uCA93, \uCA94, \uCA95, \uCA96, \uCA97, \uCA98, \uCA99, \uCA9A, \uCA9B, \uCA9C, \uCA9D, \uCA9E, \uCA9F, "
@@ -4885,7 +4479,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uCAFF, \uCAFF, \uCAFF, \uCAFF, \uCAFF, \uCAFF, \uCAFF, \uCAFF, \uCAFF, \uCAFF, \uCAFF, \uCAFF, \uCAFF, \uCAFF, \uCAFF, \uCAFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uCB00, \uCB01, \uCB02, \uCB03, \uCB04, \uCB05, \uCB06, \uCB07, \uCB08, \uCB09, \uCB0A, \uCB0B, \uCB0C, \uCB0D, \uCB0E, \uCB0F, "
 			"\uCB10, \uCB11, \uCB12, \uCB13, \uCB14, \uCB15, \uCB16, \uCB17, \uCB18, \uCB19, \uCB1A, \uCB1B, \uCB1C, \uCB1D, \uCB1E, \uCB1F, "
@@ -4897,7 +4490,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uCB70, \uCB71, \uCB72, \uCB73, \uCB74, \uCB75, \uCB76, \uCB77, \uCB78, \uCB79, \uCB7A, \uCB7B, \uCB7C, \uCB7D, \uCB7E, \uCB7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uCB80, \uCB81, \uCB82, \uCB83, \uCB84, \uCB85, \uCB86, \uCB87, \uCB88, \uCB89, \uCB8A, \uCB8B, \uCB8C, \uCB8D, \uCB8E, \uCB8F, "
 			"\uCB90, \uCB91, \uCB92, \uCB93, \uCB94, \uCB95, \uCB96, \uCB97, \uCB98, \uCB99, \uCB9A, \uCB9B, \uCB9C, \uCB9D, \uCB9E, \uCB9F, "
@@ -4909,7 +4501,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uCBFF, \uCBFF, \uCBFF, \uCBFF, \uCBFF, \uCBFF, \uCBFF, \uCBFF, \uCBFF, \uCBFF, \uCBFF, \uCBFF, \uCBFF, \uCBFF, \uCBFF, \uCBFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uCC00, \uCC01, \uCC02, \uCC03, \uCC04, \uCC05, \uCC06, \uCC07, \uCC08, \uCC09, \uCC0A, \uCC0B, \uCC0C, \uCC0D, \uCC0E, \uCC0F, "
 			"\uCC10, \uCC11, \uCC12, \uCC13, \uCC14, \uCC15, \uCC16, \uCC17, \uCC18, \uCC19, \uCC1A, \uCC1B, \uCC1C, \uCC1D, \uCC1E, \uCC1F, "
@@ -4921,7 +4512,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uCC70, \uCC71, \uCC72, \uCC73, \uCC74, \uCC75, \uCC76, \uCC77, \uCC78, \uCC79, \uCC7A, \uCC7B, \uCC7C, \uCC7D, \uCC7E, \uCC7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uCC80, \uCC81, \uCC82, \uCC83, \uCC84, \uCC85, \uCC86, \uCC87, \uCC88, \uCC89, \uCC8A, \uCC8B, \uCC8C, \uCC8D, \uCC8E, \uCC8F, "
 			"\uCC90, \uCC91, \uCC92, \uCC93, \uCC94, \uCC95, \uCC96, \uCC97, \uCC98, \uCC99, \uCC9A, \uCC9B, \uCC9C, \uCC9D, \uCC9E, \uCC9F, "
@@ -4933,7 +4523,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uCCFF, \uCCFF, \uCCFF, \uCCFF, \uCCFF, \uCCFF, \uCCFF, \uCCFF, \uCCFF, \uCCFF, \uCCFF, \uCCFF, \uCCFF, \uCCFF, \uCCFF, \uCCFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uCD00, \uCD01, \uCD02, \uCD03, \uCD04, \uCD05, \uCD06, \uCD07, \uCD08, \uCD09, \uCD0A, \uCD0B, \uCD0C, \uCD0D, \uCD0E, \uCD0F, "
 			"\uCD10, \uCD11, \uCD12, \uCD13, \uCD14, \uCD15, \uCD16, \uCD17, \uCD18, \uCD19, \uCD1A, \uCD1B, \uCD1C, \uCD1D, \uCD1E, \uCD1F, "
@@ -4945,7 +4534,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uCD70, \uCD71, \uCD72, \uCD73, \uCD74, \uCD75, \uCD76, \uCD77, \uCD78, \uCD79, \uCD7A, \uCD7B, \uCD7C, \uCD7D, \uCD7E, \uCD7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uCD80, \uCD81, \uCD82, \uCD83, \uCD84, \uCD85, \uCD86, \uCD87, \uCD88, \uCD89, \uCD8A, \uCD8B, \uCD8C, \uCD8D, \uCD8E, \uCD8F, "
 			"\uCD90, \uCD91, \uCD92, \uCD93, \uCD94, \uCD95, \uCD96, \uCD97, \uCD98, \uCD99, \uCD9A, \uCD9B, \uCD9C, \uCD9D, \uCD9E, \uCD9F, "
@@ -4957,7 +4545,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uCDFF, \uCDFF, \uCDFF, \uCDFF, \uCDFF, \uCDFF, \uCDFF, \uCDFF, \uCDFF, \uCDFF, \uCDFF, \uCDFF, \uCDFF, \uCDFF, \uCDFF, \uCDFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uCE00, \uCE01, \uCE02, \uCE03, \uCE04, \uCE05, \uCE06, \uCE07, \uCE08, \uCE09, \uCE0A, \uCE0B, \uCE0C, \uCE0D, \uCE0E, \uCE0F, "
 			"\uCE10, \uCE11, \uCE12, \uCE13, \uCE14, \uCE15, \uCE16, \uCE17, \uCE18, \uCE19, \uCE1A, \uCE1B, \uCE1C, \uCE1D, \uCE1E, \uCE1F, "
@@ -4969,7 +4556,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uCE70, \uCE71, \uCE72, \uCE73, \uCE74, \uCE75, \uCE76, \uCE77, \uCE78, \uCE79, \uCE7A, \uCE7B, \uCE7C, \uCE7D, \uCE7E, \uCE7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uCE80, \uCE81, \uCE82, \uCE83, \uCE84, \uCE85, \uCE86, \uCE87, \uCE88, \uCE89, \uCE8A, \uCE8B, \uCE8C, \uCE8D, \uCE8E, \uCE8F, "
 			"\uCE90, \uCE91, \uCE92, \uCE93, \uCE94, \uCE95, \uCE96, \uCE97, \uCE98, \uCE99, \uCE9A, \uCE9B, \uCE9C, \uCE9D, \uCE9E, \uCE9F, "
@@ -4981,7 +4567,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uCEFF, \uCEFF, \uCEFF, \uCEFF, \uCEFF, \uCEFF, \uCEFF, \uCEFF, \uCEFF, \uCEFF, \uCEFF, \uCEFF, \uCEFF, \uCEFF, \uCEFF, \uCEFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uCF00, \uCF01, \uCF02, \uCF03, \uCF04, \uCF05, \uCF06, \uCF07, \uCF08, \uCF09, \uCF0A, \uCF0B, \uCF0C, \uCF0D, \uCF0E, \uCF0F, "
 			"\uCF10, \uCF11, \uCF12, \uCF13, \uCF14, \uCF15, \uCF16, \uCF17, \uCF18, \uCF19, \uCF1A, \uCF1B, \uCF1C, \uCF1D, \uCF1E, \uCF1F, "
@@ -4993,7 +4578,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uCF70, \uCF71, \uCF72, \uCF73, \uCF74, \uCF75, \uCF76, \uCF77, \uCF78, \uCF79, \uCF7A, \uCF7B, \uCF7C, \uCF7D, \uCF7E, \uCF7F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uCF80, \uCF81, \uCF82, \uCF83, \uCF84, \uCF85, \uCF86, \uCF87, \uCF88, \uCF89, \uCF8A, \uCF8B, \uCF8C, \uCF8D, \uCF8E, \uCF8F, "
 			"\uCF90, \uCF91, \uCF92, \uCF93, \uCF94, \uCF95, \uCF96, \uCF97, \uCF98, \uCF99, \uCF9A, \uCF9B, \uCF9C, \uCF9D, \uCF9E, \uCF9F, "
@@ -5005,7 +4589,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uCFFF, \uCFFF, \uCFFF, \uCFFF, \uCFFF, \uCFFF, \uCFFF, \uCFFF, \uCFFF, \uCFFF, \uCFFF, \uCFFF, \uCFFF, \uCFFF, \uCFFF, \uCFFF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
             "\uD000, \uD001, \uD002, \uD003, \uD004, \uD005, \uD006, \uD007, \uD008, \uD009, \uD00A, \uD00B, \uD00C, \uD00D, \uD00E, \uD00F, "
             "\uD010, \uD011, \uE012, \uD013, \uD014, \uD015, \uD016, \uD017, \uD018, \uD019, \uD01A, \uD01B, \uD01C, \uD01D, \uD01E, \uD01F, "
@@ -5017,7 +4600,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
             "\uD070, \uD071, \uD072, \uD073, \uD074, \uD075, \uD076, \uD077, \uD078, \uD079, \uD07A, \uD07B, \uD07C, \uD07D, \uD07E, \uD07F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uD080, \uD081, \uD082, \uD083, \uD084, \uD085, \uD086, \uD087, \uD088, \uD089, \uD08A, \uD08B, \uD08C, \uD08D, \uD08E, \uD08F, "
 			"\uD090, \uD091, \uD092, \uD093, \uD094, \uD095, \uD096, \uD097, \uD098, \uD099, \uD09A, \uD09B, \uD09C, \uD09D, \uD09E, \uD09F, "
@@ -5029,7 +4611,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uD0FF, \uD0FF, \uD0FF, \uD0FF, \uD0FF, \uD0FF, \uD0FF, \uD0FF, \uD0FF, \uD0FF, \uD0FF, \uD0FF, \uD0FF, \uD0FF, \uD0FF, \uD0FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uD100, \uD101, \uD102, \uD103, \uD104, \uD105, \uD106, \uD107, \uD108, \uD109, \uD10A, \uD10B, \uD10C, \uD10D, \uD10E, \uD10F, "
 			"\uD110, \uD111, \uD112, \uD113, \uD114, \uD115, \uD116, \uD117, \uD118, \uD119, \uD11A, \uD11B, \uD11C, \uD11D, \uD11E, \uD11F, "
@@ -5041,7 +4622,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uD170, \uD171, \uD172, \uD173, \uD174, \uD175, \uD176, \uD177, \uD178, \uD179, \uD17A, \uD17B, \uD17C, \uD17D, \uD17E, \uD17F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uD180, \uD181, \uD182, \uD183, \uD184, \uD185, \uD186, \uD187, \uD188, \uD189, \uD18A, \uD18B, \uD18C, \uD18D, \uD18E, \uD18F, "
 			"\uD190, \uD191, \uD192, \uD193, \uD194, \uD195, \uD196, \uD197, \uD198, \uD199, \uD19A, \uD19B, \uD19C, \uD19D, \uD19E, \uD19F, "
@@ -5053,7 +4633,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uD1FF, \uD1FF, \uD1FF, \uD1FF, \uD1FF, \uD1FF, \uD1FF, \uD1FF, \uD1FF, \uD1FF, \uD1FF, \uD1FF, \uD1FF, \uD1FF, \uD1FF, \uD1FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uD200, \uD201, \uD202, \uD203, \uD204, \uD205, \uD206, \uD207, \uD208, \uD209, \uD20A, \uD20B, \uD20C, \uD20D, \uD20E, \uD20F, "
 			"\uD210, \uD211, \uD212, \uD213, \uD214, \uD215, \uD216, \uD217, \uD218, \uD219, \uD21A, \uD21B, \uD21C, \uD21D, \uD21E, \uD21F, "
@@ -5065,7 +4644,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uD270, \uD271, \uD272, \uD273, \uD274, \uD275, \uD276, \uD277, \uD278, \uD279, \uD27A, \uD27B, \uD27C, \uD27D, \uD27E, \uD27F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uD280, \uD281, \uD282, \uD283, \uD284, \uD285, \uD286, \uD287, \uD288, \uD289, \uD28A, \uD28B, \uD28C, \uD28D, \uD28E, \uD28F, "
 			"\uD290, \uD291, \uD292, \uD293, \uD294, \uD295, \uD296, \uD297, \uD298, \uD299, \uD29A, \uD29B, \uD29C, \uD29D, \uD29E, \uD29F, "
@@ -5077,7 +4655,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uD2FF, \uD2FF, \uD2FF, \uD2FF, \uD2FF, \uD2FF, \uD2FF, \uD2FF, \uD2FF, \uD2FF, \uD2FF, \uD2FF, \uD2FF, \uD2FF, \uD2FF, \uD2FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uD300, \uD301, \uD302, \uD303, \uD304, \uD305, \uD306, \uD307, \uD308, \uD309, \uD30A, \uD30B, \uD30C, \uD30D, \uD30E, \uD30F, "
 			"\uD310, \uD311, \uD312, \uD313, \uD314, \uD315, \uD316, \uD317, \uD318, \uD319, \uD31A, \uD31B, \uD31C, \uD31D, \uD31E, \uD31F, "
@@ -5089,7 +4666,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uD370, \uD371, \uD372, \uD373, \uD374, \uD375, \uD376, \uD377, \uD378, \uD379, \uD37A, \uD37B, \uD37C, \uD37D, \uD37E, \uD37F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uD380, \uD381, \uD382, \uD383, \uD384, \uD385, \uD386, \uD387, \uD388, \uD389, \uD38A, \uD38B, \uD38C, \uD38D, \uD38E, \uD38F, "
 			"\uD390, \uD391, \uD392, \uD393, \uD394, \uD395, \uD396, \uD397, \uD398, \uD399, \uD39A, \uD39B, \uD39C, \uD39D, \uD39E, \uD39F, "
@@ -5101,7 +4677,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uD3FF, \uD3FF, \uD3FF, \uD3FF, \uD3FF, \uD3FF, \uD3FF, \uD3FF, \uD3FF, \uD3FF, \uD3FF, \uD3FF, \uD3FF, \uD3FF, \uD3FF, \uD3FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uD400, \uD401, \uD402, \uD403, \uD404, \uD405, \uD406, \uD407, \uD408, \uD409, \uD40A, \uD40B, \uD40C, \uD40D, \uD40E, \uD40F, "
 			"\uD410, \uD411, \uD412, \uD413, \uD414, \uD415, \uD416, \uD417, \uD418, \uD419, \uD41A, \uD41B, \uD41C, \uD41D, \uD41E, \uD41F, "
@@ -5113,7 +4688,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uD470, \uD471, \uD472, \uD473, \uD474, \uD475, \uD476, \uD477, \uD478, \uD479, \uD47A, \uD47B, \uD47C, \uD47D, \uD47E, \uD47F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uD480, \uD481, \uD482, \uD483, \uD484, \uD485, \uD486, \uD487, \uD488, \uD489, \uD48A, \uD48B, \uD48C, \uD48D, \uD48E, \uD48F, "
 			"\uD490, \uD491, \uD492, \uD493, \uD494, \uD495, \uD496, \uD497, \uD498, \uD499, \uD49A, \uD49B, \uD49C, \uD49D, \uD49E, \uD49F, "
@@ -5125,7 +4699,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uD4FF, \uD4FF, \uD4FF, \uD4FF, \uD4FF, \uD4FF, \uD4FF, \uD4FF, \uD4FF, \uD4FF, \uD4FF, \uD4FF, \uD4FF, \uD4FF, \uD4FF, \uD4FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uD500, \uD501, \uD502, \uD503, \uD504, \uD505, \uD506, \uD507, \uD508, \uD509, \uD50A, \uD50B, \uD50C, \uD50D, \uD50E, \uD50F, "
 			"\uD510, \uD511, \uD512, \uD513, \uD514, \uD515, \uD516, \uD517, \uD518, \uD519, \uD51A, \uD51B, \uD51C, \uD51D, \uD51E, \uD51F, "
@@ -5137,7 +4710,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uD570, \uD571, \uD572, \uD573, \uD574, \uD575, \uD576, \uD577, \uD578, \uD579, \uD57A, \uD57B, \uD57C, \uD57D, \uD57E, \uD57F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uD580, \uD581, \uD582, \uD583, \uD584, \uD585, \uD586, \uD587, \uD588, \uD589, \uD58A, \uD58B, \uD58C, \uD58D, \uD58E, \uD58F, "
 			"\uD590, \uD591, \uD592, \uD593, \uD594, \uD595, \uD596, \uD597, \uD598, \uD599, \uD59A, \uD59B, \uD59C, \uD59D, \uD59E, \uD59F, "
@@ -5149,7 +4721,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uD5FF, \uD5FF, \uD5FF, \uD5FF, \uD5FF, \uD5FF, \uD5FF, \uD5FF, \uD5FF, \uD5FF, \uD5FF, \uD5FF, \uD5FF, \uD5FF, \uD5FF, \uD5FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uD600, \uD601, \uD602, \uD603, \uD604, \uD605, \uD606, \uD607, \uD608, \uD609, \uD60A, \uD60B, \uD60C, \uD60D, \uD60E, \uD60F, "
 			"\uD610, \uD611, \uD612, \uD613, \uD614, \uD615, \uD616, \uD617, \uD618, \uD619, \uD61A, \uD61B, \uD61C, \uD61D, \uD61E, \uD61F, "
@@ -5161,7 +4732,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uD670, \uD671, \uD672, \uD673, \uD674, \uD675, \uD676, \uD677, \uD678, \uD679, \uD67A, \uD67B, \uD67C, \uD67D, \uD67E, \uD67F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uD680, \uD681, \uD682, \uD683, \uD684, \uD685, \uD686, \uD687, \uD688, \uD689, \uD68A, \uD68B, \uD68C, \uD68D, \uD68E, \uD68F, "
 			"\uD690, \uD691, \uD692, \uD693, \uD694, \uD695, \uD696, \uD697, \uD698, \uD699, \uD69A, \uD69B, \uD69C, \uD69D, \uD69E, \uD69F, "
@@ -5173,7 +4743,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uD6FF, \uD6FF, \uD6FF, \uD6FF, \uD6FF, \uD6FF, \uD6FF, \uD6FF, \uD6FF, \uD6FF, \uD6FF, \uD6FF, \uD6FF, \uD6FF, \uD6FF, \uD6FF, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uD700, \uD701, \uD702, \uD703, \uD704, \uD705, \uD706, \uD707, \uD708, \uD709, \uD70A, \uD70B, \uD70C, \uD70D, \uD70E, \uD70F, "
 			"\uD710, \uD711, \uD712, \uD713, \uD714, \uD715, \uD716, \uD717, \uD718, \uD719, \uD71A, \uD71B, \uD71C, \uD71D, \uD71E, \uD71F, "
@@ -5185,7 +4754,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uD770, \uD771, \uD772, \uD773, \uD774, \uD775, \uD776, \uD777, \uD778, \uD779, \uD77A, \uD77B, \uD77C, \uD77D, \uD77E, \uD77F, "
     );
 
-    vecIcons.push_back("Icones ");
     vecChanges.push_back(
 			"\uD780, \uD781, \uD782, \uD783, \uD784, \uD785, \uD786, \uD787, \uD788, \uD789, \uD78A, \uD78B, \uD78C, \uD78D, \uD78E, \uD78F, "
 			"\uD790, \uD791, \uD792, \uD793, \uD794, \uD795, \uD796, \uD797, \uD798, \uD799, \uD79A, \uD79B, \uD79C, \uD79D, \uD79E, \uD79F, "
@@ -5197,7 +4765,8 @@ IconsPage::IconsPage() : AppletFrame(true, true)
 			"\uD7FF, \uD7FF, \uD7FF, \uD7FF, \uD7FF, \uD7FF, \uD7FF, \uD7FF, \uD7FF, \uD7FF, \uD7FF, \uD7FF, \uD7FF, \uD7FF, \uD7FF, \uD7FF, "
     );
 
-    for (int i = 1; i <= vecIcons.size(); i++) {
+    for (int i = 0; i <= vecChanges.size() - 1; i++) {
+
         listItem = new brls::ListItem(fmt::format("Icones {}", i));
         strIcon = vecChanges[i];
         listItem->getClickEvent()->subscribe([strIcon](brls::View* view) {
@@ -5205,5 +4774,6 @@ IconsPage::IconsPage() : AppletFrame(true, true)
         });
         list->addView(listItem);
     }
+
     this->setContentView(list);
 }

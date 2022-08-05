@@ -9,7 +9,7 @@ constexpr const char APP_FULL_NAME[] = "Atualizador Pacote GameMod";
 constexpr const char APP_SHORT_NAME[] = "APG";
 constexpr const char BASE_FOLDER_NAME[] = "gmpack";
 constexpr const char GITHUB_USER[] = "gamemoddesignbr";
-constexpr const bool SHOW_GNX = true;
+constexpr const bool SHOW_OTHER = true;
 
 /*
 DO NOT CHANGE ONLY THESE CONSTANTS UNLESS YOU KNOW WHAT YOU'RE DOING

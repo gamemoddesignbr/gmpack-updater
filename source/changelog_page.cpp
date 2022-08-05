@@ -28,7 +28,7 @@ ChangelogPage::ChangelogPage() : AppletFrame(true, true)
     changes.push_back("\uE016 Foi corrigido um problema de crash ao iniciar o homebrew sem internet.\n\uE016 Melhorias nos textos do homebrew.\n\uE016 Limpeza no código para remover dependência com o AIO.");
 
     verTitles.push_back("v1.1.2");
-    changes.push_back("\uE016 Adicionada a opção de baixar o pacote GNX.\n\uE016 Melhorias nos textos do homebrew.\n\uE016 Nova imagem para o homebrew.");
+    changes.push_back("\uE016 Adicionada a opção de baixar outro pacote.\n\uE016 Melhorias nos textos do homebrew.\n\uE016 Nova imagem para o homebrew.");
 
     verTitles.push_back("v1.1.3");
     changes.push_back("\uE016 Aba 'Créditos' incluída.\n\uE016 Melhorias nos textos do homebrew.\n\uE016 Limpeza no código em geral.");
@@ -62,6 +62,9 @@ ChangelogPage::ChangelogPage() : AppletFrame(true, true)
 
     verTitles.push_back("v2.0.4");
     changes.push_back("\uE016 Melhoria nos textos para esclarecer um pouco mais sobre 'Instalação limpa'.\n\uE016 Limpeza no código em geral.\n\uE016 Melhorias nos textos do homebrew.");
+
+    verTitles.push_back("v2.0.5");
+    changes.push_back("\uE016 Inclusão do 'Aviso legal'.\n\uE016 Limpeza no código em geral.\n\uE016 Melhorias nos textos do homebrew.");
 
 	for (int i = verTitles.size() - 1; i >= 0; i--) {
         listItem = new brls::ListItem(verTitles[i]);

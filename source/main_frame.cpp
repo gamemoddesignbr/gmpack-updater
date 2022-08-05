@@ -14,6 +14,8 @@
 #include "tools_tab.hpp"
 #include "utils.hpp"
 
+#include "warning_page.hpp"
+
 namespace i18n = brls::i18n;
 using namespace i18n::literals;
 using json = nlohmann::json;
@@ -58,7 +60,9 @@ MainFrame::MainFrame() : TabFrame()
             R_SUCCEEDED(fs::getFreeStorageSD(freeStorage)) ? floor(((float)freeStorage / 0x40000000) * 100.0) / 100.0 : -1));
     }
     else {
-        this->setFooterText(fmt::format("menus/main/footer_text"_i18n, BRAND_FULL_NAME, std::string(AppVersion) + "menus/main/footer_text_not_connected"_i18n, R_SUCCEEDED(fs::getFreeStorageSD(freeStorage)) ? (float)freeStorage / 0x40000000 : -1));
+        this->setFooterText(fmt::format("menus/main/footer_text"_i18n, BRAND_FULL_NAME,
+            "v" + std::string(AppVersion) + "menus/main/footer_text_not_connected"_i18n,
+            R_SUCCEEDED(fs::getFreeStorageSD(freeStorage)) ? floor(((float)freeStorage / 0x40000000) * 100.0) / 100.0 : -1));
     }
 
     nlohmann::ordered_json nxlinks;
@@ -72,6 +76,11 @@ MainFrame::MainFrame() : TabFrame()
         popupHelp->addTab("menus/main/help_order"_i18n, new brls::Label(brls::LabelStyle::REGULAR, fmt::format("menus/main/help_order_text"_i18n, "menus/main/update_ams"_i18n, util::upperCase(BASE_FOLDER_NAME), "menus/main/download_firmware"_i18n), true));
         popupHelp->addTab("menus/main/help_clean_inst"_i18n, new brls::Label(brls::LabelStyle::REGULAR, "menus/main/help_clean_inst_text"_i18n, true));
         brls::PopupFrame::open("menus/main/help"_i18n, popupHelp, "menus/main/help_how_to_use_full"_i18n, "");
+        return true;
+    });
+
+    this->registerAction("menus/main/legal_warning_txt"_i18n, brls::Key::Y, [] {
+        brls::Application::pushView(new WarningPage(fmt::format("menus/main/legal_warning"_i18n, BRAND_ARTICLE, BRAND_FULL_NAME, util::lowerCase(BRAND_ARTICLE), util::lowerCase(BRAND_ARTICLE), BRAND_FULL_NAME, BRAND_ARTICLE, BRAND_FULL_NAME, BRAND_ARTICLE, BRAND_FULL_NAME), false, false));
         return true;
     });
 
