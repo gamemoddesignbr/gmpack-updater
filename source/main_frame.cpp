@@ -75,6 +75,7 @@ MainFrame::MainFrame() : TabFrame()
         popupHelp->addTab("menus/main/help_how_to_use"_i18n, new brls::Label(brls::LabelStyle::REGULAR, "menus/main/help_how_to_use_text"_i18n, true));
         popupHelp->addTab("menus/main/help_order"_i18n, new brls::Label(brls::LabelStyle::REGULAR, fmt::format("menus/main/help_order_text"_i18n, "menus/main/update_ams"_i18n, util::upperCase(BASE_FOLDER_NAME), "menus/main/download_firmware"_i18n), true));
         popupHelp->addTab("menus/main/help_clean_inst"_i18n, new brls::Label(brls::LabelStyle::REGULAR, "menus/main/help_clean_inst_text"_i18n, true));
+        popupHelp->addTab("menus/main/help_terms"_i18n, new brls::Label(brls::LabelStyle::REGULAR, "menus/main/help_terms_text"_i18n, true));
         brls::PopupFrame::open("menus/main/help"_i18n, popupHelp, "menus/main/help_how_to_use_full"_i18n, "");
         return true;
     });
