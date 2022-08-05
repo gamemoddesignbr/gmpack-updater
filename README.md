@@ -12,7 +12,7 @@
 
 Um homebrew de Nintendo Switch, baseado no homebrew [AIO-Switch-Updater](https://github.com/HamletDuFromage/aio-switch-updater/), altamente modificado, para fazer o download e atualizar firmwares e o custom firmware [GMPACK](https://github.com/gamemoddesignbr/gmpack/releases).
 
-GMPACK é um pacote all-in-one (tudo em um) de custom firmware que inclui o Atmosphère, hekate, nyx e vários outros homebrews.
+GMPACK é um pacote all-in-one (tudo em um) de custom firmware que inclui o Atmosphère, hekate, nyx e vários outros homebrews mas nenhuma arquivo que habilita pirataria.
 
 Este homebrew suporta Atmosphère e funciona em consoles não corrigidos (`Erista`) and corrigidos (`Mariko`).
 
