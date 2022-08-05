@@ -72,7 +72,7 @@
     "help_clean_inst": "Instalação limpa",
     "help_clean_inst_text": "\nComo fazer uma instalação limpa?\n\n\uE150 Uma instalação limpa irá remover tudo do seu microSD menos os arquivos e pastas abaixo!\n\n* Para executar uma instalação limpa selecione o pacote Atmosphère de sua preferência, escolha “Sim”, confirme novamente com “Sim” e espere o processo terminar!\n* Escolhendo “Não” executará a instalação normal que poderá apagar os itens marcados com \uE150.\n\nO que a instalação limpa não remove:\n\u2605 emuNAND (jogos, saves e usuários) \uE150 pasta de backup \uE150 backup dos saves (JKSV, Checkpoint e EdiZon) \u2605 pasta do retroarch e ROMs \uE150 arquivos/temas do Tinfoil",
     "help_terms": "Termos",
-    "help_terms_text": "\u25c6 Homebrew: “programas caseiros” não-oficiais criados pelos próprios usuários de uma plataforma específica.\n\u25c6 Patch: são remendos ou fragmentos de códigos utilizados para consertar/remendar um software.\n\u25c6 SigPatch: Ou “signature patch“, são remendos que modificam a forma como Switch™ verifica a assinatura de um conteúdo e permite a execução de tal conteúdo mesmo quando ele não é legítimo."
+    "help_terms_text": "\n\u25c6 Homebrew: “programas caseiros” não-oficiais criados pelos próprios usuários de uma plataforma específica.\n\u25c6 Patch: são remendos ou fragmentos de códigos utilizados para consertar/remendar um software.\n\u25c6 SigPatch: Ou “signature patch“, são remendos que modificam a forma como Switch™ verifica a assinatura de um conteúdo e permite a execução de tal conteúdo mesmo quando ele não é legítimo."
   },
   "tools": {
     "batch_copy_not_found": "Os segintes arquivos não foram encontrados e não puderam ser copiados:\n",
