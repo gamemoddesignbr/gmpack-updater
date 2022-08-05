@@ -64,7 +64,7 @@ ChangelogPage::ChangelogPage() : AppletFrame(true, true)
     changes.push_back("\uE016 Melhoria nos textos para esclarecer um pouco mais sobre 'Instalação limpa'.\n\uE016 Limpeza no código em geral.\n\uE016 Melhorias nos textos do homebrew.");
 
     verTitles.push_back("v2.0.5");
-    changes.push_back("\uE016 Inclusão do 'Aviso legal'.\n\uE016 Limpeza no código em geral.\n\uE016 Melhorias nos textos do homebrew.");
+    changes.push_back("\uE016 Inclusão do botão de 'Aviso legal'.\n\uE016 Inclusão de novos tópicos de ajuda.\n\uE016 Limpeza no código em geral.\n\uE016 Melhorias nos textos do homebrew.");
 
 	for (int i = verTitles.size() - 1; i >= 0; i--) {
         listItem = new brls::ListItem(verTitles[i]);
