@@ -57,7 +57,7 @@ Se você estiver com dúvidas de como usar o homebrew, aperte o botão `X` e uma
 A GameMod design não detém nenhum direito de cópia sobre nenhum arquivo baixado por este homebrew e todo o crédito pertence aos seus respectivos proprietários. Se o atual proprietário do arquivo baixado por este atualizador solicitar a remoção, removeremos imediatamente deste homebrew a habilidade de baixar tal arquivo.
 - O GMPACK, assim como o Atmosphère, não habilita a pirataria no console e seu propósito principal é somente habilitar o usuário a rodar homebrews.
 - O uso do GMPACK com o propósito diferente do mencionado acima, como rodar cópias (backup) de jogos originais, é parcial ou totalmente proibida pela legislação de certos países.
-- Ao usar o GMPACK você está declarando ter consultado sua legislação local e estar legalmente apto a usá-los com o propósito de rodar cópias (backup) dos seus jogos originais.
+- Ao usar o GMPACK você está declarando ter consultado sua legislação local e estar legalmente apto a usá-lo com o propósito de rodar cópias (backup) dos seus jogos originais.
 - Você está declarando também ser o dono de todos os jogos originais dos quais você fez, faz ou fará cópias (backup).
 - O uso do GMPACK com o propósito diferente do que é permitido pela sua legislação local será feito sob a sua inteira responsabilidade, isentando-se assim a GameMod design.
 - A GameMod design não comercializa ou instala backup de jogos, ROMs de emuladores nem nenhum conteúdo que habilita a pirataria!
