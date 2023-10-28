@@ -1,4 +1,4 @@
-<h1 align="center">APG - Atualizador Pacote GameMod</h1>
+<h1 align="center">GMPACK Updater [APG - Atualizador Pacote GameMod]</h1>
 
 <div align="center">
 <img src="./Images/bootlogo.png" alight-itens="center">
@@ -23,7 +23,7 @@ Baixe o arquivo `gmpack-updater.zip` do link acima e o extraia na `raiz` do micr
 No final você deve ter uma pasta `gmpack-updater` dentro da pasta `/switch`.
 
 ## Onde achar o homebrew e como iniciá-lo?
-Abra a lista de homebrews do seu desbloqueio (no `Atmosphère` é o botão do `Album`) e execute o homebrew `Atualizador Pacote GameMod` (também conhecido por `APG`).
+Abra a lista de homebrews do seu desbloqueio (no `Atmosphère` é o botão do `Album`) e execute o homebrew `GMPACK Updater [APG]`.
 Se você estiver com dúvidas de como usar o homebrew, aperte o botão `X` e uma janela de ajuda irá aparecer.
 
 ## Descrição das funções
@@ -48,7 +48,7 @@ Se você estiver com dúvidas de como usar o homebrew, aperte o botão `X` e uma
 
 ### ⬦ Extras (na página `Ferramentas`)
 - Editar as configurações da internet (DNS, endereço IP, MTU, etc). Adicione suas próprias configurações em `config/aio-switch-updater/internet.json`. Você vai achar um modelo desta configuração neste repositório.
-- Abrir o navegador de internet do Switch (precisa abrir o APG em modo título/title usando um jogo e pressionar R).
+- Abrir o navegador de internet do Switch (precisa abrir o GMPACK Updater em modo título/title usando um jogo e pressionar R).
 - Limpar os arquivos temporários baixados.
 - Abrir a última mensagem do dia (MOTD) disponível no servidor (quando disponível).
 - Consultar as alterações sofridas pelo homebrew (changelog).
